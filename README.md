@@ -13,4 +13,4 @@ For every OCEL, we calculate the number of stable many-to-one relationships (m2o
 
 For instance, the LRMS-O2C log with noise 0.1 holds, in total, 11 relationships, with 1 many-to-many, 2 many-to-one, and 8 one-to-one relationships. Hence, we add up to 2 + 2*8 = 18 stable m2o relationships.
 
-<img width="761" alt="image" src="https://github.com/user-attachments/assets/ea1751eb-6a24-47a4-b67a-335e8b8674e7" />
+<img src="table.png" alt="drawing" width="800"/>
