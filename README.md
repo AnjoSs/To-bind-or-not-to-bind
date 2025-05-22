@@ -12,25 +12,37 @@ This repository contains:
 ## Transformation script
 
 The Python command line script can be called as
+```sh
  $ python3 ocpn2opid.py examples/Recruiting/ocpn.json 
  $ python3 ocpn2opid.py -R "[(offers:applications)]" examples/Recruiting/ocpn.json 
+```
 
 It takes an OCPN in [json format](https://github.com/rwth-pads/ocpn-visualizer/) as input, and produces a pnml file out.pnml and a .dot visualization of the resulting OPID in out.dot.
-The -R parameter is optional: if it is omitted, only transformation T1 is applied. Otherwise, -R should be followed by a list of pairs of object types that should be considered many-to-one relationships, in a format such as [(many1:one1),(many2:one2),(many3:one3)].
+The `-R` parameter is optional: if it is omitted, only transformation T1 is applied. Otherwise, -R should be followed by a list of pairs of object types that should be considered many-to-one relationships, in a format such as `[(many1:one1),(many2:one2),(many3:one3)]`.
 
 We applied our script to the sample OCPNs in [this repository](https://github.com/rwth-pads/ocpn-visualizer/), excluding nets that have only one object type or are otherwise syntactic. The following table summarizes the results:
 
-| OCPN                    | OPID N1        | many-to-one relations                     | OPID N2        |
-|-------------------------|----------------|-------------------------------------------|----------------|
-| Applications and offers | pnml, png, pdf | [(offer:application)]                     | pnml, png, pdf |
-| Cyclic OCPN             | pnml, png, pdf | [(item:order)]                            | pnml, png, pdf |
-| Exported P2P            | pnml, png, pdf | [(MATERIAL:PURCHREQ),(MATERIAL:PURCHORD)] | pnml, png, pdf |
-| Kolloquium example      | pnml, png, pdf | [(turq:yel),(yel:turq)]                   | pnml, png, pdf |
-| OCPA P2P                | pnml, png, pdf | [(item:order)]                            | pnml, png, pdf |
-| Order Process           | pnml, png, pdf | [(item:order)]                            | pnml, png, pdf |
-| Recruiting              | pnml, png, pdf | [(offers:applications)]                   | pnml, png, pdf |
-| Syntactic cyclic OCPN   | pnml, png, pdf |                                           |                |
+OCPN2OPID Tests
 
+# OCPN2OPID Tests
+
+## Script
+
+The Python command-line script can be obtained [here](code.zip).
+
+## Tests
+
+|     |     |     |     |
+| --- | --- | --- | --- |
+| **OCPN** | **OPID N1** | **many-to-one relations** | **OPID N2** |
+| [Applications and offers](./examples/Applications_and_offers/ocpn.json) | [pnml](./examples/Applications_and_offers/N1.pnml), [png](./examples/Applications_and_offers/N1.png), [pdf](./examples/Applications_and_offers/N1.pdf) | \[(offer:application)\] | [pnml](./examples/Applications_and_offers/N2.pnml), [png](./examples/Applications_and_offers/N2.png), [pdf](./examples/Applications_and_offers/N2.pdf) |
+| [Cyclic OCPN](./examples/Cyclic_OCPN/ocpn.json) | [pnml](./examples/Cyclic_OCPN/N1.pnml), [png](./examples/Cyclic_OCPN/N1.png), [pdf](./examples/Cyclic_OCPN/N1.pdf) | \[(item:order)\] | [pnml](./examples/Cyclic_OCPN/N2.pnml), [png](./examples/Cyclic_OCPN/N2.png), [pdf](./examples/Cyclic_OCPN/N2.pdf) |
+| [Exported P2P](./examples/Exported_P2P/ocpn.json) | [pnml](./examples/Exported_P2P/N1.pnml), [png](./examples/Exported_P2P/N1.png), [pdf](./examples/Exported_P2P/N1.pdf) | \[(MATERIAL:PURCHREQ),(MATERIAL:PURCHORD)\] | [pnml](./examples/Exported_P2P/N2.pnml), [png](./examples/Exported_P2P/N2.png), [pdf](./examples/Exported_P2P/N2.pdf) |
+| [Kolloquium example](./examples/Kolloquium_example/ocpn.json) | [pnml](./examples/Kolloquium_example/N1.pnml), [png](./examples/Kolloquium_example/N1.png), [pdf](./examples/Kolloquium_example/N1.pdf) | \[(turq:yel),(yel:turq)\] | [pnml](./examples/Kolloquium_example/N2.pnml), [png](./examples/Kolloquium_example/N2.png), [pdf](./examples/Kolloquium_example/N2.pdf) |
+| [OCPA P2P](./examples/OCPA_P2P/ocpn.json) | [pnml](./examples/OCPA_P2P/N1.pnml), [png](./examples/OCPA_P2P/N1.png), [pdf](./examples/OCPA_P2P/N1.pdf) | \[(item:order)\] | [pnml](./examples/OCPA_P2P/N2.pnml), [png](./examples/OCPA_P2P/N2.png), [pdf](./examples/OCPA_P2P/N2.pdf) |
+| [Order Process](./examples/Order_Process/ocpn.json) | [pnml](./examples/Order_Process/N1.pnml), [png](./examples/Order_Process/N1.png), [pdf](./examples/Order_Process/N1.pdf) | \[(item:order)\] | [pnml](./examples/Order_Process/N2.pnml), [png](./examples/Order_Process/N2.png), [pdf](./examples/Order_Process/N2.pdf) |
+| [Recruiting](./examples/Recruiting/ocpn.json) | [pnml](./examples/Recruiting/N1.pnml), [png](./examples/Recruiting/N1.png), [pdf](./examples/Recruiting/N1.pdf) | \[(offers:applications)\] | [pnml](./examples/Recruiting/N2.pnml), [png](./examples/Recruiting/N2.png), [pdf](./examples/Recruiting/N2.pdf) |
+| [Syntactic cyclic OCPN](./examples/Syntactic_cyclic_OCPN/ocpn.json) | [pnml](./examples/Syntactic_cyclic_OCPN/N1.pnml), [png](./examples/Syntactic_cyclic_OCPN/N1.png), [pdf](./examples/Syntactic_cyclic_OCPN/N1.pdf) |     | [pnml](./examples/Syntactic_cyclic_OCPN/N2.pnml), [png](./examples/Syntactic_cyclic_OCPN/N2.png), [pdf](./examples/Syntactic_cyclic_OCPN/N2.pdf) |
 
 ## Object relationships in OCELs: Results
 
