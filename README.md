@@ -2,10 +2,37 @@
 
 This repository contains:
 - the [extended version](extended_paper.pdf) of the paper including the detailed proof of our theorems in the appendix,
-- the [python script](myOCELinspector.py) based on [pm4py](https://pypi.org/project/pm4py/) to inspect the object type relaionships of [benchmark OCELs](https://www.ocel-standard.org/event-logs/overview/),
-- and the [results](result.txt) of running the script for the OCELs for Logistcs, Order Management, Procure-to-Pay, LRMS, Hinge Production, and Age of Empires.
+- an implementation of our transformations:
+  * a [python script](src/ocpn2opid.py) implementing the transformations presented in the paper
+  * a [directory](examples) with the results obtained by the transformations for a number of [sample OCPNs](https://github.com/rwth-pads/ocpn-visualizer/tree/master/public/sample_ocpns/json); these results are also summarized in the table below
+- to inspect object type relationships in OCELs:
+  * a [python script](src/ocel_inspector.py) based on [pm4py](https://pypi.org/project/pm4py/) that counts such relationships of [benchmark OCELs](https://www.ocel-standard.org/event-logs/overview/),
+  *  and the [results](result.txt) obtained by this script for the OCELs for Logistics, Order Management, Procure-to-Pay, LRMS, Hinge Production, and Age of Empires.
 
-## Inspection results
+## Transformation script
+
+The Python command line script can be called as
+ $ python3 ocpn2opid.py examples/Recruiting/ocpn.json 
+ $ python3 ocpn2opid.py -R "[(offers:applications)]" examples/Recruiting/ocpn.json 
+
+It takes an OCPN in [json format](https://github.com/rwth-pads/ocpn-visualizer/) as input, and produces a pnml file out.pnml and a .dot visualization of the resulting OPID in out.dot.
+The -R parameter is optional: if it is omitted, only transformation T1 is applied. Otherwise, -R should be followed by a list of pairs of object types that should be considered many-to-one relationships, in a format such as [(many1:one1),(many2:one2),(many3:one3)].
+
+We applied our script to the sample OCPNs in [this repository](https://github.com/rwth-pads/ocpn-visualizer/), excluding nets that have only one object type or are otherwise syntactic. The following table summarizes the results:
+
+| OCPN                    | OPID N1        | many-to-one relations                     | OPID N2        |
+|-------------------------|----------------|-------------------------------------------|----------------|
+| Applications and offers | pnml, png, pdf | [(offer:application)]                     | pnml, png, pdf |
+| Cyclic OCPN             | pnml, png, pdf | [(item:order)]                            | pnml, png, pdf |
+| Exported P2P            | pnml, png, pdf | [(MATERIAL:PURCHREQ),(MATERIAL:PURCHORD)] | pnml, png, pdf |
+| Kolloquium example      | pnml, png, pdf | [(turq:yel),(yel:turq)]                   | pnml, png, pdf |
+| OCPA P2P                | pnml, png, pdf | [(item:order)]                            | pnml, png, pdf |
+| Order Process           | pnml, png, pdf | [(item:order)]                            | pnml, png, pdf |
+| Recruiting              | pnml, png, pdf | [(offers:applications)]                   | pnml, png, pdf |
+| Syntactic cyclic OCPN   | pnml, png, pdf |                                           |                |
+
+
+## Object relationships in OCELs: Results
 
 The results of our analysis are displayed in the following table. For each analyzed OCEL, it holds the number of object types, and the number of bidirectional relationships between object types. The relationships can be of three different types: many-to-many, many-to-one, and one-to-one. In the paper, we define stable m2o relationships. As elaborated, a many-to-one relationship manifests as one stable m2o relationship in our approach, while a bi-directional one-to-one relationship manifests two stable m2o relationships.
 
