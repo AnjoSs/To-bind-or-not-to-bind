@@ -1,0 +1,116 @@
+{
+    "name": "Simple Cyclic OCPN",
+    "places": [
+        {
+            "name": "o1",
+            "objectType": "order",
+            "initial": true,
+            "final": false
+        },
+        {
+            "name": "o2",
+            "objectType": "order",
+            "initial": false,
+            "final": false
+        },
+        {
+            "name": "i1",
+            "objectType": "item",
+            "initial": true,
+            "final": false
+        },
+        {
+            "name": "i2",
+            "objectType": "item",
+            "initial": false,
+            "final": false
+        },
+        {
+            "name": "i3",
+            "objectType": "item",
+            "initial": false,
+            "final": true
+        },
+        {
+            "name": "o3",
+            "objectType": "order",
+            "initial": false,
+            "final": true
+        }
+    ],
+    "transitions": [
+        {
+            "name": "t1",
+            "label": "Collect",
+            "silent": false
+        },
+        {
+            "name": "t2",
+            "label": "Prepare",
+            "silent": false
+        },
+        {
+            "name": "t3",
+            "label": "",
+            "silent": true
+        }
+    ],
+    "arcs": [
+        {
+            "source": "o1",
+            "target": "t1",
+            "variable": false,
+            "properties": {}
+        },
+        {
+            "source": "i1",
+            "target": "t1",
+            "variable": true,
+            "properties": {}
+        },
+        {
+            "source": "t1",
+            "target": "o2",
+            "variable": false
+        },
+        {
+            "source": "t1",
+            "target": "i2",
+            "variable": true
+        },
+        {
+            "source": "o2",
+            "target": "t2",
+            "variable": false
+        },
+        {
+            "source": "i2",
+            "target": "t2",
+            "variable": false
+        },
+        {
+            "source": "t2",
+            "target": "i3",
+            "variable": false
+        },
+        {
+            "source": "t2",
+            "target": "o3",
+            "variable": false
+        },
+        {
+            "source": "o3",
+            "target": "t3",
+            "variable": false
+        },
+        {
+            "source": "t3",
+            "target": "o2",
+            "variable": false
+        }
+    ],
+    "properties": {
+        "creator": "Tobias Br.",
+        "version": "1.0"
+    }
+}

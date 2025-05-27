@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+	<net>
+		<page>
+			<name>Simple Cyclic OCPN</name>
+			<place id="649" color="order">
+				<name>o1</name>
+			</place>
+			<place id="651" color="order">
+				<name>o2</name>
+			</place>
+			<place id="652" color="item">
+				<name>i1</name>
+			</place>
+			<place id="654" color="item">
+				<name>i2</name>
+			</place>
+			<place id="655" color="item">
+				<name>i3</name>
+			</place>
+			<place id="657" color="order">
+				<name>o3</name>
+			</place>
+			<transition id="650" invisible="true">
+				<name>create order</name>
+			</transition>
+			<transition id="653" invisible="true">
+				<name>create item</name>
+			</transition>
+			<transition id="656" invisible="true">
+				<name>consume item</name>
+			</transition>
+			<transition id="658" invisible="true">
+				<name>consume order</name>
+			</transition>
+			<transition id="659">
+				<name>Collect</name>
+			</transition>
+			<transition id="660">
+				<name>Prepare</name>
+			</transition>
+			<transition id="661" invisible="true">
+				<name></name>
+			</transition>
+			<arc source="650" target="649" inscription="nu_o:order"/>
+			<arc source="653" target="652" inscription="nu_i:item"/>
+			<arc source="655" target="656" inscription="i:item"/>
+			<arc source="657" target="658" inscription="o:order"/>
+			<arc source="649" target="659" inscription="o:order"/>
+			<arc source="652" target="659" inscription="I:item"/>
+			<arc source="659" target="651" inscription="o:order"/>
+			<arc source="659" target="654" inscription="I:item"/>
+			<arc source="651" target="660" inscription="o:order"/>
+			<arc source="654" target="660" inscription="i:item"/>
+			<arc source="660" target="655" inscription="i:item"/>
+			<arc source="660" target="657" inscription="o:order"/>
+			<arc source="657" target="661" inscription="o:order"/>
+			<arc source="661" target="651" inscription="o:order"/>
+		</page>
+	</net>
+</pnml>

@@ -3,38 +3,38 @@
 	<net>
 		<page>
 			<name>Example Petri Net</name>
-			<place id="657" color="type1">
+			<place id="691" color="type1">
 				<name>p1</name>
 			</place>
-			<place id="659" color="type1">
+			<place id="693" color="type1">
 				<name>p2</name>
 			</place>
-			<place id="660" color="type1">
+			<place id="694" color="type1">
 				<name>p3</name>
 			</place>
-			<transition id="658" invisible="true">
+			<transition id="692" invisible="true">
 				<name>create type1</name>
 			</transition>
-			<transition id="661" invisible="true">
+			<transition id="695" invisible="true">
 				<name>consume type1</name>
 			</transition>
-			<transition id="662">
+			<transition id="696">
 				<name>Start</name>
 			</transition>
-			<transition id="663">
+			<transition id="697">
 				<name>Process</name>
 			</transition>
-			<transition id="664">
+			<transition id="698">
 				<name>End</name>
 			</transition>
-			<arc source="658" target="657" inscription="nu_t:type1"/>
-			<arc source="660" target="661" inscription="t:type1"/>
-			<arc source="657" target="662" inscription="t:type1"/>
-			<arc source="662" target="659" inscription="t:type1"/>
-			<arc source="659" target="663" inscription="t:type1"/>
-			<arc source="663" target="660" inscription="t:type1"/>
-			<arc source="660" target="664" inscription="t:type1"/>
-			<arc source="664" target="657" inscription="t:type1"/>
+			<arc source="692" target="691" inscription="nu_t:type1"/>
+			<arc source="694" target="695" inscription="t:type1"/>
+			<arc source="691" target="696" inscription="t:type1"/>
+			<arc source="696" target="693" inscription="t:type1"/>
+			<arc source="693" target="697" inscription="t:type1"/>
+			<arc source="697" target="694" inscription="t:type1"/>
+			<arc source="694" target="698" inscription="t:type1"/>
+			<arc source="698" target="691" inscription="t:type1"/>
 		</page>
 	</net>
 </pnml>
