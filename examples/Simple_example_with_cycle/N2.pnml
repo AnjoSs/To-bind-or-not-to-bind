@@ -57,7 +57,7 @@
 			<transition id="674" invisible="true">
 				<name></name>
 			</transition>
-			<transition id="680">
+			<transition id="680" invisible="true">
 				<name>Tlink item-order</name>
 			</transition>
 			<transition id="681" invisible="true">

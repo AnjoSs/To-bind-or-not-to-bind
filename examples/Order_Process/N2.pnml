@@ -156,7 +156,7 @@
 			<transition id="556">
 				<name>Fuel Car</name>
 			</transition>
-			<transition id="562">
+			<transition id="562" invisible="true">
 				<name>Tlink item-order</name>
 			</transition>
 			<transition id="563" invisible="true">

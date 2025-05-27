@@ -132,7 +132,7 @@
 			<transition id="640">
 				<name>first screening</name>
 			</transition>
-			<transition id="646">
+			<transition id="646" invisible="true">
 				<name>Tlink offers-applications</name>
 			</transition>
 			<transition id="647" invisible="true">

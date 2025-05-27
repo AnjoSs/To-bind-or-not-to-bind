@@ -165,7 +165,7 @@
 			<transition id="334">
 				<name>Receive Invoice</name>
 			</transition>
-			<transition id="340">
+			<transition id="340" invisible="true">
 				<name>Tlink MATERIAL-PURCHREQ</name>
 			</transition>
 			<transition id="341" invisible="true">
@@ -174,7 +174,7 @@
 			<transition id="342" invisible="true">
 				<name>Ti PURCHREQ</name>
 			</transition>
-			<transition id="348">
+			<transition id="348" invisible="true">
 				<name>Tlink MATERIAL-PURCHORD</name>
 			</transition>
 			<transition id="349" invisible="true">

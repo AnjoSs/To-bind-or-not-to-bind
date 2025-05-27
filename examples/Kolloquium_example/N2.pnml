@@ -72,7 +72,7 @@
 			<transition id="376">
 				<name>t3</name>
 			</transition>
-			<transition id="382">
+			<transition id="382" invisible="true">
 				<name>Tlink turq-yel</name>
 			</transition>
 			<transition id="383" invisible="true">
@@ -81,7 +81,7 @@
 			<transition id="384" invisible="true">
 				<name>Ti yel</name>
 			</transition>
-			<transition id="390">
+			<transition id="390" invisible="true">
 				<name>Tlink yel-turq</name>
 			</transition>
 			<transition id="391" invisible="true">

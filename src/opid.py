@@ -245,7 +245,7 @@ class OPID:
     pa_many = Place(self.get_id(), "Pa "+many, [many])
     pa_one = Place(self.get_id(), "Pa "+one, [one])
     self._places += [link_place, pb_many, pb_one, pa_many, pa_one]
-    link_trans = Transition(self.get_id(), "T"+linkname, False)
+    link_trans = Transition(self.get_id(), "T"+linkname, True)
     ti_many = Transition(self.get_id(), "Ti "+many, True)
     ti_one = Transition(self.get_id(), "Ti "+one, True)
     self._transitions += [link_trans, ti_many, ti_one]

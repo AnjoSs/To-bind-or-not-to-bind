@@ -114,7 +114,7 @@
 			<transition id="456">
 				<name>Pay Order</name>
 			</transition>
-			<transition id="462">
+			<transition id="462" invisible="true">
 				<name>Tlink item-order</name>
 			</transition>
 			<transition id="463" invisible="true">

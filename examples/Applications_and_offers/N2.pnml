@@ -330,7 +330,7 @@
 			<transition id="208" invisible="true">
 				<name>971d954a-da7a-4c35-9757-34816d5ebd82</name>
 			</transition>
-			<transition id="214">
+			<transition id="214" invisible="true">
 				<name>Tlink offer-application</name>
 			</transition>
 			<transition id="215" invisible="true">
