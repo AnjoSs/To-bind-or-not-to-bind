@@ -3,11 +3,11 @@
 This repository contains the supplementary material to the paper "To bind or not to bind? Replaying object-centric processes under stable relationships":
 1. The [extended version](extended_paper.pdf) of the paper including the detailed proof of our theorems in the appendix
 2. An inspection of object type relationships in existing benchmark OCELs:
-   * The [python script](src/ocel_inspector.py) based on [pm4py](https://pypi.org/project/pm4py/) counts the relationships of [benchmark OCELs](https://www.ocel-standard.org/event-logs/overview/).
-  *  The [results](result.txt) reports on the results obtained by this script for the OCELs for Logistics, Order Management, Procure-to-Pay, LRMS, Hinge Production, and Age of Empires.
+    * The [python script](src/ocel_inspector.py) based on [pm4py](https://pypi.org/project/pm4py/) counts the relationships of [benchmark OCELs](https://www.ocel-standard.org/event-logs/overview/).
+    *  The [results](result.txt) reports on the results obtained by this script for the OCELs for Logistics, Order Management, Procure-to-Pay, LRMS, Hinge Production, and Age of Empires.
 3. An implementation of our mapping from OCPN to OPID:
-  * The [python script](src/ocpn2opid.py) implements the mappings presented in the paper.
-  * The [examples directory](examples) provides a set of [sample OCPNs](https://github.com/rwth-pads/ocpn-visualizer/tree/master/public/sample_ocpns/json) and the mapped OPIDs (summarized in the table below).
+    * The [python script](src/ocpn2opid.py) implements the mappings presented in the paper.
+    * The [examples directory](examples) provides a set of [sample OCPNs](https://github.com/rwth-pads/ocpn-visualizer/tree/master/public/sample_ocpns/json) and the mapped OPIDs (summarized in the table below).
 
 ## 1. Extended Paper
 
