@@ -113,8 +113,8 @@
 			<arc source="382" target="381" inscription="y:yel"/>
 			<arc source="381" target="369" inscription="y:yel"/>
 			<arc source="380" target="365" inscription="t:turq"/>
-			<arc source="377" target="376" inscription="T:turq,y:yel"/>
-			<arc source="376" target="377" inscription="T:turq,y:yel"/>
+			<arc source="377" target="376" inscription="t:turq,y:yel"/>
+			<arc source="376" target="377" inscription="t:turq,y:yel"/>
 			<arc source="391" target="386" inscription="nu_y:yel"/>
 			<arc source="392" target="387" inscription="nu_t:turq"/>
 			<arc source="386" target="390" inscription="Y:yel"/>
@@ -125,12 +125,10 @@
 			<arc source="390" target="389" inscription="t:turq"/>
 			<arc source="389" target="383" inscription="t:turq"/>
 			<arc source="388" target="384" inscription="y:yel"/>
-			<arc source="385" target="373" inscription="Y:yel,t:turq"/>
-			<arc source="373" target="385" inscription="Y:yel,t:turq"/>
-			<arc source="385" target="376" inscription="Y:yel,t:turq"/>
-			<arc source="376" target="385" inscription="Y:yel,t:turq"/>
-			<arc source="385" target="382" inscription="Y:yel,t:turq"/>
-			<arc source="382" target="385" inscription="Y:yel,t:turq"/>
+			<arc source="385" target="376" inscription="y:yel,t:turq"/>
+			<arc source="376" target="385" inscription="y:yel,t:turq"/>
+			<arc source="385" target="382" inscription="y:yel,t:turq"/>
+			<arc source="382" target="385" inscription="y:yel,t:turq"/>
 		</page>
 	</net>
 </pnml>

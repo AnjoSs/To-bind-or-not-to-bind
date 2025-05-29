@@ -493,16 +493,16 @@
 			<arc source="214" target="213" inscription="a:application"/>
 			<arc source="213" target="130" inscription="a:application"/>
 			<arc source="212" target="141" inscription="o:offer"/>
-			<arc source="209" target="149" inscription="O:offer,a:application"/>
-			<arc source="149" target="209" inscription="O:offer,a:application"/>
-			<arc source="209" target="158" inscription="O:offer,a:application"/>
-			<arc source="158" target="209" inscription="O:offer,a:application"/>
-			<arc source="209" target="165" inscription="O:offer,a:application"/>
-			<arc source="165" target="209" inscription="O:offer,a:application"/>
-			<arc source="209" target="170" inscription="O:offer,a:application"/>
-			<arc source="170" target="209" inscription="O:offer,a:application"/>
-			<arc source="209" target="179" inscription="O:offer,a:application"/>
-			<arc source="179" target="209" inscription="O:offer,a:application"/>
+			<arc source="209" target="149" inscription="o:offer,a:application"/>
+			<arc source="149" target="209" inscription="o:offer,a:application"/>
+			<arc source="209" target="158" inscription="o:offer,a:application"/>
+			<arc source="158" target="209" inscription="o:offer,a:application"/>
+			<arc source="209" target="165" inscription="o:offer,a:application"/>
+			<arc source="165" target="209" inscription="o:offer,a:application"/>
+			<arc source="209" target="170" inscription="o:offer,a:application"/>
+			<arc source="170" target="209" inscription="o:offer,a:application"/>
+			<arc source="209" target="179" inscription="o:offer,a:application"/>
+			<arc source="179" target="209" inscription="o:offer,a:application"/>
 			<arc source="209" target="194" inscription="O:offer,a:application"/>
 			<arc source="194" target="209" inscription="O:offer,a:application"/>
 			<arc source="209" target="204" inscription="O:offer,a:application"/>

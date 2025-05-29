@@ -43,6 +43,7 @@ The Python command-line script can be obtained [here](code.zip).
 | [Order Process](./examples/Order_Process/ocpn.json) | [pnml](./examples/Order_Process/N1.pnml), [png](./examples/Order_Process/N1.png), [pdf](./examples/Order_Process/N1.pdf) | \[(item:order)\] | [pnml](./examples/Order_Process/N2.pnml), [png](./examples/Order_Process/N2.png), [pdf](./examples/Order_Process/N2.pdf) |
 | [Recruiting](./examples/Recruiting/ocpn.json) | [pnml](./examples/Recruiting/N1.pnml), [png](./examples/Recruiting/N1.png), [pdf](./examples/Recruiting/N1.pdf) | \[(offers:applications)\] | [pnml](./examples/Recruiting/N2.pnml), [png](./examples/Recruiting/N2.png), [pdf](./examples/Recruiting/N2.pdf) |
 | [Syntactic cyclic OCPN](./examples/Syntactic_cyclic_OCPN/ocpn.json) | [pnml](./examples/Syntactic_cyclic_OCPN/N1.pnml), [png](./examples/Syntactic_cyclic_OCPN/N1.png), [pdf](./examples/Syntactic_cyclic_OCPN/N1.pdf) |     | [pnml](./examples/Syntactic_cyclic_OCPN/N2.pnml), [png](./examples/Syntactic_cyclic_OCPN/N2.png), [pdf](./examples/Syntactic_cyclic_OCPN/N2.pdf) |
+| [Simple example with cycle](./examples/Simple_example_with_cycle/ocpn.json) | [pnml](./examples/Simple_example_with_cycle/N1.pnml), [png](./examples/Simple_example_with_cycle/N1.png), [pdf](./examples/Simple_example_with_cycle/N1.pdf) |     | [pnml](./examples/Simple_example_with_cycle/N2.pnml), [png](./examples/Simple_example_with_cycle/N2.png), [pdf](./examples/Simple_example_with_cycle/N2.pdf) |
 
 ## Object relationships in OCELs: Results
 

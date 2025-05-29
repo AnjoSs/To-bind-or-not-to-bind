@@ -82,8 +82,8 @@
 			<arc source="244" target="243" inscription="o:order"/>
 			<arc source="243" target="229" inscription="o:order"/>
 			<arc source="242" target="233" inscription="i:item"/>
-			<arc source="239" target="236" inscription="I:item,o:order"/>
-			<arc source="236" target="239" inscription="I:item,o:order"/>
+			<arc source="239" target="236" inscription="i:item,o:order"/>
+			<arc source="236" target="239" inscription="i:item,o:order"/>
 		</page>
 	</net>
 </pnml>

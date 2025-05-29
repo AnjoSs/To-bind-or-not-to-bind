@@ -197,12 +197,12 @@
 			<arc source="646" target="645" inscription="a:applications"/>
 			<arc source="645" target="607" inscription="a:applications"/>
 			<arc source="644" target="622" inscription="o:offers"/>
-			<arc source="641" target="633" inscription="O:offers,a:applications"/>
-			<arc source="633" target="641" inscription="O:offers,a:applications"/>
-			<arc source="641" target="637" inscription="O:offers,a:applications"/>
-			<arc source="637" target="641" inscription="O:offers,a:applications"/>
-			<arc source="641" target="639" inscription="O:offers,a:applications"/>
-			<arc source="639" target="641" inscription="O:offers,a:applications"/>
+			<arc source="641" target="633" inscription="o:offers,a:applications"/>
+			<arc source="633" target="641" inscription="o:offers,a:applications"/>
+			<arc source="641" target="637" inscription="o:offers,a:applications"/>
+			<arc source="637" target="641" inscription="o:offers,a:applications"/>
+			<arc source="641" target="639" inscription="o:offers,a:applications"/>
+			<arc source="639" target="641" inscription="o:offers,a:applications"/>
 		</page>
 	</net>
 </pnml>

@@ -92,8 +92,8 @@
 			<arc source="678" target="666" inscription="i:item"/>
 			<arc source="675" target="672" inscription="I:item,o:order"/>
 			<arc source="672" target="675" inscription="I:item,o:order"/>
-			<arc source="675" target="673" inscription="I:item,o:order"/>
-			<arc source="673" target="675" inscription="I:item,o:order"/>
+			<arc source="675" target="673" inscription="i:item,o:order"/>
+			<arc source="673" target="675" inscription="i:item,o:order"/>
 		</page>
 	</net>
 </pnml>

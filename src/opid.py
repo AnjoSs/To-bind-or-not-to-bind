@@ -208,14 +208,15 @@ class OPID:
     return types
 
   def connect_transitions_to_link_place(self, one, many, link_place, ignore):
-    def get_place_for(t, otype, pre = True): # get pre or post place of t
+
+    def get_place_for(t, otype, pre = True): # get id of pre or post place of t
       if pre:
         ps = [a._source for a in self._arcs if a._target == t._id and \
           otype in a._inscription._object_types]
       else:
         ps = [a._target for a in self._arcs if a._source == t._id and \
           otype in a._inscription._object_types]
-      return None if len(ps) != 1 else ps[0]
+      return None if len(ps) == 0 else ps[0]
     
     for t in self._transitions:
       if (not set([one, many]).issubset(self.transition_types(t))) or \
@@ -228,8 +229,16 @@ class OPID:
       if None in [in_one, in_many, out_one, out_many]:
         print("Warning: transition '%s' ignored for types (%s,%s)" % \
           (t._label, many, one))
+        continue
       print(" enforce many-to-one wrt %s-to-%s for %s" % (many, one, t._label))
-      insc = Inscription.many([many, one], [many.upper(), one.lower()], True)
+      arcs = [a for a in self._arcs if a._source == in_many and a._target == t._id]
+      if len(arcs) == 0:
+        print(t._label, "no arc found")
+      arc = arcs[0]
+      if arc._inscription._is_variable:
+        insc = Inscription.many([many, one], [many.upper(), one.lower()], True)
+      else:
+        insc = Inscription.many([many, one], [many.lower(), one.lower()], False)
       self._arcs.append(Arc(link_place._id, t._id, insc))
       self._arcs.append(Arc(t._id, link_place._id, insc))
 
