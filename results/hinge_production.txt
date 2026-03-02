@@ -1,0 +1,95 @@
+A Facility interacts with [1, 1] Worker (on average 1.000). A Worker interacts with [1, 1] Facility (on average 1.000). (Facility, Worker) has [1, 1] and (Worker, Facility) has [1, 1].
+o2o 11
+
+A FemalePart interacts with [1, 1] FormedPart (on average 1.000). A FormedPart interacts with [0, 1] FemalePart (on average 0.493). (FemalePart, FormedPart) has [1, 1] and (FormedPart, FemalePart) has [0, 1].
+o2o 10
+
+A FemalePart interacts with [0, 1] Hinge (on average 0.997). A Hinge interacts with [1, 1] FemalePart (on average 1.000). (FemalePart, Hinge) has [0, 1] and (Hinge, FemalePart) has [1, 1].
+o2o 10
+
+A FemalePart interacts with [1, 2] Machine (on average 1.997). A Machine interacts with [0, 2915] FemalePart (on average 831.714). (FemalePart, Machine) has [1, 2] and (Machine, FemalePart) has [0, 2915].
+m2m
+
+A FemalePart interacts with [0, 1] MalePart (on average 0.997). A MalePart interacts with [0, 1] FemalePart (on average 0.998). (FemalePart, MalePart) has [0, 1] and (MalePart, FemalePart) has [0, 1].
+o2o 00
+
+A FemalePart interacts with [0, 1] SteelPin (on average 0.997). A SteelPin interacts with [1, 1] FemalePart (on average 1.000). (FemalePart, SteelPin) has [0, 1] and (SteelPin, FemalePart) has [1, 1].
+o2o 10
+
+A FemalePart interacts with [1, 1] Worker (on average 1.000). A Worker interacts with [2915, 2915] FemalePart (on average 2915.000). (FemalePart, Worker) has [1, 1] and (Worker, FemalePart) has [2915, 2915].
+m2o 11
+
+A FemalePart interacts with [1, 2] Workstation (on average 1.997). A Workstation interacts with [0, 2915] FemalePart (on average 1940.667). (FemalePart, Workstation) has [1, 2] and (Workstation, FemalePart) has [0, 2915].
+m2m
+
+A FormedPart interacts with [2, 3] Machine (on average 2.986). A Machine interacts with [0, 5911] FormedPart (on average 2521.571). (FormedPart, Machine) has [2, 3] and (Machine, FormedPart) has [0, 5911].
+m2m
+
+A FormedPart interacts with [0, 1] MalePart (on average 0.493). A MalePart interacts with [1, 1] FormedPart (on average 1.000). (FormedPart, MalePart) has [0, 1] and (MalePart, FormedPart) has [1, 1].
+o2o 10
+
+A FormedPart interacts with [1, 1] SteelSheet (on average 1.000). A SteelSheet interacts with [1, 1] FormedPart (on average 1.000). (FormedPart, SteelSheet) has [1, 1] and (SteelSheet, FormedPart) has [1, 1].
+o2o 00
+
+A FormedPart interacts with [1, 2] Workstation (on average 1.986). A Workstation interacts with [0, 5911] FormedPart (on average 3913.333). (FormedPart, Workstation) has [1, 2] and (Workstation, FormedPart) has [0, 5911].
+m2m
+
+A Hinge interacts with [0, 1] HingePack (on average 0.998). A HingePack interacts with [10, 10] Hinge (on average 10.000). (Hinge, HingePack) has [0, 1] and (HingePack, Hinge) has [10, 10].
+m2o 10
+
+A Hinge interacts with [1, 2] Machine (on average 1.998). A Machine interacts with [0, 2907] Hinge (on average 829.571). (Hinge, Machine) has [1, 2] and (Machine, Hinge) has [0, 2907].
+m2m
+
+A Hinge interacts with [1, 1] MalePart (on average 1.000). A MalePart interacts with [0, 1] Hinge (on average 0.998). (Hinge, MalePart) has [1, 1] and (MalePart, Hinge) has [0, 1].
+o2o 10
+
+A Hinge interacts with [1, 1] SteelPin (on average 1.000). A SteelPin interacts with [1, 1] Hinge (on average 1.000). (Hinge, SteelPin) has [1, 1] and (SteelPin, Hinge) has [1, 1].
+o2o 00
+
+A Hinge interacts with [1, 1] Workstation (on average 1.000). A Workstation interacts with [0, 2907] Hinge (on average 969.000). (Hinge, Workstation) has [1, 1] and (Workstation, Hinge) has [0, 2907].
+m2o 01
+
+A HingePack interacts with [1, 1] Machine (on average 1.000). A Machine interacts with [0, 290] HingePack (on average 41.429). (HingePack, Machine) has [1, 1] and (Machine, HingePack) has [0, 290].
+m2o 01
+
+A HingePack interacts with [1, 1] Workstation (on average 1.000). A Workstation interacts with [0, 290] HingePack (on average 96.667). (HingePack, Workstation) has [1, 1] and (Workstation, HingePack) has [0, 290].
+m2o 01
+
+A Machine interacts with [0, 2914] MalePart (on average 831.571). A MalePart interacts with [1, 2] Machine (on average 1.998). (Machine, MalePart) has [0, 2914] and (MalePart, Machine) has [1, 2].
+m2m
+
+A Machine interacts with [0, 4] SteelCoil (on average 0.571). A SteelCoil interacts with [1, 1] Machine (on average 1.000). (Machine, SteelCoil) has [0, 4] and (SteelCoil, Machine) has [1, 1].
+m2o 01
+
+A Machine interacts with [0, 2907] SteelPin (on average 415.286). A SteelPin interacts with [1, 1] Machine (on average 1.000). (Machine, SteelPin) has [0, 2907] and (SteelPin, Machine) has [1, 1].
+m2o 01
+
+A Machine interacts with [0, 5911] SteelSheet (on average 2533.286). A SteelSheet interacts with [3, 3] Machine (on average 3.000). (Machine, SteelSheet) has [0, 5911] and (SteelSheet, Machine) has [3, 3].
+m2m
+
+A Machine interacts with [1, 1] Workstation (on average 1.000). A Workstation interacts with [1, 4] Machine (on average 2.333). (Machine, Workstation) has [1, 1] and (Workstation, Machine) has [1, 4].
+m2o 11
+
+A MalePart interacts with [0, 1] SteelPin (on average 0.998). A SteelPin interacts with [1, 1] MalePart (on average 1.000). (MalePart, SteelPin) has [0, 1] and (SteelPin, MalePart) has [1, 1].
+o2o 01
+
+A MalePart interacts with [1, 1] Worker (on average 1.000). A Worker interacts with [2914, 2914] MalePart (on average 2914.000). (MalePart, Worker) has [1, 1] and (Worker, MalePart) has [2914, 2914].
+m2o 11
+
+A MalePart interacts with [1, 2] Workstation (on average 1.998). A Workstation interacts with [0, 2914] MalePart (on average 1940.333). (MalePart, Workstation) has [1, 2] and (Workstation, MalePart) has [0, 2914].
+m2m
+
+A SteelCoil interacts with [1477, 1478] SteelSheet (on average 1477.750). A SteelSheet interacts with [1, 1] SteelCoil (on average 1.000). (SteelCoil, SteelSheet) has [1477, 1478] and (SteelSheet, SteelCoil) has [1, 1].
+m2o 11
+
+A SteelCoil interacts with [1, 1] Workstation (on average 1.000). A Workstation interacts with [0, 4] SteelCoil (on average 1.333). (SteelCoil, Workstation) has [1, 1] and (Workstation, SteelCoil) has [0, 4].
+m2o 01
+
+A SteelPin interacts with [1, 1] Workstation (on average 1.000). A Workstation interacts with [0, 2907] SteelPin (on average 969.000). (SteelPin, Workstation) has [1, 1] and (Workstation, SteelPin) has [0, 2907].
+m2o 01
+
+A SteelSheet interacts with [1, 1] Workstation (on average 1.000). A Workstation interacts with [0, 5911] SteelSheet (on average 1970.333). (SteelSheet, Workstation) has [1, 1] and (Workstation, SteelSheet) has [0, 5911].
+m2o 01
+
+A Worker interacts with [1, 1] Workstation (on average 1.000). A Workstation interacts with [0, 1] Worker (on average 0.333). (Worker, Workstation) has [1, 1] and (Workstation, Worker) has [0, 1].
+o2o 01
