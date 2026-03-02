@@ -1,0 +1,23 @@
+A Purchase Order interacts with [1, 2] Goods Receipt (on average 1.034). A Goods Receipt interacts with [1, 3] Purchase Order (on average 1.049). (Purchase Order, Goods Receipt) has [1, 2] and (Goods Receipt, Purchase Order) has [1, 3].
+m2m
+
+A Purchase Order interacts with [1, 2] Invoice (on average 1.034). A Invoice interacts with [1, 3] Purchase Order (on average 1.049). (Purchase Order, Invoice) has [1, 2] and (Invoice, Purchase Order) has [1, 3].
+m2m
+
+A Purchase Order interacts with [1, 12] Purchase Requisition (on average 2.559). A Purchase Requisition interacts with [0, 6] Purchase Order (on average 2.226). (Purchase Order, Purchase Requisition) has [1, 12] and (Purchase Requisition, Purchase Order) has [0, 6].
+m2m
+
+A Purchase Order interacts with [1, 2] Supplier (on average 1.034). A Supplier interacts with [9, 29] Purchase Order (on average 18.000). (Purchase Order, Supplier) has [1, 2] and (Supplier, Purchase Order) has [9, 29].
+m2m
+
+A Goods Receipt interacts with [1, 3] Invoice (on average 1.049). A Invoice interacts with [1, 3] Goods Receipt (on average 1.049). (Goods Receipt, Invoice) has [1, 3] and (Invoice, Goods Receipt) has [1, 3].
+m2m
+
+A Invoice interacts with [1, 3] Payment (on average 1.049). A Payment interacts with [1, 3] Invoice (on average 1.050). (Invoice, Payment) has [1, 3] and (Payment, Invoice) has [1, 3].
+m2m
+
+A Invoice interacts with [1, 3] Supplier (on average 1.049). A Supplier interacts with [9, 29] Invoice (on average 18.000). (Invoice, Supplier) has [1, 3] and (Supplier, Invoice) has [9, 29].
+m2m
+
+A Payment interacts with [1, 3] Supplier (on average 1.049). A Supplier interacts with [9, 29] Payment (on average 17.980). (Payment, Supplier) has [1, 3] and (Supplier, Payment) has [9, 29].
+m2m
