@@ -1,0 +1,23 @@
+A Candidate interacts with [1, 1] JobRequisition (on average 1.000). A JobRequisition interacts with [18, 47] Candidate (on average 30.000). (Candidate, JobRequisition) has [1, 1] and (JobRequisition, Candidate) has [18, 47].
+m2o 11
+
+A Candidate interacts with [0, 1] HiringManager (on average 0.304). A HiringManager interacts with [15, 80] Candidate (on average 45.550). (Candidate, HiringManager) has [0, 1] and (HiringManager, Candidate) has [15, 80].
+m2o 10
+
+A Candidate interacts with [1, 1] Recruiter (on average 1.000). A Recruiter interacts with [201, 454] Candidate (on average 300.000). (Candidate, Recruiter) has [1, 1] and (Recruiter, Candidate) has [201, 454].
+m2o 11
+
+A Candidate interacts with [0, 4] Interviewer (on average 0.456). A Interviewer interacts with [19, 40] Candidate (on average 27.380). (Candidate, Interviewer) has [0, 4] and (Interviewer, Candidate) has [19, 40].
+m2m
+
+A Candidate interacts with [0, 1] Assessment (on average 0.304). A Assessment interacts with [1, 5] Candidate (on average 1.549). (Candidate, Assessment) has [0, 1] and (Assessment, Candidate) has [1, 5].
+m2o 10
+
+A JobRequisition interacts with [1, 1] HiringManager (on average 1.000). A HiringManager interacts with [2, 9] JobRequisition (on average 5.000). (JobRequisition, HiringManager) has [1, 1] and (HiringManager, JobRequisition) has [2, 9].
+m2o 11
+
+A JobRequisition interacts with [1, 1] Recruiter (on average 1.000). A Recruiter interacts with [7, 15] JobRequisition (on average 10.000). (JobRequisition, Recruiter) has [1, 1] and (Recruiter, JobRequisition) has [7, 15].
+m2o 11
+
+A HiringManager interacts with [15, 75] Assessment (on average 44.500). A Assessment interacts with [1, 5] HiringManager (on average 1.514). (HiringManager, Assessment) has [15, 75] and (Assessment, HiringManager) has [1, 5].
+m2m
