@@ -1,0 +1,38 @@
+A orders interacts with [1, 16] items (on average 3.829). A items interacts with [1, 1] orders (on average 1.000). (orders, items) has [1, 16] and (items, orders) has [1, 1].
+m2o 11
+
+A orders interacts with [1, 1] customers (on average 1.000). A customers interacts with [103, 152] orders (on average 133.333). (orders, customers) has [1, 1] and (customers, orders) has [103, 152].
+m2o 11
+
+A orders interacts with [1, 11] products (on average 3.490). A products interacts with [313, 391] orders (on average 349.000). (orders, products) has [1, 11] and (products, orders) has [313, 391].
+m2m
+
+A orders interacts with [1, 1] employees (on average 1.000). A employees interacts with [0, 513] orders (on average 111.111). (orders, employees) has [1, 1] and (employees, orders) has [0, 513].
+m2o 01
+
+A items interacts with [1, 1] packages (on average 1.000). A packages interacts with [1, 20] items (on average 6.790). (items, packages) has [1, 1] and (packages, items) has [1, 20].
+m2o 11
+
+A items interacts with [1, 1] customers (on average 1.000). A customers interacts with [404, 616] items (on average 510.600). (items, customers) has [1, 1] and (customers, items) has [404, 616].
+m2o 11
+
+A items interacts with [1, 16] products (on average 8.221). A products interacts with [2870, 3385] items (on average 3148.400). (items, products) has [1, 16] and (products, items) has [2870, 3385].
+m2m
+
+A items interacts with [3, 7] employees (on average 4.771). A employees interacts with [962, 3082] items (on average 2030.167). (items, employees) has [3, 7] and (employees, items) has [962, 3082].
+m2m
+
+A packages interacts with [1, 14] products (on average 5.690). A products interacts with [286, 352] packages (on average 320.900). (packages, products) has [1, 14] and (products, packages) has [286, 352].
+m2m
+
+A packages interacts with [2, 3] employees (on average 2.785). A employees interacts with [0, 297] packages (on average 174.500). (packages, employees) has [2, 3] and (employees, packages) has [0, 297].
+m2m
+
+A customers interacts with [20, 20] products (on average 20.000). A products interacts with [15, 15] customers (on average 15.000). (customers, products) has [20, 20] and (products, customers) has [15, 15].
+m2m
+
+A customers interacts with [3, 5] employees (on average 4.067). A employees interacts with [0, 13] customers (on average 3.389). (customers, employees) has [3, 5] and (employees, customers) has [0, 13].
+m2m
+
+A products interacts with [18, 18] employees (on average 18.000). A employees interacts with [20, 20] products (on average 20.000). (products, employees) has [18, 18] and (employees, products) has [20, 20].
+m2m
