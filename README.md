@@ -19,6 +19,12 @@ Our analysis of the [benchmark OCELs](https://www.ocel-standard.org/event-logs/o
 The results of our analysis are displayed in the following table. For each analyzed OCEL, it holds the number of object types, and the number of bidirectional relationships between object types. It displays the amount of stable many-to-one relationships with the multiplicities 1..*-1..1, 0..*-1..1, 1..*-0..1, and 0..*-0..1, and amount of stable one-to-one relationships of the types 1..1-1..1, 0..1-1..1, and 0..1-0..1. Finally, this results in a number of functional dependencies for each log.
 
 <img width="955" height="476" alt="image" src="https://github.com/user-attachments/assets/8b00eacc-4e0e-406b-b922-855d389db197" />
+
+Additionally, for every OCEL and any event type, the according events are iterated to check the set of object types that an event type operates on. If events of the same event type appear with different sets of object types, then there are optional object types for one event type. For example, in the AoE log, we find:
+```
+Event type Start Build Barracks has optional types: Villager missing in 53 events, of 4057 events in total
+```
+For the event type `Start Build Barracks`, we can find 53 events, in which the processed objects contain no `Villager`. In all other 4004 events, a villager is processed.
   
 ## 2. Prototypical implementation of the Mapping
 
