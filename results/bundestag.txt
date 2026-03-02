@@ -1,0 +1,92 @@
+A Antrag interacts with [0, 2] Bericht, Gutachten, Programm (on average 0.020). A Bericht, Gutachten, Programm interacts with [0, 3] Antrag (on average 0.038). (Antrag, Bericht, Gutachten, Programm) has [0, 2] and (Bericht, Gutachten, Programm, Antrag) has [0, 3].
+m2m
+
+A Antrag interacts with [0, 5] Entschließungsantrag BT (on average 0.136). A Entschließungsantrag BT interacts with [0, 8] Antrag (on average 0.852). (Antrag, Entschließungsantrag BT) has [0, 5] and (Entschließungsantrag BT, Antrag) has [0, 8].
+m2m
+
+A Antrag interacts with [0, 1] Rechtsverordnung (on average 0.005). A Rechtsverordnung interacts with [0, 4] Antrag (on average 0.022). (Antrag, Rechtsverordnung) has [0, 1] and (Rechtsverordnung, Antrag) has [0, 4].
+m2o 00
+
+A Antrag interacts with [0, 6] Gesetzgebung (on average 0.234). A Gesetzgebung interacts with [0, 8] Antrag (on average 0.468). (Antrag, Gesetzgebung) has [0, 6] and (Gesetzgebung, Antrag) has [0, 8].
+m2m
+
+A Antrag interacts with [0, 3] Besetzung externer Gremien durch BT (on average 0.002). A Besetzung externer Gremien durch BT interacts with [0, 1] Antrag (on average 0.026). (Antrag, Besetzung externer Gremien durch BT) has [0, 3] and (Besetzung externer Gremien durch BT, Antrag) has [0, 1].
+m2o 00
+
+A Antrag interacts with [0, 2] Geschäftsordnung (on average 0.007). A Geschäftsordnung interacts with [0, 4] Antrag (on average 0.061). (Antrag, Geschäftsordnung) has [0, 2] and (Geschäftsordnung, Antrag) has [0, 4].
+m2m
+
+A Antrag interacts with [0, 1] Untersuchungsausschuss (on average 0.001). A Untersuchungsausschuss interacts with [0, 1] Antrag (on average 0.143). (Antrag, Untersuchungsausschuss) has [0, 1] and (Untersuchungsausschuss, Antrag) has [0, 1].
+o2o 00
+
+A Antrag interacts with [0, 1] Große Anfrage (on average 0.003). A Große Anfrage interacts with [0, 2] Antrag (on average 0.108). (Antrag, Große Anfrage) has [0, 1] and (Große Anfrage, Antrag) has [0, 2].
+m2o 00
+
+A Antrag interacts with [0, 1] Verfahren vor dem Bundesverfassungsgericht (on average 0.004). A Verfahren vor dem Bundesverfassungsgericht interacts with [0, 5] Antrag (on average 0.094). (Antrag, Verfahren vor dem Bundesverfassungsgericht) has [0, 1] and (Verfahren vor dem Bundesverfassungsgericht, Antrag) has [0, 5].
+m2o 00
+
+A Antrag interacts with [0, 1] Anmerkung zur Plenarsitzung (on average 0.001). A Anmerkung zur Plenarsitzung interacts with [0, 1] Antrag (on average 0.018). (Antrag, Anmerkung zur Plenarsitzung) has [0, 1] and (Anmerkung zur Plenarsitzung, Antrag) has [0, 1].
+o2o 00
+
+A Antrag interacts with [0, 1] Regierungserklärung (on average 0.003). A Regierungserklärung interacts with [0, 2] Antrag (on average 0.167). (Antrag, Regierungserklärung) has [0, 1] and (Regierungserklärung, Antrag) has [0, 2].
+m2o 00
+
+A Bericht, Gutachten, Programm interacts with [0, 1] Entschließungsantrag BT (on average 0.011). A Entschließungsantrag BT interacts with [0, 1] Bericht, Gutachten, Programm (on average 0.036). (Bericht, Gutachten, Programm, Entschließungsantrag BT) has [0, 1] and (Entschließungsantrag BT, Bericht, Gutachten, Programm) has [0, 1].
+o2o 00
+
+A Bericht, Gutachten, Programm interacts with [0, 2] Gesetzgebung (on average 0.012). A Gesetzgebung interacts with [0, 1] Bericht, Gutachten, Programm (on average 0.013). (Bericht, Gutachten, Programm, Gesetzgebung) has [0, 2] and (Gesetzgebung, Bericht, Gutachten, Programm) has [0, 1].
+m2o 00
+
+A Bericht, Gutachten, Programm interacts with [0, 1] Regierungserklärung (on average 0.008). A Regierungserklärung interacts with [0, 2] Bericht, Gutachten, Programm (on average 0.250). (Bericht, Gutachten, Programm, Regierungserklärung) has [0, 1] and (Regierungserklärung, Bericht, Gutachten, Programm) has [0, 2].
+m2o 00
+
+A Entschließungsantrag BT interacts with [0, 2] Rechtsverordnung (on average 0.027). A Rechtsverordnung interacts with [0, 2] Entschließungsantrag BT (on average 0.019). (Entschließungsantrag BT, Rechtsverordnung) has [0, 2] and (Rechtsverordnung, Entschließungsantrag BT) has [0, 2].
+m2m
+
+A Entschließungsantrag BT interacts with [0, 4] Gesetzgebung (on average 1.121). A Gesetzgebung interacts with [0, 8] Entschließungsantrag BT (on average 0.359). (Entschließungsantrag BT, Gesetzgebung) has [0, 4] and (Gesetzgebung, Entschließungsantrag BT) has [0, 8].
+m2m
+
+A Entschließungsantrag BT interacts with [0, 1] Geschäftsordnung (on average 0.013). A Geschäftsordnung interacts with [0, 2] Entschließungsantrag BT (on average 0.018). (Entschließungsantrag BT, Geschäftsordnung) has [0, 1] and (Geschäftsordnung, Entschließungsantrag BT) has [0, 2].
+m2o 00
+
+A Entschließungsantrag BT interacts with [0, 1] Vereinbarte Debatte (on average 0.009). A Vereinbarte Debatte interacts with [0, 2] Entschließungsantrag BT (on average 0.051). (Entschließungsantrag BT, Vereinbarte Debatte) has [0, 1] and (Vereinbarte Debatte, Entschließungsantrag BT) has [0, 2].
+m2o 00
+
+A Entschließungsantrag BT interacts with [0, 1] Verfahren vor dem Bundesverfassungsgericht (on average 0.009). A Verfahren vor dem Bundesverfassungsgericht interacts with [0, 2] Entschließungsantrag BT (on average 0.038). (Entschließungsantrag BT, Verfahren vor dem Bundesverfassungsgericht) has [0, 1] and (Verfahren vor dem Bundesverfassungsgericht, Entschließungsantrag BT) has [0, 2].
+m2o 00
+
+A Entschließungsantrag BT interacts with [0, 1] Anmerkung zur Plenarsitzung (on average 0.009). A Anmerkung zur Plenarsitzung interacts with [0, 2] Entschließungsantrag BT (on average 0.036). (Entschließungsantrag BT, Anmerkung zur Plenarsitzung) has [0, 1] and (Anmerkung zur Plenarsitzung, Entschließungsantrag BT) has [0, 2].
+m2o 00
+
+A Entschließungsantrag BT interacts with [0, 1] Regierungserklärung (on average 0.117). A Regierungserklärung interacts with [0, 5] Entschließungsantrag BT (on average 1.083). (Entschließungsantrag BT, Regierungserklärung) has [0, 1] and (Regierungserklärung, Entschließungsantrag BT) has [0, 5].
+m2o 00
+
+A Rechtsverordnung interacts with [0, 6] Gesetzgebung (on average 0.060). A Gesetzgebung interacts with [0, 2] Rechtsverordnung (on average 0.027). (Rechtsverordnung, Gesetzgebung) has [0, 6] and (Gesetzgebung, Rechtsverordnung) has [0, 2].
+m2m
+
+A Rechtsverordnung interacts with [0, 1] Geschäftsordnung (on average 0.006). A Geschäftsordnung interacts with [0, 1] Rechtsverordnung (on average 0.012). (Rechtsverordnung, Geschäftsordnung) has [0, 1] and (Geschäftsordnung, Rechtsverordnung) has [0, 1].
+o2o 00
+
+A Gesetzgebung interacts with [0, 6] Selbständiger Antrag von Ländern auf Entschließung (on average 0.029). A Selbständiger Antrag von Ländern auf Entschließung interacts with [0, 2] Gesetzgebung (on average 0.094). (Gesetzgebung, Selbständiger Antrag von Ländern auf Entschließung) has [0, 6] and (Selbständiger Antrag von Ländern auf Entschließung, Gesetzgebung) has [0, 2].
+m2m
+
+A Gesetzgebung interacts with [0, 3] Besetzung externer Gremien durch BT (on average 0.004). A Besetzung externer Gremien durch BT interacts with [0, 1] Gesetzgebung (on average 0.026). (Gesetzgebung, Besetzung externer Gremien durch BT) has [0, 3] and (Besetzung externer Gremien durch BT, Gesetzgebung) has [0, 1].
+m2o 00
+
+A Gesetzgebung interacts with [0, 1] Geschäftsordnung (on average 0.004). A Geschäftsordnung interacts with [0, 2] Gesetzgebung (on average 0.018). (Gesetzgebung, Geschäftsordnung) has [0, 1] and (Geschäftsordnung, Gesetzgebung) has [0, 2].
+m2o 00
+
+A Gesetzgebung interacts with [0, 1] Verfahren vor dem Bundesverfassungsgericht (on average 0.001). A Verfahren vor dem Bundesverfassungsgericht interacts with [0, 1] Gesetzgebung (on average 0.019). (Gesetzgebung, Verfahren vor dem Bundesverfassungsgericht) has [0, 1] and (Verfahren vor dem Bundesverfassungsgericht, Gesetzgebung) has [0, 1].
+o2o 00
+
+A Gesetzgebung interacts with [0, 1] Anmerkung zur Plenarsitzung (on average 0.006). A Anmerkung zur Plenarsitzung interacts with [0, 2] Gesetzgebung (on average 0.073). (Gesetzgebung, Anmerkung zur Plenarsitzung) has [0, 1] and (Anmerkung zur Plenarsitzung, Gesetzgebung) has [0, 2].
+m2o 00
+
+A Besetzung externer Gremien durch BT interacts with [0, 1] Anmerkung zur Plenarsitzung (on average 0.026). A Anmerkung zur Plenarsitzung interacts with [0, 3] Besetzung externer Gremien durch BT (on average 0.055). (Besetzung externer Gremien durch BT, Anmerkung zur Plenarsitzung) has [0, 1] and (Anmerkung zur Plenarsitzung, Besetzung externer Gremien durch BT) has [0, 3].
+m2o 00
+
+A Wahl im BT interacts with [0, 1] Anmerkung zur Plenarsitzung (on average 0.028). A Anmerkung zur Plenarsitzung interacts with [0, 1] Wahl im BT (on average 0.018). (Wahl im BT, Anmerkung zur Plenarsitzung) has [0, 1] and (Anmerkung zur Plenarsitzung, Wahl im BT) has [0, 1].
+o2o 00
+
+A Anmerkung zur Plenarsitzung interacts with [0, 1] Regierungserklärung (on average 0.018). A Regierungserklärung interacts with [0, 1] Anmerkung zur Plenarsitzung (on average 0.042). (Anmerkung zur Plenarsitzung, Regierungserklärung) has [0, 1] and (Regierungserklärung, Anmerkung zur Plenarsitzung) has [0, 1].
+o2o 00
