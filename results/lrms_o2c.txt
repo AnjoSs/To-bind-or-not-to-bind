@@ -1,0 +1,32 @@
+A Customer interacts with [1, 8] Order (on average 2.336). A Order interacts with [1, 1] Customer (on average 1.000). (Customer, Order) has [1, 8] and (Order, Customer) has [1, 1].
+m2o 11
+
+A Customer interacts with [0, 8] Invoice (on average 2.113). A Invoice interacts with [1, 1] Customer (on average 1.000). (Customer, Invoice) has [0, 8] and (Invoice, Customer) has [1, 1].
+m2o 01
+
+A Customer interacts with [0, 3] Dispute (on average 0.203). A Dispute interacts with [1, 1] Customer (on average 1.000). (Customer, Dispute) has [0, 3] and (Dispute, Customer) has [1, 1].
+m2o 01
+
+A Customer interacts with [0, 2] Return (on average 0.120). A Return interacts with [1, 1] Customer (on average 1.000). (Customer, Return) has [0, 2] and (Return, Customer) has [1, 1].
+m2o 01
+
+A Product interacts with [2, 25] Order (on average 9.138). A Order interacts with [0, 4] Product (on average 2.284). (Product, Order) has [2, 25] and (Order, Product) has [0, 4].
+m2m
+
+A Order interacts with [0, 1] Shipment (on average 0.904). A Shipment interacts with [1, 1] Order (on average 1.000). (Order, Shipment) has [0, 1] and (Shipment, Order) has [1, 1].
+o2o 10
+
+A Order interacts with [0, 1] Invoice (on average 0.904). A Invoice interacts with [1, 1] Order (on average 1.000). (Order, Invoice) has [0, 1] and (Invoice, Order) has [1, 1].
+o2o 10
+
+A Order interacts with [0, 1] Return (on average 0.051). A Return interacts with [1, 1] Order (on average 1.000). (Order, Return) has [0, 1] and (Return, Order) has [1, 1].
+o2o 10
+
+A Invoice interacts with [0, 1] Payment (on average 0.810). A Payment interacts with [1, 1] Invoice (on average 1.000). (Invoice, Payment) has [0, 1] and (Payment, Invoice) has [1, 1].
+o2o 10
+
+A Invoice interacts with [0, 1] Dispute (on average 0.096). A Dispute interacts with [1, 1] Invoice (on average 1.000). (Invoice, Dispute) has [0, 1] and (Dispute, Invoice) has [1, 1].
+o2o 10
+
+A Return interacts with [1, 1] CreditNote (on average 1.000). A CreditNote interacts with [1, 1] Return (on average 1.000). (Return, CreditNote) has [1, 1] and (CreditNote, Return) has [1, 1].
+o2o 11
