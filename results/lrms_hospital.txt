@@ -1,0 +1,26 @@
+A Patient interacts with [1, 2] Physician (on average 1.161). A Physician interacts with [11, 37] Patient (on average 23.210). (Patient, Physician) has [1, 2] and (Physician, Patient) has [11, 37].
+m2m
+
+A Patient interacts with [1, 1] Nurse (on average 1.000). A Nurse interacts with [1, 13] Patient (on average 5.013). (Patient, Nurse) has [1, 1] and (Nurse, Patient) has [1, 13].
+m2o 11
+
+A Patient interacts with [1, 1] Bed (on average 1.000). A Bed interacts with [1, 10] Patient (on average 3.407). (Patient, Bed) has [1, 1] and (Bed, Patient) has [1, 10].
+m2o 11
+
+A Patient interacts with [0, 1] DiagnosticEquipment (on average 0.161). A DiagnosticEquipment interacts with [1, 8] Patient (on average 3.344). (Patient, DiagnosticEquipment) has [0, 1] and (DiagnosticEquipment, Patient) has [1, 8].
+m2o 10
+
+A Patient interacts with [0, 1] LabTechnician (on average 0.161). A LabTechnician interacts with [1, 7] Patient (on average 3.309). (Patient, LabTechnician) has [0, 1] and (LabTechnician, Patient) has [1, 7].
+m2o 10
+
+A Patient interacts with [1, 1] InsuranceCompany (on average 1.000). A InsuranceCompany interacts with [177, 216] Patient (on average 200.000). (Patient, InsuranceCompany) has [1, 1] and (InsuranceCompany, Patient) has [177, 216].
+m2o 11
+
+A Patient interacts with [1, 1] Room (on average 1.000). A Room interacts with [1, 12] Patient (on average 5.013). (Patient, Room) has [1, 1] and (Room, Patient) has [1, 12].
+m2o 11
+
+A Bed interacts with [1, 10] Room (on average 3.388). A Room interacts with [1, 12] Bed (on average 4.985). (Bed, Room) has [1, 10] and (Room, Bed) has [1, 12].
+m2o 11
+
+A DiagnosticEquipment interacts with [1, 8] LabTechnician (on average 3.281). A LabTechnician interacts with [1, 7] DiagnosticEquipment (on average 3.247). (DiagnosticEquipment, LabTechnician) has [1, 8] and (LabTechnician, DiagnosticEquipment) has [1, 7].
+m2m
