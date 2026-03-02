@@ -1,29 +1,26 @@
-# To bind or not to bind? Replaying object-centric processes under stable relationships
+# To bind or not to bind? The Assumption of Stable Relationships in Object-centric Process Mining
 
-This repository contains the supplementary material to the paper "To bind or not to bind? Replaying object-centric processes under stable relationships":
-1. The [extended version](extended_paper.pdf) of the paper including the detailed proof of our theorems in the appendix
-2. An inspection of object type relationships in existing benchmark OCELs:
-    * The [python script](src/ocel_inspector.py) based on [pm4py](https://pypi.org/project/pm4py/) counts the relationships of [benchmark OCELs](https://www.ocel-standard.org/event-logs/overview/).
-    *  The [results](result.txt) reports on the results obtained by this script for the OCELs for Logistics, Order Management, Procure-to-Pay, LRMS, Hinge Production, and Age of Empires.
+This repository contains the supplementary material to two papers:
+   * "To bind or not to bind? Replaying object-centric processes under stable relationships" in [this branch](https://github.com/AnjoSs/To-bind-or-not-to-bind/tree/er-2025).
+   * "The Assumption of Stable Relationships in Object-centric Process Mining" in the current branch.
+
+In this repository, you can find:
+1. An inspection of object type relationships in existing benchmark OCELs:
+    * The [python script](src/ocel_inspector.py) based on [pm4py](https://pypi.org/project/pm4py/) counts the object relationships of [benchmark OCELs](https://www.ocel-standard.org/event-logs/overview/).
+    *  The [results](results/result.txt) reports on the results obtained by this script for the OCELs for Logistics, Order Management, Procure-to-Pay, the LRMS collection, Hinge Production, Age of Empires, Bundesttag, Angular GitHub Commits, and Inventory Management.
 3. An implementation of our mapping from OCPN to OPID (The original repository is available [here](https://github.com/bytekid/ocpn2opid)):
     * The [python script](src/ocpn2opid.py) implements the mappings presented in the paper.
     * The [examples directory](examples) provides a set of [sample OCPNs](https://github.com/rwth-pads/ocpn-visualizer/tree/master/public/sample_ocpns/json) and the mapped OPIDs (summarized in the table below).
 
-## 1. Extended Paper
+## 1. Object relationships in OCELs
 
-The [extended paper](extended_paper.pdf) is available as a PDF. To provide formal rigor, the appendix holds the detailed prooves of Theorem 1 and Theorem 2, which were abbreviated in the paper for sake of space. Appendix A holds the detailed proof for Theorem 1, and Appendix B holds the detailed proof for Theorem 2. The rest of the paper is not changed.
+Our analysis of the [benchmark OCELs](https://www.ocel-standard.org/event-logs/overview/) iterates all objects in the log. For each object and possibly related object type, it counts to how many objects are corelated in any event. For every possible pair of object types, this results in a set of relationships, with an interval representing the multiplicities for each side of the relationship. For each OCEL, we report the resulting relationships in a separate file in the [results folder](results).
 
-## 2. Object relationships in OCELs
+The results of our analysis are displayed in the following table. For each analyzed OCEL, it holds the number of object types, and the number of bidirectional relationships between object types. It displays the amount of stable many-to-one relationships with the multiplicities 1..*-1..1, 0..*-1..1, 1..*-0..1, and 0..*-0..1, and amount of stable one-to-one relationships of the types 1..1-1..1, 0..1-1..1, and 0..1-0..1. Finally, this results in a number of functional dependencies for each log.
 
-The results of our analysis are displayed in the following table. For each analyzed OCEL, it holds the number of object types, and the number of bidirectional relationships between object types. The relationships can be of three different types: many-to-many, many-to-one, and one-to-one. In the paper, we define stable m2o relationships. As elaborated, a many-to-one relationship manifests as one stable m2o relationship in our approach, while a bi-directional one-to-one relationship manifests two stable m2o relationships.
-
-For every OCEL, we calculate the number of stable many-to-one relationships (m2o) with a filtered noise threshold of 0.1, and 0.0 (no filter). The number of stable m2o relationships combines all many-to-one relationships, and double the number of the bi-directional one-to-one relationships.
-
-For instance, the LRMS-O2C log with noise 0.1 holds, in total, 11 relationships, with 1 many-to-many, 2 many-to-one, and 8 one-to-one relationships. Hence, we add up to 2 + 2*8 = 18 stable m2o relationships.
-
-<img src="table.png" alt="drawing" width="800"/>
+<img width="955" height="476" alt="image" src="https://github.com/user-attachments/assets/8b00eacc-4e0e-406b-b922-855d389db197" />
   
-## 3. Prototypical implementation of the Mapping
+## 2. Prototypical implementation of the Mapping
 
 ### Implementation script
 
