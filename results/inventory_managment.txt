@@ -1,0 +1,50 @@
+A MAT interacts with [3, 5] PLA (on average 4.450). A PLA interacts with [86, 92] MAT (on average 89.000). (MAT, PLA) has [3, 5] and (PLA, MAT) has [86, 92].
+m2m
+
+A MAT interacts with [1, 13] PO_ITEM (on average 4.860). A PO_ITEM interacts with [1, 3] MAT (on average 1.097). (MAT, PO_ITEM) has [1, 13] and (PO_ITEM, MAT) has [1, 3].
+m2m
+
+A MAT interacts with [1, 11] SO_ITEM (on average 5.320). A SO_ITEM interacts with [1, 1] MAT (on average 1.000). (MAT, SO_ITEM) has [1, 11] and (SO_ITEM, MAT) has [1, 1].
+m2o 11
+
+A MAT interacts with [2, 13] CUSTOMER (on average 6.050). A CUSTOMER interacts with [1, 26] MAT (on average 4.116). (MAT, CUSTOMER) has [2, 13] and (CUSTOMER, MAT) has [1, 26].
+m2m
+
+A MAT interacts with [1, 11] SUPPLIER (on average 4.510). A SUPPLIER interacts with [2, 32] MAT (on average 15.552). (MAT, SUPPLIER) has [1, 11] and (SUPPLIER, MAT) has [2, 32].
+m2m
+
+A MAT interacts with [3, 5] MAT_PLA (on average 4.450). A MAT_PLA interacts with [1, 1] MAT (on average 1.000). (MAT, MAT_PLA) has [3, 5] and (MAT_PLA, MAT) has [1, 1].
+m2o 11
+
+A PLA interacts with [86, 105] PO_ITEM (on average 95.600). A PO_ITEM interacts with [1, 3] PLA (on average 1.079). (PLA, PO_ITEM) has [86, 105] and (PO_ITEM, PLA) has [1, 3].
+m2m
+
+A PLA interacts with [83, 121] SO_ITEM (on average 106.400). A SO_ITEM interacts with [1, 1] PLA (on average 1.000). (PLA, SO_ITEM) has [83, 121] and (SO_ITEM, PLA) has [1, 1].
+m2o 11
+
+A PLA interacts with [59, 71] CUSTOMER (on average 63.000). A CUSTOMER interacts with [1, 5] PLA (on average 2.143). (PLA, CUSTOMER) has [59, 71] and (CUSTOMER, PLA) has [1, 5].
+m2m
+
+A PLA interacts with [24, 28] SUPPLIER (on average 26.600). A SUPPLIER interacts with [2, 5] PLA (on average 4.586). (PLA, SUPPLIER) has [24, 28] and (SUPPLIER, PLA) has [2, 5].
+m2m
+
+A PLA interacts with [86, 92] MAT_PLA (on average 89.000). A MAT_PLA interacts with [1, 1] PLA (on average 1.000). (PLA, MAT_PLA) has [86, 92] and (MAT_PLA, PLA) has [1, 1].
+m2o 11
+
+A PO_ITEM interacts with [1, 1] SUPPLIER (on average 1.000). A SUPPLIER interacts with [2, 31] PO_ITEM (on average 15.276). (PO_ITEM, SUPPLIER) has [1, 1] and (SUPPLIER, PO_ITEM) has [2, 31].
+m2o 11
+
+A PO_ITEM interacts with [1, 3] MAT_PLA (on average 1.102). A MAT_PLA interacts with [0, 5] PO_ITEM (on average 1.097). (PO_ITEM, MAT_PLA) has [1, 3] and (MAT_PLA, PO_ITEM) has [0, 5].
+m2m
+
+A SO_ITEM interacts with [1, 1] CUSTOMER (on average 1.000). A CUSTOMER interacts with [0, 27] SO_ITEM (on average 3.619). (SO_ITEM, CUSTOMER) has [1, 1] and (CUSTOMER, SO_ITEM) has [0, 27].
+m2o 01
+
+A SO_ITEM interacts with [1, 1] MAT_PLA (on average 1.000). A MAT_PLA interacts with [0, 5] SO_ITEM (on average 1.196). (SO_ITEM, MAT_PLA) has [1, 1] and (MAT_PLA, SO_ITEM) has [0, 5].
+m2o 01
+
+A CUSTOMER interacts with [1, 27] MAT_PLA (on average 4.259). A MAT_PLA interacts with [0, 5] CUSTOMER (on average 1.407). (CUSTOMER, MAT_PLA) has [1, 27] and (MAT_PLA, CUSTOMER) has [0, 5].
+m2m
+
+A SUPPLIER interacts with [2, 34] MAT_PLA (on average 16.448). A MAT_PLA interacts with [0, 5] SUPPLIER (on average 1.072). (SUPPLIER, MAT_PLA) has [2, 34] and (MAT_PLA, SUPPLIER) has [0, 5].
+m2m
