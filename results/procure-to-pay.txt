@@ -1,0 +1,26 @@
+A goods receipt interacts with [1, 1] invoice receipt (on average 1.000). A invoice receipt interacts with [1, 4] goods receipt (on average 2.094). (goods receipt, invoice receipt) has [1, 1] and (invoice receipt, goods receipt) has [1, 4].
+m2o 11
+
+A goods receipt interacts with [1, 1] payment (on average 1.000). A payment interacts with [1, 4] goods receipt (on average 2.094). (goods receipt, payment) has [1, 1] and (payment, goods receipt) has [1, 4].
+m2o 11
+
+A goods receipt interacts with [1, 4] purchase_order (on average 2.082). A purchase_order interacts with [1, 4] goods receipt (on average 2.529). (goods receipt, purchase_order) has [1, 4] and (purchase_order, goods receipt) has [1, 4].
+m2m
+
+A invoice receipt interacts with [1, 1] payment (on average 1.000). A payment interacts with [1, 1] invoice receipt (on average 1.000). (invoice receipt, payment) has [1, 1] and (payment, invoice receipt) has [1, 1].
+o2o 11
+
+A invoice receipt interacts with [1, 4] purchase_order (on average 1.724). A purchase_order interacts with [1, 1] invoice receipt (on average 1.000). (invoice receipt, purchase_order) has [1, 4] and (purchase_order, invoice receipt) has [1, 1].
+m2o 11
+
+A payment interacts with [1, 4] purchase_order (on average 1.724). A purchase_order interacts with [1, 1] payment (on average 1.000). (payment, purchase_order) has [1, 4] and (purchase_order, payment) has [1, 1].
+m2o 11
+
+A purchase_order interacts with [1, 1] quotation (on average 1.000). A quotation interacts with [1, 4] purchase_order (on average 1.724). (purchase_order, quotation) has [1, 1] and (quotation, purchase_order) has [1, 4].
+m2o 11
+
+A material interacts with [1, 1] purchase_requisition (on average 1.000). A purchase_requisition interacts with [0, 4] material (on average 1.949). (material, purchase_requisition) has [1, 1] and (purchase_requisition, material) has [0, 4].
+m2o 01
+
+A purchase_requisition interacts with [1, 1] quotation (on average 1.000). A quotation interacts with [1, 1] purchase_requisition (on average 1.000). (purchase_requisition, quotation) has [1, 1] and (quotation, purchase_requisition) has [1, 1].
+o2o 11
