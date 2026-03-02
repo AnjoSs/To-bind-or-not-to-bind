@@ -1,0 +1,402 @@
+A Archery Range interacts with [0, 14] Barracks (on average 0.067). A Barracks interacts with [0, 10] Archery Range (on average 0.062). (Archery Range, Barracks) has [0, 14] and (Barracks, Archery Range) has [0, 10].
+m2m
+
+A Archery Range interacts with [0, 2] Castle (on average 0.013). A Castle interacts with [0, 10] Archery Range (on average 0.018). (Archery Range, Castle) has [0, 2] and (Castle, Archery Range) has [0, 10].
+m2m
+
+A Archery Range interacts with [1, 1] Match (on average 1.000). A Match interacts with [0, 33] Archery Range (on average 3.749). (Archery Range, Match) has [1, 1] and (Match, Archery Range) has [0, 33].
+m2o 01
+
+A Archery Range interacts with [0, 1] Mill (on average 0.001). A Mill interacts with [0, 2] Archery Range (on average 0.001). (Archery Range, Mill) has [0, 1] and (Mill, Archery Range) has [0, 2].
+m2o 00
+
+A Archery Range interacts with [0, 1] Monastery (on average 0.010). A Monastery interacts with [0, 10] Archery Range (on average 0.028). (Archery Range, Monastery) has [0, 1] and (Monastery, Archery Range) has [0, 10].
+m2o 00
+
+A Archery Range interacts with [1, 2] Player (on average 1.001). A Player interacts with [0, 26] Archery Range (on average 2.134). (Archery Range, Player) has [1, 2] and (Player, Archery Range) has [0, 26].
+m2m
+
+A Archery Range interacts with [1, 2] Session (on average 1.001). A Session interacts with [0, 26] Archery Range (on average 1.877). (Archery Range, Session) has [1, 2] and (Session, Archery Range) has [0, 26].
+m2m
+
+A Archery Range interacts with [0, 2] Siege Workshop (on average 0.010). A Siege Workshop interacts with [0, 9] Archery Range (on average 0.027). (Archery Range, Siege Workshop) has [0, 2] and (Siege Workshop, Archery Range) has [0, 9].
+m2m
+
+A Archery Range interacts with [0, 12] Stable (on average 0.078). A Stable interacts with [0, 10] Archery Range (on average 0.055). (Archery Range, Stable) has [0, 12] and (Stable, Archery Range) has [0, 10].
+m2m
+
+A Archery Range interacts with [0, 36] Villager (on average 2.434). A Villager interacts with [0, 21] Archery Range (on average 0.045). (Archery Range, Villager) has [0, 36] and (Villager, Archery Range) has [0, 21].
+m2m 
+
+A Barracks interacts with [0, 2] Castle (on average 0.007). A Castle interacts with [0, 14] Barracks (on average 0.011). (Barracks, Castle) has [0, 2] and (Castle, Barracks) has [0, 14].
+m2m
+
+A Barracks interacts with [0, 1] Lumber Camp (on average 0.000). A Lumber Camp interacts with [0, 1] Barracks (on average 0.000). (Barracks, Lumber Camp) has [0, 1] and (Lumber Camp, Barracks) has [0, 1].
+o2o 00
+
+A Barracks interacts with [1, 1] Match (on average 1.000). A Match interacts with [0, 40] Barracks (on average 4.061). (Barracks, Match) has [1, 1] and (Match, Barracks) has [0, 40].
+m2o 01
+
+A Barracks interacts with [0, 1] Mill (on average 0.001). A Mill interacts with [0, 5] Barracks (on average 0.001). (Barracks, Mill) has [0, 1] and (Mill, Barracks) has [0, 5].
+m2o 00
+
+A Barracks interacts with [0, 2] Monastery (on average 0.008). A Monastery interacts with [0, 14] Barracks (on average 0.024). (Barracks, Monastery) has [0, 2] and (Monastery, Barracks) has [0, 14].
+m2m
+
+A Barracks interacts with [1, 2] Player (on average 1.006). A Player interacts with [0, 29] Barracks (on average 2.322). (Barracks, Player) has [1, 2] and (Player, Barracks) has [0, 29].
+m2m
+
+A Barracks interacts with [1, 2] Session (on average 1.006). A Session interacts with [0, 29] Barracks (on average 2.042). (Barracks, Session) has [1, 2] and (Session, Barracks) has [0, 29].
+m2m
+
+A Barracks interacts with [0, 2] Siege Workshop (on average 0.009). A Siege Workshop interacts with [0, 14] Barracks (on average 0.027). (Barracks, Siege Workshop) has [0, 2] and (Siege Workshop, Barracks) has [0, 14].
+m2m
+
+A Barracks interacts with [0, 12] Stable (on average 0.066). A Stable interacts with [0, 14] Barracks (on average 0.051). (Barracks, Stable) has [0, 12] and (Stable, Barracks) has [0, 14].
+m2m
+
+A Barracks interacts with [0, 1] Town Center (on average 0.000). A Town Center interacts with [0, 1] Barracks (on average 0.000). (Barracks, Town Center) has [0, 1] and (Town Center, Barracks) has [0, 1].
+o2o 00
+
+A Barracks interacts with [0, 30] Villager (on average 2.432). A Villager interacts with [0, 18] Barracks (on average 0.048). (Barracks, Villager) has [0, 30] and (Villager, Barracks) has [0, 18].
+m2m
+
+A Blacksmith interacts with [1, 1] Match (on average 1.000). A Match interacts with [0, 7] Blacksmith (on average 1.895). (Blacksmith, Match) has [1, 1] and (Match, Blacksmith) has [0, 7].
+m2o 01
+
+A Blacksmith interacts with [1, 1] Player (on average 1.000). A Player interacts with [0, 6] Blacksmith (on average 1.077). (Blacksmith, Player) has [1, 1] and (Player, Blacksmith) has [0, 6].
+m2o 01
+
+A Blacksmith interacts with [1, 1] Session (on average 1.000). A Session interacts with [0, 6] Blacksmith (on average 0.948). (Blacksmith, Session) has [1, 1] and (Session, Blacksmith) has [0, 6].
+m2o 01
+
+A Blacksmith interacts with [0, 18] Villager (on average 1.445). A Villager interacts with [0, 2] Blacksmith (on average 0.013). (Blacksmith, Villager) has [0, 18] and (Villager, Blacksmith) has [0, 2].
+m2m
+
+A Bombard Tower interacts with [1, 1] Match (on average 1.000). A Match interacts with [0, 67] Bombard Tower (on average 0.067). (Bombard Tower, Match) has [1, 1] and (Match, Bombard Tower) has [0, 67].
+m2o 01
+
+A Bombard Tower interacts with [1, 1] Player (on average 1.000). A Player interacts with [0, 43] Bombard Tower (on average 0.038). (Bombard Tower, Player) has [1, 1] and (Player, Bombard Tower) has [0, 43].
+m2o 01
+
+A Bombard Tower interacts with [1, 1] Session (on average 1.000). A Session interacts with [0, 43] Bombard Tower (on average 0.034). (Bombard Tower, Session) has [1, 1] and (Session, Bombard Tower) has [0, 43].
+m2o 01
+
+A Bombard Tower interacts with [1, 16] Villager (on average 4.313). A Villager interacts with [0, 23] Bombard Tower (on average 0.001). (Bombard Tower, Villager) has [1, 16] and (Villager, Bombard Tower) has [0, 23].
+m2m
+
+A Castle interacts with [1, 1] Match (on average 1.000). A Match interacts with [0, 18] Castle (on average 2.554). (Castle, Match) has [1, 1] and (Match, Castle) has [0, 18].
+m2o 01
+
+A Castle interacts with [0, 1] Monastery (on average 0.003). A Monastery interacts with [0, 2] Castle (on average 0.006). (Castle, Monastery) has [0, 1] and (Monastery, Castle) has [0, 2].
+m2o 00
+
+A Castle interacts with [1, 2] Player (on average 1.007). A Player interacts with [0, 15] Castle (on average 1.462). (Castle, Player) has [1, 2] and (Player, Castle) has [0, 15].
+m2m
+
+A Castle interacts with [1, 2] Session (on average 1.007). A Session interacts with [0, 13] Castle (on average 1.286). (Castle, Session) has [1, 2] and (Session, Castle) has [0, 13].
+m2m
+
+A Castle interacts with [0, 2] Siege Workshop (on average 0.002). A Siege Workshop interacts with [0, 2] Castle (on average 0.004). (Castle, Siege Workshop) has [0, 2] and (Siege Workshop, Castle) has [0, 2].
+m2m
+
+A Castle interacts with [0, 12] Stable (on average 0.022). A Stable interacts with [0, 2] Castle (on average 0.011). (Castle, Stable) has [0, 12] and (Stable, Castle) has [0, 2].
+m2m
+
+A Castle interacts with [0, 1] Town Center (on average 0.000). A Town Center interacts with [0, 1] Castle (on average 0.000). (Castle, Town Center) has [0, 1] and (Town Center, Castle) has [0, 1].
+o2o 00
+
+A Castle interacts with [0, 46] Villager (on average 9.060). A Villager interacts with [0, 7] Castle (on average 0.114). (Castle, Villager) has [0, 46] and (Villager, Castle) has [0, 7].
+m2m
+
+A Dock interacts with [1, 1] Match (on average 1.000). A Match interacts with [0, 12] Dock (on average 0.325). (Dock, Match) has [1, 1] and (Match, Dock) has [0, 12].
+m2o 01
+
+A Dock interacts with [1, 1] Player (on average 1.000). A Player interacts with [0, 11] Dock (on average 0.185). (Dock, Player) has [1, 1] and (Player, Dock) has [0, 11].
+m2o 01
+
+A Dock interacts with [1, 1] Session (on average 1.000). A Session interacts with [0, 9] Dock (on average 0.163). (Dock, Session) has [1, 1] and (Session, Dock) has [0, 9].
+m2o 01
+
+A Dock interacts with [0, 1] Town Center (on average 0.003). A Town Center interacts with [0, 1] Dock (on average 0.000). (Dock, Town Center) has [0, 1] and (Town Center, Dock) has [0, 1].
+o2o 00
+
+A Dock interacts with [0, 9] Villager (on average 1.185). A Villager interacts with [0, 5] Dock (on average 0.002). (Dock, Villager) has [0, 9] and (Villager, Dock) has [0, 5].
+m2m
+
+A Donjon interacts with [1, 1] Match (on average 1.000). A Match interacts with [0, 5] Donjon (on average 0.010). (Donjon, Match) has [1, 1] and (Match, Donjon) has [0, 5].
+m2o 01
+
+A Donjon interacts with [1, 1] Player (on average 1.000). A Player interacts with [0, 5] Donjon (on average 0.006). (Donjon, Player) has [1, 1] and (Player, Donjon) has [0, 5].
+m2o 01
+
+A Donjon interacts with [1, 1] Session (on average 1.000). A Session interacts with [0, 5] Donjon (on average 0.005). (Donjon, Session) has [1, 1] and (Session, Donjon) has [0, 5].
+m2o 01
+
+A Donjon interacts with [2, 18] Villager (on average 6.300). A Villager interacts with [0, 5] Donjon (on average 0.000). (Donjon, Villager) has [2, 18] and (Villager, Donjon) has [0, 5].
+m2m
+
+A Farm interacts with [1, 1] Match (on average 1.000). A Match interacts with [0, 441] Farm (on average 61.478). (Farm, Match) has [1, 1] and (Match, Farm) has [0, 441].
+m2o 01
+
+A Farm interacts with [1, 1] Player (on average 1.000). A Player interacts with [0, 259] Farm (on average 34.951). (Farm, Player) has [1, 1] and (Player, Farm) has [0, 259].
+m2o 01
+
+A Farm interacts with [1, 1] Session (on average 1.000). A Session interacts with [0, 259] Farm (on average 30.739). (Farm, Session) has [1, 1] and (Session, Farm) has [0, 259].
+m2o 01
+
+A Farm interacts with [0, 46] Villager (on average 3.152). A Villager interacts with [0, 40] Farm (on average 0.951). (Farm, Villager) has [0, 46] and (Villager, Farm) has [0, 40].
+m2m
+
+A Feitoria interacts with [1, 1] Match (on average 1.000). A Match interacts with [0, 7] Feitoria (on average 0.022). (Feitoria, Match) has [1, 1] and (Match, Feitoria) has [0, 7].
+m2o 01
+
+A Feitoria interacts with [1, 1] Player (on average 1.000). A Player interacts with [0, 7] Feitoria (on average 0.013). (Feitoria, Player) has [1, 1] and (Player, Feitoria) has [0, 7].
+m2o 01
+
+A Feitoria interacts with [1, 1] Session (on average 1.000). A Session interacts with [0, 7] Feitoria (on average 0.011). (Feitoria, Session) has [1, 1] and (Session, Feitoria) has [0, 7].
+m2o 01
+
+A Feitoria interacts with [1, 27] Villager (on average 5.864). A Villager interacts with [0, 5] Feitoria (on average 0.001). (Feitoria, Villager) has [1, 27] and (Villager, Feitoria) has [0, 5].
+m2m
+
+A Fish Trap interacts with [1, 1] Match (on average 1.000). A Match interacts with [0, 22] Fish Trap (on average 0.046). (Fish Trap, Match) has [1, 1] and (Match, Fish Trap) has [0, 22].
+m2o 01
+
+A Fish Trap interacts with [1, 1] Player (on average 1.000). A Player interacts with [0, 22] Fish Trap (on average 0.026). (Fish Trap, Player) has [1, 1] and (Player, Fish Trap) has [0, 22].
+m2o 01
+
+A Fish Trap interacts with [1, 1] Session (on average 1.000). A Session interacts with [0, 22] Fish Trap (on average 0.023). (Fish Trap, Session) has [1, 1] and (Session, Fish Trap) has [0, 22].
+m2o 01
+
+A Fish Trap interacts with [1, 7] Villager (on average 2.652). A Villager interacts with [0, 8] Fish Trap (on average 0.001). (Fish Trap, Villager) has [1, 7] and (Villager, Fish Trap) has [0, 8].
+m2m
+
+A Gate interacts with [1, 1] Match (on average 1.000). A Match interacts with [0, 10] Gate (on average 0.287). (Gate, Match) has [1, 1] and (Match, Gate) has [0, 10].
+m2o 01
+
+A Gate interacts with [1, 1] Player (on average 1.000). A Player interacts with [0, 10] Gate (on average 0.163). (Gate, Player) has [1, 1] and (Player, Gate) has [0, 10].
+m2o 01
+
+A Gate interacts with [1, 1] Session (on average 1.000). A Session interacts with [0, 10] Gate (on average 0.143). (Gate, Session) has [1, 1] and (Session, Gate) has [0, 10].
+m2o 01
+
+A Gate interacts with [0, 10] Villager (on average 1.544). A Villager interacts with [0, 4] Gate (on average 0.002). (Gate, Villager) has [0, 10] and (Villager, Gate) has [0, 4].
+m2m
+
+A House interacts with [1, 1] Match (on average 1.000). A Match interacts with [0, 175] House (on average 43.052). (House, Match) has [1, 1] and (Match, House) has [0, 175].
+m2o 01
+
+A House interacts with [1, 1] Player (on average 1.000). A Player interacts with [0, 164] House (on average 24.475). (House, Player) has [1, 1] and (Player, House) has [0, 164].
+m2o 01
+
+A House interacts with [1, 1] Session (on average 1.000). A Session interacts with [0, 116] House (on average 21.526). (House, Session) has [1, 1] and (Session, House) has [0, 116].
+m2o 01
+
+A House interacts with [0, 27] Villager (on average 1.630). A Villager interacts with [0, 39] House (on average 0.344). (House, Villager) has [0, 27] and (Villager, House) has [0, 39].
+m2m
+
+A Krepost interacts with [1, 1] Match (on average 1.000). A Match interacts with [0, 9] Krepost (on average 0.019). (Krepost, Match) has [1, 1] and (Match, Krepost) has [0, 9].
+m2o 01
+
+A Krepost interacts with [1, 1] Player (on average 1.000). A Player interacts with [0, 9] Krepost (on average 0.011). (Krepost, Player) has [1, 1] and (Player, Krepost) has [0, 9].
+m2o 01
+
+A Krepost interacts with [1, 1] Session (on average 1.000). A Session interacts with [0, 9] Krepost (on average 0.009). (Krepost, Session) has [1, 1] and (Session, Krepost) has [0, 9].
+m2o 01
+
+A Krepost interacts with [0, 14] Villager (on average 6.368). A Villager interacts with [0, 5] Krepost (on average 0.001). (Krepost, Villager) has [0, 14] and (Villager, Krepost) has [0, 5].
+m2m
+
+A Lumber Camp interacts with [1, 1] Match (on average 1.000). A Match interacts with [0, 98] Lumber Camp (on average 7.130). (Lumber Camp, Match) has [1, 1] and (Match, Lumber Camp) has [0, 98].
+m2o 01
+
+A Lumber Camp interacts with [1, 1] Player (on average 1.000). A Player interacts with [0, 60] Lumber Camp (on average 4.053). (Lumber Camp, Player) has [1, 1] and (Player, Lumber Camp) has [0, 60].
+m2o 01
+
+A Lumber Camp interacts with [1, 1] Session (on average 1.000). A Session interacts with [0, 60] Lumber Camp (on average 3.565). (Lumber Camp, Session) has [1, 1] and (Session, Lumber Camp) has [0, 60].
+m2o 01
+
+A Lumber Camp interacts with [0, 1] Stable (on average 0.000). A Stable interacts with [0, 1] Lumber Camp (on average 0.000). (Lumber Camp, Stable) has [0, 1] and (Stable, Lumber Camp) has [0, 1].
+o2o 00
+
+A Lumber Camp interacts with [0, 43] Villager (on average 4.994). A Villager interacts with [0, 7] Lumber Camp (on average 0.175). (Lumber Camp, Villager) has [0, 43] and (Villager, Lumber Camp) has [0, 7].
+m2m
+
+A Market interacts with [1, 1] Match (on average 1.000). A Match interacts with [0, 5] Market (on average 1.580). (Market, Match) has [1, 1] and (Match, Market) has [0, 5].
+m2o 01
+
+A Market interacts with [1, 1] Player (on average 1.000). A Player interacts with [0, 6] Market (on average 0.898). (Market, Player) has [1, 1] and (Player, Market) has [0, 6].
+m2o 01
+
+A Market interacts with [1, 1] Session (on average 1.000). A Session interacts with [0, 4] Market (on average 0.790). (Market, Session) has [1, 1] and (Session, Market) has [0, 4].
+m2o 01
+
+A Market interacts with [0, 19] Villager (on average 2.091). A Villager interacts with [0, 4] Market (on average 0.016). (Market, Villager) has [0, 19] and (Villager, Market) has [0, 4].
+m2m
+
+A Mill interacts with [1, 1] Match (on average 1.000). A Match interacts with [0, 40] Mill (on average 3.853). (Mill, Match) has [1, 1] and (Match, Mill) has [0, 40].
+m2o 01
+
+A Mill interacts with [1, 1] Player (on average 1.000). A Player interacts with [0, 26] Mill (on average 2.190). (Mill, Player) has [1, 1] and (Player, Mill) has [0, 26].
+m2o 01
+
+A Mill interacts with [1, 1] Session (on average 1.000). A Session interacts with [0, 26] Mill (on average 1.927). (Mill, Session) has [1, 1] and (Session, Mill) has [0, 26].
+m2o 01
+
+A Mill interacts with [0, 44] Villager (on average 3.553). A Villager interacts with [0, 5] Mill (on average 0.067). (Mill, Villager) has [0, 44] and (Villager, Mill) has [0, 5].
+m2m
+
+A Mining Camp interacts with [1, 1] Match (on average 1.000). A Match interacts with [0, 36] Mining Camp (on average 6.380). (Mining Camp, Match) has [1, 1] and (Match, Mining Camp) has [0, 36].
+m2o 01
+
+A Mining Camp interacts with [1, 1] Player (on average 1.000). A Player interacts with [0, 30] Mining Camp (on average 3.627). (Mining Camp, Player) has [1, 1] and (Player, Mining Camp) has [0, 30].
+m2o 01
+
+A Mining Camp interacts with [1, 1] Session (on average 1.000). A Session interacts with [0, 22] Mining Camp (on average 3.190). (Mining Camp, Session) has [1, 1] and (Session, Mining Camp) has [0, 22].
+m2o 01
+
+A Mining Camp interacts with [0, 48] Villager (on average 4.865). A Villager interacts with [0, 7] Mining Camp (on average 0.152). (Mining Camp, Villager) has [0, 48] and (Villager, Mining Camp) has [0, 7].
+m2m
+
+A Monastery interacts with [1, 1] Match (on average 1.000). A Match interacts with [0, 9] Monastery (on average 1.300). (Monastery, Match) has [1, 1] and (Match, Monastery) has [0, 9].
+m2o 01
+
+A Monastery interacts with [1, 1] Player (on average 1.000). A Player interacts with [0, 8] Monastery (on average 0.739). (Monastery, Player) has [1, 1] and (Player, Monastery) has [0, 8].
+m2o 01
+
+A Monastery interacts with [1, 1] Session (on average 1.000). A Session interacts with [0, 8] Monastery (on average 0.650). (Monastery, Session) has [1, 1] and (Session, Monastery) has [0, 8].
+m2o 01
+
+A Monastery interacts with [0, 3] Town Center (on average 0.003). A Town Center interacts with [0, 1] Monastery (on average 0.001). (Monastery, Town Center) has [0, 3] and (Town Center, Monastery) has [0, 1].
+m2o 00
+
+A Monastery interacts with [0, 17] Villager (on average 1.958). A Villager interacts with [0, 6] Monastery (on average 0.012). (Monastery, Villager) has [0, 17] and (Villager, Monastery) has [0, 6].
+m2m
+
+A None interacts with [1, 1] Match (on average 1.000). A Match interacts with [0, 8] None (on average 0.066). (None, Match) has [1, 1] and (Match, None) has [0, 8].
+m2o 01
+
+A None interacts with [1, 1] Player (on average 1.000). A Player interacts with [0, 9] None (on average 0.038). (None, Player) has [1, 1] and (Player, None) has [0, 9].
+m2o 01
+
+A None interacts with [1, 1] Session (on average 1.000). A Session interacts with [0, 8] None (on average 0.033). (None, Session) has [1, 1] and (Session, None) has [0, 8].
+m2o 01
+
+A None interacts with [0, 16] Villager (on average 3.576). A Villager interacts with [0, 2] None (on average 0.001). (None, Villager) has [0, 16] and (Villager, None) has [0, 2].
+m2m
+
+A Outpost interacts with [1, 1] Match (on average 1.000). A Match interacts with [0, 26] Outpost (on average 1.315). (Outpost, Match) has [1, 1] and (Match, Outpost) has [0, 26].
+m2o 01
+
+A Outpost interacts with [1, 1] Player (on average 1.000). A Player interacts with [0, 26] Outpost (on average 0.748). (Outpost, Player) has [1, 1] and (Player, Outpost) has [0, 26].
+m2o 01
+
+A Outpost interacts with [1, 1] Session (on average 1.000). A Session interacts with [0, 25] Outpost (on average 0.657). (Outpost, Session) has [1, 1] and (Session, Outpost) has [0, 25].
+m2o 01
+
+A Outpost interacts with [0, 13] Villager (on average 1.465). A Villager interacts with [0, 13] Outpost (on average 0.009). (Outpost, Villager) has [0, 13] and (Villager, Outpost) has [0, 13].
+m2m
+
+A Palisade Gate interacts with [1, 1] Match (on average 1.000). A Match interacts with [0, 8] Palisade Gate (on average 0.999). (Palisade Gate, Match) has [1, 1] and (Match, Palisade Gate) has [0, 8].
+m2o 01
+
+A Palisade Gate interacts with [1, 1] Player (on average 1.000). A Player interacts with [0, 12] Palisade Gate (on average 0.568). (Palisade Gate, Player) has [1, 1] and (Player, Palisade Gate) has [0, 12].
+m2o 01
+
+A Palisade Gate interacts with [1, 1] Session (on average 1.000). A Session interacts with [0, 7] Palisade Gate (on average 0.499). (Palisade Gate, Session) has [1, 1] and (Session, Palisade Gate) has [0, 7].
+m2o 01
+
+A Palisade Gate interacts with [0, 18] Villager (on average 1.299). A Villager interacts with [0, 4] Palisade Gate (on average 0.006). (Palisade Gate, Villager) has [0, 18] and (Villager, Palisade Gate) has [0, 4].
+m2m
+
+A Player interacts with [1, 5] Match (on average 1.137). A Match interacts with [2, 2] Player (on average 2.000). (Player, Match) has [1, 5] and (Match, Player) has [2, 2].
+m2m
+
+A Player interacts with [1, 5] Session (on average 1.137). A Session interacts with [1, 1] Player (on average 1.000). (Player, Session) has [1, 5] and (Session, Player) has [1, 1].
+m2o 11
+
+A Player interacts with [0, 13] Siege Workshop (on average 0.791). A Siege Workshop interacts with [1, 2] Player (on average 1.001). (Player, Siege Workshop) has [0, 13] and (Siege Workshop, Player) has [1, 2].
+m2m
+
+A Player interacts with [0, 36] Stable (on average 2.988). A Stable interacts with [1, 2] Player (on average 1.001). (Player, Stable) has [0, 36] and (Stable, Player) has [1, 2].
+m2m
+
+A Player interacts with [0, 23] Town Center (on average 3.786). A Town Center interacts with [1, 2] Player (on average 1.349). (Player, Town Center) has [0, 23] and (Town Center, Player) has [1, 2].
+m2m
+
+A Player interacts with [0, 3] University (on average 0.450). A University interacts with [1, 1] Player (on average 1.000). (Player, University) has [0, 3] and (University, Player) has [1, 1].
+m2o 01
+
+A Player interacts with [0, 2358] Villager (on average 158.533). A Villager interacts with [1, 2] Player (on average 1.368). (Player, Villager) has [0, 2358] and (Villager, Player) has [1, 2].
+m2m
+
+A Player interacts with [0, 26] Watch Tower (on average 0.480). A Watch Tower interacts with [1, 1] Player (on average 1.000). (Player, Watch Tower) has [0, 26] and (Watch Tower, Player) has [1, 1].
+m2o 01
+
+
+A Session interacts with [1, 1] Match (on average 1.000). A Match interacts with [2, 2] Session (on average 2.000). (Session, Match) has [1, 1] and (Match, Session) has [2, 2].
+m2o 11
+
+A Session interacts with [0, 13] Siege Workshop (on average 0.696). A Siege Workshop interacts with [1, 2] Session (on average 1.001). (Session, Siege Workshop) has [0, 13] and (Siege Workshop, Session) has [1, 2].
+m2m
+
+A Session interacts with [0, 36] Stable (on average 2.628). A Stable interacts with [1, 2] Session (on average 1.001). (Session, Stable) has [0, 36] and (Stable, Session) has [1, 2].
+m2m
+
+A Session interacts with [0, 15] Town Center (on average 3.329). A Town Center interacts with [1, 2] Session (on average 1.349). (Session, Town Center) has [0, 15] and (Town Center, Session) has [1, 2].
+m2m
+
+A Session interacts with [0, 3] University (on average 0.396). A University interacts with [1, 1] Session (on average 1.000). (Session, University) has [0, 3] and (University, Session) has [1, 1].
+m2o 01
+
+A Session interacts with [0, 2358] Villager (on average 139.429). A Villager interacts with [1, 2] Session (on average 1.368). (Session, Villager) has [0, 2358] and (Villager, Session) has [1, 2].
+m2m
+
+A Session interacts with [0, 26] Watch Tower (on average 0.422). A Watch Tower interacts with [1, 1] Session (on average 1.000). (Session, Watch Tower) has [0, 26] and (Watch Tower, Session) has [1, 1].
+m2o 01
+
+A Siege Workshop interacts with [1, 1] Match (on average 1.000). A Match interacts with [0, 16] Siege Workshop (on average 1.391). (Siege Workshop, Match) has [1, 1] and (Match, Siege Workshop) has [0, 16].
+m2o 01
+
+A Siege Workshop interacts with [0, 1] Monastery (on average 0.004). A Monastery interacts with [0, 2] Siege Workshop (on average 0.005). (Siege Workshop, Monastery) has [0, 1] and (Monastery, Siege Workshop) has [0, 2].
+m2o 00
+
+A Siege Workshop interacts with [0, 12] Stable (on average 0.033). A Stable interacts with [0, 2] Siege Workshop (on average 0.009). (Siege Workshop, Stable) has [0, 12] and (Stable, Siege Workshop) has [0, 2].
+m2m
+
+A Siege Workshop interacts with [0, 3] Town Center (on average 0.002). A Town Center interacts with [0, 1] Siege Workshop (on average 0.001). (Siege Workshop, Town Center) has [0, 3] and (Town Center, Siege Workshop) has [0, 1].
+m2o 00
+
+A Siege Workshop interacts with [0, 21] Villager (on average 2.569). A Villager interacts with [0, 11] Siege Workshop (on average 0.018). (Siege Workshop, Villager) has [0, 21] and (Villager, Siege Workshop) has [0, 11].
+m2m
+
+A Stable interacts with [1, 1] Match (on average 1.000). A Match interacts with [0, 58] Stable (on average 5.251). (Stable, Match) has [1, 1] and (Match, Stable) has [0, 58].
+m2o 01
+
+A Stable interacts with [0, 2] Monastery (on average 0.011). A Monastery interacts with [0, 12] Stable (on average 0.046). (Stable, Monastery) has [0, 2] and (Monastery, Stable) has [0, 12].
+m2m
+
+A Stable interacts with [0, 1] Town Center (on average 0.001). A Town Center interacts with [0, 3] Stable (on average 0.001). (Stable, Town Center) has [0, 1] and (Town Center, Stable) has [0, 3].
+m2o 00
+
+A Stable interacts with [0, 34] Villager (on average 2.618). A Villager interacts with [0, 15] Stable (on average 0.067). (Stable, Villager) has [0, 34] and (Villager, Stable) has [0, 15].
+m2m
+
+A Town Center interacts with [1, 1] Match (on average 1.000). A Match interacts with [0, 18] Town Center (on average 4.936). (Town Center, Match) has [1, 1] and (Match, Town Center) has [0, 18].
+m2o 01
+
+A Town Center interacts with [0, 418] Villager (on average 44.023). A Villager interacts with [0, 4] Town Center (on average 1.066). (Town Center, Villager) has [0, 418] and (Villager, Town Center) has [0, 4].
+m2m
+
+A University interacts with [1, 1] Match (on average 1.000). A Match interacts with [0, 4] University (on average 0.791). (University, Match) has [1, 1] and (Match, University) has [0, 4].
+m2o 01
+
+A University interacts with [0, 15] Villager (on average 2.439). A Villager interacts with [0, 2] University (on average 0.009). (University, Villager) has [0, 15] and (Villager, University) has [0, 2].
+m2m
+
+A Watch Tower interacts with [1, 1] Match (on average 1.000). A Match interacts with [0, 26] Watch Tower (on average 0.844). (Watch Tower, Match) has [1, 1] and (Match, Watch Tower) has [0, 26].
+m2o 01
+
+A Watch Tower interacts with [0, 30] Villager (on average 4.598). A Villager interacts with [0, 12] Watch Tower (on average 0.019). (Watch Tower, Villager) has [0, 30] and (Villager, Watch Tower) has [0, 12].
+m2m
