@@ -1,0 +1,26 @@
+A Customer Order interacts with [0, 1] Transport Document (on average 0.990). A Transport Document interacts with [1, 1] Customer Order (on average 1.000). (Customer Order, Transport Document) has [0, 1] and (Transport Document, Customer Order) has [1, 1].
+o2o 10
+
+A Transport Document interacts with [0, 74] Container (on average 23.200). A Container interacts with [1, 13] Transport Document (on average 6.866). (Transport Document, Container) has [0, 74] and (Container, Transport Document) has [1, 13].
+m2m
+
+A Transport Document interacts with [1, 3] Vehicle (on average 1.337). A Vehicle interacts with [1, 13] Transport Document (on average 5.970). (Transport Document, Vehicle) has [1, 3] and (Vehicle, Transport Document) has [1, 13].
+m2m
+
+A Container interacts with [0, 1] Truck (on average 0.994). A Truck interacts with [322, 336] Container (on average 332.333). (Container, Truck) has [0, 1] and (Truck, Container) has [322, 336].
+m2o 10
+
+A Container interacts with [0, 6] Handling Unit (on average 5.258). A Handling Unit interacts with [1, 1] Container (on average 1.000). (Container, Handling Unit) has [0, 6] and (Handling Unit, Container) has [1, 1].
+m2o 01
+
+A Container interacts with [0, 2] Forklift (on average 1.596). A Forklift interacts with [1059, 1073] Container (on average 1067.667). (Container, Forklift) has [0, 2] and (Forklift, Container) has [1059, 1073].
+m2m
+
+A Container interacts with [0, 1] Vehicle (on average 0.980). A Vehicle interacts with [0, 39] Container (on average 14.789). (Container, Vehicle) has [0, 1] and (Vehicle, Container) has [0, 39].
+m2o 00
+
+A Truck interacts with [1716, 1807] Handling Unit (on average 1758.833). A Handling Unit interacts with [1, 1] Truck (on average 1.000). (Truck, Handling Unit) has [1716, 1807] and (Handling Unit, Truck) has [1, 1].
+m2o 11
+
+A Forklift interacts with [124, 128] Vehicle (on average 126.000). A Vehicle interacts with [0, 3] Forklift (on average 2.842). (Forklift, Vehicle) has [124, 128] and (Vehicle, Forklift) has [0, 3].
+m2m
