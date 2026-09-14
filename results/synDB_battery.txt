@@ -1,0 +1,126 @@
+18 OBJECT TYPES
+['BatteryPack', 'BatteryPassport', 'CellBatch', 'Certificate', 'DiagnosticTest', 'FirmwareCampaign', 'Incident', 'MaterialBatch', 'Module', 'Owner', 'RecallCampaign', 'RecyclingOrder', 'SecondLifeSystem', 'ServiceOrder', 'Shipment', 'Vehicle', 'Warehouse', 'WarrantyClaim'] 
+
+INTERACTION COUNTS
+A BatteryPack interacts with [1, 1] BatteryPassport (on average 1.000).
+A BatteryPack interacts with [1, 1] CellBatch (on average 1.000).
+A BatteryPack interacts with [0, 1] Certificate (on average 0.052).
+A BatteryPack interacts with [0, 1] DiagnosticTest (on average 0.267).
+A BatteryPack interacts with [0, 1] FirmwareCampaign (on average 0.333).
+A BatteryPack interacts with [0, 1] Incident (on average 0.059).
+A BatteryPack interacts with [1, 1] MaterialBatch (on average 1.000).
+A BatteryPack interacts with [1, 1] Module (on average 1.000).
+A BatteryPack interacts with [1, 1] Owner (on average 1.000).
+A BatteryPack interacts with [0, 1] RecallCampaign (on average 0.033).
+A BatteryPack interacts with [1, 1] RecyclingOrder (on average 1.000).
+A BatteryPack interacts with [1, 1] SecondLifeSystem (on average 1.000).
+A BatteryPack interacts with [0, 1] ServiceOrder (on average 0.371).
+A BatteryPack interacts with [1, 1] Shipment (on average 1.000).
+A BatteryPack interacts with [1, 1] Vehicle (on average 1.000).
+A BatteryPack interacts with [1, 1] Warehouse (on average 1.000).
+A BatteryPack interacts with [0, 1] WarrantyClaim (on average 0.143).
+A BatteryPassport interacts with [1, 1] BatteryPack (on average 1.000).
+A BatteryPassport interacts with [1, 1] Module (on average 1.000).
+A CellBatch interacts with [6, 6] BatteryPack (on average 6.000).
+A CellBatch interacts with [6, 6] Module (on average 6.000).
+A Certificate interacts with [1, 1] BatteryPack (on average 1.000).
+A Certificate interacts with [1, 1] MaterialBatch (on average 1.000).
+A DiagnosticTest interacts with [1, 1] BatteryPack (on average 1.000).
+A DiagnosticTest interacts with [1, 1] ServiceOrder (on average 1.000).
+A FirmwareCampaign interacts with [25, 25] BatteryPack (on average 25.000).
+A Incident interacts with [1, 1] BatteryPack (on average 1.000).
+A Incident interacts with [1, 1] Shipment (on average 1.000).
+A MaterialBatch interacts with [6, 6] BatteryPack (on average 6.000).
+A MaterialBatch interacts with [0, 1] Certificate (on average 0.314).
+A MaterialBatch interacts with [6, 6] RecyclingOrder (on average 6.000).
+A Module interacts with [1, 1] BatteryPack (on average 1.000).
+A Module interacts with [1, 1] BatteryPassport (on average 1.000).
+A Module interacts with [1, 1] CellBatch (on average 1.000).
+A Owner interacts with [3, 3] BatteryPack (on average 3.000).
+A Owner interacts with [3, 3] Vehicle (on average 3.000).
+A RecallCampaign interacts with [25, 25] BatteryPack (on average 25.000).
+A RecyclingOrder interacts with [1, 1] BatteryPack (on average 1.000).
+A RecyclingOrder interacts with [1, 1] MaterialBatch (on average 1.000).
+A SecondLifeSystem interacts with [1, 1] BatteryPack (on average 1.000).
+A ServiceOrder interacts with [1, 1] BatteryPack (on average 1.000).
+A ServiceOrder interacts with [0, 1] DiagnosticTest (on average 0.718).
+A ServiceOrder interacts with [0, 1] WarrantyClaim (on average 0.384).
+A Shipment interacts with [1, 1] BatteryPack (on average 1.000).
+A Shipment interacts with [0, 1] Incident (on average 0.059).
+A Shipment interacts with [1, 1] Warehouse (on average 1.000).
+A Vehicle interacts with [1, 1] BatteryPack (on average 1.000).
+A Vehicle interacts with [1, 1] Owner (on average 1.000).
+A Warehouse interacts with [50, 50] BatteryPack (on average 50.000).
+A Warehouse interacts with [50, 50] Shipment (on average 50.000).
+A WarrantyClaim interacts with [1, 1] BatteryPack (on average 1.000).
+A WarrantyClaim interacts with [1, 1] ServiceOrder (on average 1.000).
+
+RELATIONSHIP TYPES
+7 one2one: (Vehicle, BatteryPack), (Shipment, BatteryPack), (SecondLifeSystem, BatteryPack), (RecyclingOrder, BatteryPack), (Module, BatteryPassport), (Module, BatteryPack), (BatteryPassport, BatteryPack), 
+9 opt_one2one: (ServiceOrder, WarrantyClaim), (BatteryPack, WarrantyClaim), (Incident, Shipment), (DiagnosticTest, ServiceOrder), (BatteryPack, ServiceOrder), (Certificate, MaterialBatch), (BatteryPack, Incident), (BatteryPack, DiagnosticTest), (BatteryPack, Certificate), 
+2 opt_one2many: (RecallCampaign, BatteryPack), (FirmwareCampaign, BatteryPack), 
+8 one2many: (Warehouse, Shipment), (Warehouse, BatteryPack), (Owner, Vehicle), (MaterialBatch, RecyclingOrder), (Owner, BatteryPack), (CellBatch, Module), (MaterialBatch, BatteryPack), (CellBatch, BatteryPack), 
+127 opt_many2many_opt: (WarrantyClaim, Warehouse), (WarrantyClaim, Vehicle), (WarrantyClaim, Shipment), (WarrantyClaim, SecondLifeSystem), (WarrantyClaim, RecyclingOrder), (WarrantyClaim, RecallCampaign), (WarrantyClaim, Owner), (WarrantyClaim, Module), (WarrantyClaim, MaterialBatch), (WarrantyClaim, Incident), (WarrantyClaim, FirmwareCampaign), (WarrantyClaim, DiagnosticTest), (WarrantyClaim, Certificate), (WarrantyClaim, CellBatch), (WarrantyClaim, BatteryPassport), (Warehouse, Vehicle), (Warehouse, ServiceOrder), (Warehouse, SecondLifeSystem), (Warehouse, RecyclingOrder), (Warehouse, RecallCampaign), (Warehouse, Owner), (Warehouse, Module), (Warehouse, MaterialBatch), (Warehouse, Incident), (Warehouse, FirmwareCampaign), (Warehouse, DiagnosticTest), (Warehouse, Certificate), (Warehouse, CellBatch), (Warehouse, BatteryPassport), (Vehicle, Shipment), (Vehicle, ServiceOrder), (Vehicle, SecondLifeSystem), (Vehicle, RecyclingOrder), (Vehicle, RecallCampaign), (Vehicle, Module), (Vehicle, MaterialBatch), (Vehicle, Incident), (Vehicle, FirmwareCampaign), (Vehicle, DiagnosticTest), (Vehicle, Certificate), (Vehicle, CellBatch), (Vehicle, BatteryPassport), (Shipment, ServiceOrder), (Shipment, SecondLifeSystem), (Shipment, RecyclingOrder), (Shipment, RecallCampaign), (Shipment, Owner), (Shipment, Module), (Shipment, MaterialBatch), (Shipment, FirmwareCampaign), (Shipment, DiagnosticTest), (Shipment, Certificate), (Shipment, CellBatch), (Shipment, BatteryPassport), (ServiceOrder, SecondLifeSystem), (ServiceOrder, RecyclingOrder), (ServiceOrder, RecallCampaign), (ServiceOrder, Owner), (ServiceOrder, Module), (ServiceOrder, MaterialBatch), (ServiceOrder, Incident), (ServiceOrder, FirmwareCampaign), (ServiceOrder, Certificate), (ServiceOrder, CellBatch), (ServiceOrder, BatteryPassport), (SecondLifeSystem, RecyclingOrder), (SecondLifeSystem, RecallCampaign), (SecondLifeSystem, Owner), (SecondLifeSystem, Module), (SecondLifeSystem, MaterialBatch), (SecondLifeSystem, Incident), (SecondLifeSystem, FirmwareCampaign), (SecondLifeSystem, DiagnosticTest), (SecondLifeSystem, Certificate), (SecondLifeSystem, CellBatch), (SecondLifeSystem, BatteryPassport), (RecyclingOrder, RecallCampaign), (RecyclingOrder, Owner), (RecyclingOrder, Module), (RecyclingOrder, Incident), (RecyclingOrder, FirmwareCampaign), (RecyclingOrder, DiagnosticTest), (RecyclingOrder, Certificate), (RecyclingOrder, CellBatch), (RecyclingOrder, BatteryPassport), (RecallCampaign, Owner), (RecallCampaign, Module), (RecallCampaign, MaterialBatch), (RecallCampaign, Incident), (RecallCampaign, FirmwareCampaign), (RecallCampaign, DiagnosticTest), (RecallCampaign, Certificate), (RecallCampaign, CellBatch), (RecallCampaign, BatteryPassport), (Owner, Module), (Owner, MaterialBatch), (Owner, Incident), (Owner, FirmwareCampaign), (Owner, DiagnosticTest), (Owner, Certificate), (Owner, CellBatch), (Owner, BatteryPassport), (Module, MaterialBatch), (Module, Incident), (Module, FirmwareCampaign), (Module, DiagnosticTest), (Module, Certificate), (MaterialBatch, Incident), (MaterialBatch, FirmwareCampaign), (MaterialBatch, DiagnosticTest), (MaterialBatch, CellBatch), (MaterialBatch, BatteryPassport), (Incident, FirmwareCampaign), (Incident, DiagnosticTest), (Incident, Certificate), (Incident, CellBatch), (Incident, BatteryPassport), (FirmwareCampaign, DiagnosticTest), (FirmwareCampaign, Certificate), (FirmwareCampaign, CellBatch), (FirmwareCampaign, BatteryPassport), (DiagnosticTest, Certificate), (DiagnosticTest, CellBatch), (DiagnosticTest, BatteryPassport), (Certificate, CellBatch), (Certificate, BatteryPassport), (CellBatch, BatteryPassport), 
+Total 153 relationship types.
+
+OPTIONAL OBJECT TYPES IN EVENTS
+Event type Cell Batch Produced has no optional types.
+Event type Cell Batch Released has no optional types.
+Event type Module Assembled has no optional types.
+Event type Module Tested has no optional types.
+Event type Battery Pack Assembled has no optional types.
+Event type Battery Pack Tested has no optional types.
+Event type Battery Pack Passed Test has no optional types.
+Event type Battery Passport Issued has no optional types.
+Event type Module Failed Test has no optional types.
+Event type Battery Installed in Vehicle has no optional types.
+Event type Vehicle Delivered has no optional types.
+Event type Ownership Transferred has no optional types.
+Event type Battery Removed from Vehicle has no optional types.
+Event type Transport Booked has no optional types.
+Event type Lease Started has no optional types.
+Event type Battery Pack Failed Test has no optional types.
+Event type Lease Ended has no optional types.
+Event type Shipment Dispatched has no optional types.
+Event type Firmware Campaign Assigned has no optional types.
+Event type Firmware Downloaded has no optional types.
+Event type Firmware Installed has no optional types.
+Event type Telemetry Anomaly Detected has no optional types.
+Event type Shipment Received has no optional types.
+Event type Diagnostic Scheduled has no optional types.
+Event type Battery Passport Corrected has no optional types.
+Event type Second-Life Assessment Started has no optional types.
+Event type Warranty Claim Opened has no optional types.
+Event type Diagnostic Run has no optional types.
+Event type State of Health Assessed has no optional types.
+Event type Second-Life Assessment Passed has no optional types.
+Event type Service Order Opened has no optional types.
+Event type Warranty Claim Approved has no optional types.
+Event type Battery Reconfigured has no optional types.
+Event type Second-Life System Commissioned has no optional types.
+Event type Second-Life Assessment Failed has no optional types.
+Event type Service Started has no optional types.
+Event type Recycling Order Created has no optional types.
+Event type Battery Dismantled has no optional types.
+Event type Second-Life System Decommissioned has no optional types.
+Event type Module Replacement Ordered has no optional types.
+Event type Material Batch Recovered has no optional types.
+Event type Module Replaced has no optional types.
+Event type Service Completed has no optional types.
+Event type Material Batch Certified has no optional types.
+Event type Lifecycle Closed has no optional types.
+Event type Battery Quarantined has no optional types.
+Event type Battery Released from Quarantine has no optional types.
+Event type Firmware Installation Failed has no optional types.
+Event type Firmware Rolled Back has no optional types.
+Event type Recall Campaign Announced has no optional types.
+Event type Warranty Claim Denied has no optional types.
+Event type Battery Matched to Recall has no optional types.
+Event type Recall Notification Sent has no optional types.
+Event type Recall Notification Acknowledged has no optional types.
+Event type Recall Service Completed has no optional types.
+Event type Incident Reported has no optional types.
+Event type Incident Investigation Started has no optional types.
+Event type Incident Closed has no optional types.
+Event type Compliance Certificate Revoked has no optional types.
+Event type Compliance Certificate Reissued has no optional types.

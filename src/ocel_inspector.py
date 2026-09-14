@@ -49,8 +49,9 @@ def object_relationships(object_summary, types_of_objects, object_types):
 
 def classify_relationships(relationships):
   to_one = []
-  to_almost_one = []
+  to_one_opt = []
   to_many = []
+  to_many_opt = []
 
   print("INTERACTION COUNTS")
   for ((otype,mtype), counts) in relationships.items():
@@ -60,50 +61,83 @@ def classify_relationships(relationships):
       cmin = min(counts)
       if cmax == 0:
         continue # no interactions at all, so we ignore this relationship
+
       print("A %s interacts with [%d, %d] %s (on average %.3f)." % (otype, cmin, cmax, mtype, ratio))
-      if ratio == 1.0:
+      if cmin == 1 and cmax == 1:
         to_one.append(tuple([otype,mtype]))
-      elif ratio > 1.0 and ratio <= 1.05:
-        to_almost_one.append(tuple([otype,mtype]))
+      elif cmin == 0 and cmax == 1:
+        to_one_opt.append(tuple([otype,mtype]))
+      elif cmin == 0 and cmax > 1:
+        to_many_opt.append(tuple([otype,mtype]))
       else:
         to_many.append(tuple([otype,mtype]))
   print("")
-  return to_one, to_almost_one, to_many
+  return to_one, to_one_opt, to_many, to_many_opt
 
-def classify_relationship_pairs(to_one, to_almost_one, to_many):
+def classify_relationship_pairs(to_one, to_one_opt, to_many, to_many_opt):
   distinct_object_types = [tuple([t1,t2]) \
     for t1 in object_types for t2 in object_types if t1 != t2]
-  rel_kinds = {"one2one": [], "one2almostone": [],"almostone2almostone": [],"many2one": [], "many2almostone": [], "many2many": []}
+  rel_kinds = {
+    "one2one": [], 
+    "opt_one2one": [],
+    "opt_one2one_opt": [],
+    "opt_one2many": [],
+    "one2many": [], 
+    "one2many_opt": [], 
+    "opt_one2many_opt": [], 
+    "opt_one2many": [], 
+    "many2many": [], 
+    "opt_many2many": [], 
+    "opt_many2many_opt": []
+    }
   for type_pair in distinct_object_types:
     (type1, type2) = type_pair
     if type1 < type2:
       continue # just to process every pair only once
+
     rtype_pair = tuple([type2, type1])
     if type_pair in to_one and rtype_pair in to_one:
       rel_kinds["one2one"].append(type_pair)
-    elif type_pair in to_one and rtype_pair in to_almost_one:
-      rel_kinds["one2almostone"].append(rtype_pair)
-    elif rtype_pair in to_one and type_pair in to_almost_one:
-      rel_kinds["one2almostone"].append(type_pair)
-    elif rtype_pair in to_almost_one and type_pair in to_almost_one:
-      rel_kinds["almostone2almostone"].append(type_pair)
+    elif type_pair in to_one and rtype_pair in to_one_opt:
+      rel_kinds["opt_one2one"].append(rtype_pair)
+    elif rtype_pair in to_one and type_pair in to_one_opt:
+      rel_kinds["opt_one2one"].append(rtype_pair)
+    elif rtype_pair in to_one_opt and type_pair in to_one_opt:
+      rel_kinds["opt_one2one_opt"].append(type_pair)
     elif type_pair in to_one and rtype_pair in to_many:
-      rel_kinds["many2one"].append(type_pair)
+      rel_kinds["one2many"].append(rtype_pair)
     elif rtype_pair in to_one and type_pair in to_many:
-      rel_kinds["many2one"].append(rtype_pair)
-    elif type_pair in to_almost_one and rtype_pair in to_many:
-      rel_kinds["many2almostone"].append(type_pair)
-    elif rtype_pair in to_almost_one and type_pair in to_many:
-      rel_kinds["many2almostone"].append(rtype_pair)
-    else:
+      rel_kinds["one2many"].append(type_pair)
+    elif type_pair in to_one_opt and rtype_pair in to_many:
+      rel_kinds["opt_one2many"].append(rtype_pair)
+    elif rtype_pair in to_one_opt and type_pair in to_many:
+      rel_kinds["opt_one2many"].append(type_pair)
+    elif type_pair in to_one and rtype_pair in to_many_opt:
+      rel_kinds["one2many_opt"].append(rtype_pair)
+    elif rtype_pair in to_one and type_pair in to_many_opt:
+      rel_kinds["one2many_opt"].append(type_pair)
+    elif type_pair in to_one_opt and rtype_pair in to_many_opt:
+      rel_kinds["opt_one2many_opt"].append(rtype_pair)
+    elif rtype_pair in to_one_opt and type_pair in to_many_opt:
+      rel_kinds["opt_one2many_opt"].append(type_pair)
+    elif type_pair in to_many and rtype_pair in to_many_opt:
+      rel_kinds["opt_many2many"].append(type_pair)
+    elif rtype_pair in to_many and type_pair in to_many_opt:
+      rel_kinds["opt_many2many"].append(rtype_pair)
+    elif rtype_pair in to_many and type_pair in to_many:
       rel_kinds["many2many"].append(type_pair)
+    else:
+      rel_kinds["opt_many2many_opt"].append(type_pair)
 
   print("RELATIONSHIP TYPES")
+  all = []
   for (kind, type_pairs) in rel_kinds.items():
+    all = all + type_pairs
     if len(type_pairs) == 0:
       continue
     ls = reduce(lambda acc, ts: "(%s, %s), %s" % (ts[0], ts[1], acc), type_pairs, "")
     print("%d %s: %s" % (len(type_pairs), kind, ls))
+  print("Total %d relationship types." % len(all))
   print("")
 
 def check_consistent_object_types_of_event_types(ocel, object_types, object_type_dict):
@@ -117,19 +151,10 @@ def check_consistent_object_types_of_event_types(ocel, object_types, object_type
     for t in object_types:
       if isinstance(rd["ocel:type:"+t], list):
         interacting_types.add(t)
-    #if event_type == "Load to Vehicle":
-    #  print(rd)
-    #  break
     itypes_key = frozenset(interacting_types)
     if not event_type in event_types:
       event_types[event_type] = { itypes_key: 1}
-      #if event_type == "build":
-      #  print("Event type %s has interacting types: %s" % (event_type, interacting_types))
     else:
-      #if event_type == "build":
-      #  if itypes_key not in event_types[event_type]:
-      #    print("Event type %s has  interacting types: %s " % (event_type, interacting_types))
-      #    print(rd.items())
       if itypes_key in event_types[event_type]:
         event_types[event_type][itypes_key] += 1
       else:
@@ -149,10 +174,10 @@ def check_consistent_object_types_of_event_types(ocel, object_types, object_type
 if __name__ == "__main__":
   ocel = import_ocel(sys.argv[1])
 
-  print(BAR, "\n", sys.argv[1])
-  print(BAR)
+  #print(BAR, "\n", sys.argv[1])
+  #print(BAR)
   object_types = ocel_get_object_types(ocel)
-  print("OBJECT TYPES")
+  print(len(object_types), "OBJECT TYPES")
   print(object_types, "\n")
   object_summary = ocel_objects_summary(ocel)
   for col in ['activities_lifecycle', 'lifecycle_start', 'lifecycle_end', 'lifecycle_duration']:
@@ -165,10 +190,10 @@ if __name__ == "__main__":
   relationships = object_relationships(object_summary, types_of_objects, object_types)
   
   # classify relationships
-  to_one, to_almost_one, to_many = classify_relationships(relationships)
+  to_one, to_one_opt, to_many, to_many_opt = classify_relationships(relationships)
 
   # classify relationship pairs
-  classify_relationship_pairs(to_one, to_almost_one, to_many)
+  classify_relationship_pairs(to_one, to_one_opt, to_many, to_many_opt)
 
   check_consistent_object_types_of_event_types(ocel, object_types, types_of_objects)
 

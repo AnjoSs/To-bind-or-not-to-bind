@@ -1,0 +1,9 @@
+OBJECT TYPES
+['files', 'branches'] 
+
+INTERACTION COUNTS
+A files interacts with [1, 130] branches (on average 92.791).
+A branches interacts with [6, 28178] files (on average 18810.460).
+
+RELATIONSHIP TYPES
+1 many2many: (files, branches), 

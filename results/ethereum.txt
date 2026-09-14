@@ -1,0 +1,263 @@
+5 OBJECT TYPES
+['EOA', 'TOKEN', 'ORDER', 'CONTRACT', 'MARKET'] 
+
+INTERACTION COUNTS
+A EOA interacts with [0, 3486] TOKEN (on average 0.906).
+A EOA interacts with [0, 4696] ORDER (on average 0.721).
+A EOA interacts with [0, 3487] CONTRACT (on average 1.672).
+A EOA interacts with [0, 1824] MARKET (on average 1.865).
+A TOKEN interacts with [0, 85915] EOA (on average 23.011).
+A TOKEN interacts with [0, 14798] ORDER (on average 9.959).
+A TOKEN interacts with [1, 3180] CONTRACT (on average 1.636).
+A TOKEN interacts with [1, 2532] MARKET (on average 4.529).
+A ORDER interacts with [0, 379] EOA (on average 3.805).
+A ORDER interacts with [0, 80] TOKEN (on average 2.068).
+A ORDER interacts with [0, 97] CONTRACT (on average 2.885).
+A ORDER interacts with [0, 80] MARKET (on average 2.959).
+A CONTRACT interacts with [0, 92300] EOA (on average 25.019).
+A CONTRACT interacts with [0, 5001] TOKEN (on average 0.964).
+A CONTRACT interacts with [0, 24001] ORDER (on average 8.184).
+A CONTRACT interacts with [0, 2899] MARKET (on average 2.533).
+A MARKET interacts with [0, 89934] EOA (on average 81.729).
+A MARKET interacts with [0, 844] TOKEN (on average 7.813).
+A MARKET interacts with [0, 12084] ORDER (on average 24.574).
+A MARKET interacts with [1, 945] CONTRACT (on average 7.418).
+
+RELATIONSHIP TYPES
+3 opt_many2many: (MARKET, CONTRACT), (TOKEN, MARKET), (TOKEN, CONTRACT), 
+7 opt_many2many_opt: (MARKET, EOA), (ORDER, MARKET), (ORDER, CONTRACT), (ORDER, EOA), (TOKEN, ORDER), (TOKEN, EOA), (EOA, CONTRACT), 
+Total 10 relationship types.
+
+OPTIONAL OBJECT TYPES IN EVENTS
+Event type call for trusted transfer has optional types: EOA missing in 238438 events, ORDER missing in 238039 events, MARKET missing in 238041 events, of 238461 events in total
+Event type call to create order has optional types: EOA missing in 102362 events, TOKEN missing in 106040 events, ORDER missing in 108839 events, CONTRACT missing in 102345 events, of 109643 events in total
+Event type create new contract has optional types: EOA missing in 1 events, TOKEN missing in 10397 events, MARKET missing in 4682 events, of 20752 events in total
+Event type call to cancel order has optional types: EOA missing in 93498 events, MARKET missing in 93330 events, of 93522 events in total
+Event type call to fill best order has optional types: EOA missing in 186 events, TOKEN missing in 285 events, ORDER missing in 313 events, CONTRACT missing in 72 events, of 358 events in total
+Event type call to create initial reporter has optional types: ORDER missing in 734 events, of 737 events in total
+Event type call to create mailbox has optional types: ORDER missing in 725 events, of 727 events in total
+Event type call to create share token has optional types: ORDER missing in 7051 events, of 7071 events in total
+Event type call to initiate a trade has optional types: EOA missing in 232 events, TOKEN missing in 373 events, ORDER missing in 433 events, CONTRACT missing in 48 events, of 488 events in total
+Event type delegate call to approve has optional types: EOA missing in 8591 events, TOKEN missing in 7001 events, ORDER missing in 6471 events, CONTRACT missing in 9583 events, MARKET missing in 7360 events, of 10072 events in total
+Event type delegate call to get amount of an order has optional types: EOA missing in 29992 events, TOKEN missing in 28881 events, CONTRACT missing in 30776 events, MARKET missing in 29237 events, of 31391 events in total
+Event type delegate call to save order has optional types: TOKEN missing in 10525 events, ORDER missing in 10297 events, CONTRACT missing in 11215 events, of 11463 events in total
+Event type delegate call to transfer token on behalf of the owner has optional types: EOA missing in 30476 events, TOKEN missing in 26178 events, ORDER missing in 24394 events, CONTRACT missing in 36020 events, MARKET missing in 27026 events, of 36889 events in total
+Event type delegate call to get the total escrow has optional types: EOA missing in 30885 events, TOKEN missing in 29668 events, ORDER missing in 29051 events, CONTRACT missing in 31785 events, of 32232 events in total
+Event type delegate call to get total supply has optional types: EOA missing in 10828 events, TOKEN missing in 9078 events, ORDER missing in 8053 events, CONTRACT missing in 12369 events, MARKET missing in 9761 events, of 12854 events in total
+Event type delegate call to get balance has optional types: EOA missing in 77704 events, TOKEN missing in 66661 events, ORDER missing in 61704 events, CONTRACT missing in 91867 events, MARKET missing in 69155 events, of 93981 events in total
+Event type delegate call to get REP token has optional types: EOA missing in 76551 events, TOKEN missing in 66899 events, ORDER missing in 62538 events, CONTRACT missing in 92040 events, MARKET missing in 68595 events, of 93757 events in total
+Event type delegate call to get the number of outcomes has optional types: EOA missing in 15616 events, TOKEN missing in 13112 events, ORDER missing in 11805 events, CONTRACT missing in 17582 events, MARKET missing in 13865 events, of 18550 events in total
+Event type delegate call to initialize has optional types: EOA missing in 6299 events, TOKEN missing in 5993 events, ORDER missing in 5787 events, CONTRACT missing in 6398 events, MARKET missing in 664 events, of 6747 events in total
+Event type delegate call to increment the total escrowed has optional types: EOA missing in 10947 events, TOKEN missing in 10540 events, ORDER missing in 10288 events, CONTRACT missing in 11211 events, of 11459 events in total
+Event type delegate call to get universe has optional types: EOA missing in 34685 events, TOKEN missing in 28785 events, ORDER missing in 25889 events, CONTRACT missing in 39322 events, MARKET missing in 30693 events, of 40916 events in total
+Event type delegate call to get share token has optional types: EOA missing in 24514 events, TOKEN missing in 20508 events, ORDER missing in 18345 events, CONTRACT missing in 27597 events, MARKET missing in 21871 events, of 29050 events in total
+Event type delegate call to create yes-no-market has optional types: EOA missing in 186 events, TOKEN missing in 146 events, ORDER missing in 151 events, CONTRACT missing in 188 events, MARKET missing in 157 events, of 220 events in total
+Event type delegate call for trusted universe transfer has optional types: EOA missing in 276 events, TOKEN missing in 214 events, ORDER missing in 208 events, CONTRACT missing in 274 events, MARKET missing in 236 events, of 322 events in total
+Event type delegate call to get denomination token has optional types: EOA missing in 8471 events, TOKEN missing in 7097 events, ORDER missing in 6403 events, CONTRACT missing in 9470 events, MARKET missing in 7510 events, of 10043 events in total
+Event type delegate call to transfer token has optional types: EOA missing in 62745 events, TOKEN missing in 54001 events, ORDER missing in 50456 events, CONTRACT missing in 74843 events, MARKET missing in 56695 events, of 76382 events in total
+Event type delegate call to get or cache market creation cost has optional types: EOA missing in 296 events, TOKEN missing in 244 events, ORDER missing in 240 events, CONTRACT missing in 298 events, MARKET missing in 247 events, of 347 events in total
+Event type delegate call to check if universe is forking has optional types: EOA missing in 1144 events, TOKEN missing in 964 events, ORDER missing in 860 events, CONTRACT missing in 1241 events, MARKET missing in 981 events, of 1344 events in total
+Event type delegate call to get or cache designated reporter no-show-bond has optional types: EOA missing in 292 events, TOKEN missing in 236 events, ORDER missing in 233 events, CONTRACT missing in 299 events, MARKET missing in 256 events, of 348 events in total
+Event type delegate call to get or cache validity bond has optional types: EOA missing in 287 events, TOKEN missing in 234 events, ORDER missing in 233 events, CONTRACT missing in 292 events, MARKET missing in 237 events, of 341 events in total
+Event type delegate call to check if container for market has optional types: EOA missing in 7482 events, TOKEN missing in 6289 events, ORDER missing in 5572 events, CONTRACT missing in 8392 events, MARKET missing in 6578 events, of 8827 events in total
+Event type delegate call to deposit Ether for Cash token has optional types: EOA missing in 3653 events, TOKEN missing in 3090 events, ORDER missing in 2767 events, CONTRACT missing in 4032 events, MARKET missing in 3270 events, of 4353 events in total
+Event type delegate call to get best order ID has optional types: EOA missing in 16769 events, TOKEN missing in 16146 events, ORDER missing in 15802 events, CONTRACT missing in 17188 events, of 17516 events in total
+Event type delegate call to get price has optional types: EOA missing in 33114 events, TOKEN missing in 31857 events, CONTRACT missing in 34036 events, MARKET missing in 32263 events, of 34572 events in total
+Event type delegate call to get worse order ID has optional types: EOA missing in 10787 events, TOKEN missing in 10371 events, CONTRACT missing in 11078 events, MARKET missing in 10524 events, of 11274 events in total
+Event type delegate call to set price has optional types: EOA missing in 8052 events, TOKEN missing in 7798 events, ORDER missing in 7607 events, CONTRACT missing in 8334 events, of 8455 events in total
+Event type delegate call to assert balances has optional types: EOA missing in 7472 events, TOKEN missing in 6182 events, ORDER missing in 5578 events, CONTRACT missing in 8357 events, MARKET missing in 6681 events, of 8806 events in total
+Event type delegate call to get market has optional types: EOA missing in 43324 events, TOKEN missing in 38355 events, ORDER missing in 20400 events, CONTRACT missing in 47540 events, MARKET missing in 39626 events, of 48961 events in total
+Event type delegate call to get outcome has optional types: EOA missing in 36815 events, TOKEN missing in 33906 events, ORDER missing in 9372 events, CONTRACT missing in 39281 events, MARKET missing in 34705 events, of 40192 events in total
+Event type delegate call to record fill order has optional types: EOA missing in 8031 events, TOKEN missing in 7779 events, CONTRACT missing in 8290 events, MARKET missing in 7835 events, of 8410 events in total
+Event type delegate call to get number of ticks has optional types: EOA missing in 11508 events, TOKEN missing in 9743 events, ORDER missing in 8640 events, CONTRACT missing in 12812 events, MARKET missing in 10179 events, of 13655 events in total
+Event type delegate call to create shares has optional types: EOA missing in 3684 events, TOKEN missing in 3138 events, ORDER missing in 2788 events, CONTRACT missing in 4136 events, MARKET missing in 3247 events, of 4382 events in total
+Event type delegate call to get order type has optional types: EOA missing in 16017 events, TOKEN missing in 15364 events, CONTRACT missing in 16536 events, MARKET missing in 15669 events, of 16749 events in total
+Event type delegate call to get order shares escrowed has optional types: EOA missing in 16062 events, TOKEN missing in 15436 events, CONTRACT missing in 16536 events, MARKET missing in 15663 events, of 16749 events in total
+Event type delegate call to get order creator has optional types: EOA missing in 16073 events, TOKEN missing in 15428 events, CONTRACT missing in 16534 events, MARKET missing in 15684 events, of 16747 events in total
+Event type delegate call to check if market is finalized has optional types: EOA missing in 2458 events, TOKEN missing in 2024 events, ORDER missing in 1852 events, CONTRACT missing in 2800 events, MARKET missing in 2148 events, of 2895 events in total
+Event type delegate call to increment open interest has optional types: EOA missing in 1271 events, TOKEN missing in 1084 events, ORDER missing in 973 events, CONTRACT missing in 1436 events, MARKET missing in 1124 events, of 1526 events in total
+Event type delegate call to get allowance has optional types: EOA missing in 5492 events, TOKEN missing in 4859 events, ORDER missing in 4468 events, CONTRACT missing in 6679 events, MARKET missing in 5012 events, of 6789 events in total
+Event type delegate call to check for container for share token has optional types: EOA missing in 25160 events, TOKEN missing in 21064 events, ORDER missing in 18872 events, CONTRACT missing in 28662 events, MARKET missing in 22285 events, of 29812 events in total
+Event type delegate call to decrement total escrow has optional types: EOA missing in 15911 events, TOKEN missing in 15283 events, ORDER missing in 14966 events, CONTRACT missing in 16399 events, of 16613 events in total
+Event type delegate call to get order ID has optional types: TOKEN missing in 10556 events, ORDER missing in 10284 events, CONTRACT missing in 11224 events, of 11471 events in total
+Event type delegate call to withdraw Ether has optional types: EOA missing in 4078 events, TOKEN missing in 3344 events, ORDER missing in 3097 events, CONTRACT missing in 4685 events, MARKET missing in 3595 events, of 4815 events in total
+Event type delegate call for trusted fill order transfer has optional types: EOA missing in 1142 events, TOKEN missing in 957 events, ORDER missing in 845 events, CONTRACT missing in 1310 events, MARKET missing in 1015 events, of 1348 events in total
+Event type delegate call for trusted order transfer has optional types: EOA missing in 938 events, TOKEN missing in 794 events, ORDER missing in 733 events, CONTRACT missing in 1095 events, MARKET missing in 844 events, of 1129 events in total
+Event type delegate call to check for better price has optional types: EOA missing in 5539 events, TOKEN missing in 5308 events, CONTRACT missing in 5671 events, MARKET missing in 5418 events, of 5783 events in total
+Event type delegate call to get order money escrowed has optional types: EOA missing in 7925 events, TOKEN missing in 7588 events, CONTRACT missing in 8198 events, MARKET missing in 7736 events, of 8292 events in total
+Event type delegate call to remove order has optional types: EOA missing in 7908 events, TOKEN missing in 7528 events, CONTRACT missing in 8123 events, MARKET missing in 7706 events, of 8217 events in total
+Event type call and transfer Ether has optional types: EOA missing in 661 events, TOKEN missing in 16450 events, ORDER missing in 28730 events, MARKET missing in 15526 events, of 32015 events in total
+Event type call to fill order has optional types: EOA missing in 77151 events, TOKEN missing in 77156 events, CONTRACT missing in 77148 events, MARKET missing in 77057 events, of 77162 events in total
+Event type call to log order filling has optional types: EOA missing in 51320 events, MARKET missing in 51202 events, of 51325 events in total
+Event type call to buy complete sets has optional types: ORDER missing in 26312 events, of 26375 events in total
+Event type call to log share token minted has optional types: ORDER missing in 18751 events, MARKET missing in 18774 events, of 18800 events in total
+Event type delegate call to assert is not worse price has optional types: EOA missing in 976 events, TOKEN missing in 778 events, ORDER missing in 712 events, CONTRACT missing in 1085 events, MARKET missing in 875 events, of 1138 events in total
+Event type delegate call to get better order ID has optional types: EOA missing in 7436 events, TOKEN missing in 7084 events, CONTRACT missing in 7622 events, MARKET missing in 7253 events, of 7747 events in total
+Event type delegate call to create a categorical market has optional types: EOA missing in 90 events, TOKEN missing in 78 events, ORDER missing in 60 events, CONTRACT missing in 87 events, MARKET missing in 73 events, of 101 events in total
+Event type delegate call to redeem has optional types: EOA missing in 243 events, TOKEN missing in 721 events, ORDER missing in 713 events, CONTRACT missing in 841 events, MARKET missing in 724 events, of 848 events in total
+Event type delegate call to check if container for fee window has optional types: EOA missing in 515 events, TOKEN missing in 439 events, ORDER missing in 400 events, CONTRACT missing in 549 events, MARKET missing in 457 events, of 615 events in total
+Event type delegate call to get start time has optional types: EOA missing in 3200 events, TOKEN missing in 2572 events, ORDER missing in 2387 events, CONTRACT missing in 3610 events, MARKET missing in 2798 events, of 3725 events in total
+Event type delegate call to buy participant tokens has no optional types.
+Event type delegate call for trusted universe buy has no optional types.
+Event type delegate call for trusted fee window transfer has optional types: EOA missing in 165 events, TOKEN missing in 144 events, ORDER missing in 130 events, CONTRACT missing in 168 events, MARKET missing in 135 events, of 194 events in total
+Event type delegate call to buy Atto tokens has optional types: EOA missing in 143 events, TOKEN missing in 128 events, ORDER missing in 108 events, CONTRACT missing in 148 events, MARKET missing in 132 events, of 173 events in total
+Event type call to fill best order with limit has optional types: EOA missing in 1674 events, TOKEN missing in 6130 events, ORDER missing in 9154 events, CONTRACT missing in 995 events, of 10333 events in total
+Event type delegate call to assert is not better price has optional types: EOA missing in 288 events, TOKEN missing in 214 events, ORDER missing in 204 events, CONTRACT missing in 312 events, MARKET missing in 256 events, of 325 events in total
+Event type delegate call to check if worse price has optional types: EOA missing in 714 events, TOKEN missing in 665 events, CONTRACT missing in 715 events, MARKET missing in 689 events, of 739 events in total
+Event type delegate call to create scalar market has optional types: EOA missing in 44 events, TOKEN missing in 35 events, ORDER missing in 30 events, CONTRACT missing in 47 events, MARKET missing in 36 events, of 49 events in total
+Event type call to trade with limit has optional types: EOA missing in 5752 events, TOKEN missing in 25236 events, ORDER missing in 40699 events, CONTRACT missing in 5509 events, of 44565 events in total
+Event type delegate call to withdraw Ether if possible has optional types: EOA missing in 559 events, TOKEN missing in 491 events, ORDER missing in 397 events, CONTRACT missing in 648 events, MARKET missing in 507 events, of 667 events in total
+Event type delegate call to get stake has optional types: EOA missing in 911 events, TOKEN missing in 803 events, ORDER missing in 696 events, CONTRACT missing in 1059 events, MARKET missing in 823 events, of 1121 events in total
+Event type delegate call for trusted market transfer has optional types: EOA missing in 273 events, TOKEN missing in 237 events, ORDER missing in 191 events, CONTRACT missing in 314 events, MARKET missing in 248 events, of 324 events in total
+Event type delegate call to get or cache next fee window has optional types: EOA missing in 1589 events, TOKEN missing in 1340 events, ORDER missing in 1205 events, CONTRACT missing in 1854 events, MARKET missing in 1367 events, of 1877 events in total
+Event type delegate call to check if container for reporting participant has optional types: EOA missing in 4288 events, TOKEN missing in 3460 events, ORDER missing in 3199 events, CONTRACT missing in 4900 events, MARKET missing in 3740 events, of 4999 events in total
+Event type delegate call to mint for reporting participant has optional types: TOKEN missing in 3782 events, ORDER missing in 3732 events, CONTRACT missing in 4113 events, MARKET missing in 3836 events, of 4153 events in total
+Event type delegate call to get fee window has optional types: EOA missing in 2757 events, TOKEN missing in 2250 events, ORDER missing in 2034 events, CONTRACT missing in 3132 events, MARKET missing in 2417 events, of 3218 events in total
+Event type delegate call to mint fee tokens has optional types: EOA missing in 1004 events, TOKEN missing in 822 events, ORDER missing in 745 events, CONTRACT missing in 1141 events, MARKET missing in 895 events, of 1180 events in total
+Event type delegate call to check if container for fee token has optional types: EOA missing in 1827 events, TOKEN missing in 1445 events, ORDER missing in 1367 events, CONTRACT missing in 2084 events, MARKET missing in 1619 events, of 2127 events in total
+Event type delegate call to do initial report has optional types: EOA missing in 380 events, TOKEN missing in 336 events, ORDER missing in 261 events, CONTRACT missing in 436 events, MARKET missing in 350 events, of 451 events in total
+Event type delegate call to get report time stamp has optional types: EOA missing in 859 events, TOKEN missing in 716 events, ORDER missing in 623 events, CONTRACT missing in 967 events, MARKET missing in 747 events, of 1000 events in total
+Event type delegate call to get payout distribution hash has optional types: EOA missing in 3886 events, TOKEN missing in 3207 events, ORDER missing in 2827 events, CONTRACT missing in 4424 events, MARKET missing in 3413 events, of 4549 events in total
+Event type delegate call to get as address or zero has optional types: EOA missing in 2712 events, TOKEN missing in 2244 events, ORDER missing in 2033 events, CONTRACT missing in 3157 events, MARKET missing in 2424 events, of 3218 events in total
+Event type delegate call to get designated reporter has optional types: EOA missing in 1030 events, TOKEN missing in 894 events, ORDER missing in 768 events, CONTRACT missing in 1181 events, MARKET missing in 919 events, of 1226 events in total
+Event type delegate call to get or cache designated reporter stake has optional types: EOA missing in 279 events, TOKEN missing in 241 events, ORDER missing in 217 events, CONTRACT missing in 327 events, MARKET missing in 249 events, of 337 events in total
+Event type delegate call to get fee token has optional types: EOA missing in 3913 events, TOKEN missing in 3134 events, ORDER missing in 2897 events, CONTRACT missing in 4482 events, MARKET missing in 3420 events, of 4547 events in total
+Event type delegate call to report has optional types: EOA missing in 336 events, TOKEN missing in 295 events, ORDER missing in 245 events, CONTRACT missing in 389 events, MARKET missing in 302 events, of 404 events in total
+Event type call to create yes-no-market has optional types: EOA missing in 30 events, TOKEN missing in 658 events, ORDER missing in 1192 events, MARKET missing in 624 events, of 1306 events in total
+Event type call to create market has optional types: TOKEN missing in 2154 events, ORDER missing in 3901 events, MARKET missing in 2005 events, of 4300 events in total
+Event type delegate call for trusted cancel order transfer has optional types: EOA missing in 668 events, TOKEN missing in 559 events, ORDER missing in 481 events, CONTRACT missing in 771 events, MARKET missing in 605 events, of 787 events in total
+Event type transfer tokens has optional types: EOA missing in 562265 events, TOKEN missing in 531114 events, ORDER missing in 444405 events, MARKET missing in 503783 events, of 591858 events in total
+Event type create order has optional types: EOA missing in 22096 events, TOKEN missing in 20754 events, MARKET missing in 19358 events, of 23253 events in total
+Event type mint tokens has optional types: TOKEN missing in 59887 events, ORDER missing in 50340 events, MARKET missing in 56498 events, of 67357 events in total
+Event type transferred tokens has optional types: EOA missing in 454753 events, ORDER missing in 359824 events, of 478654 events in total
+Event type give approval to transfer tokens has optional types: EOA missing in 49388 events, TOKEN missing in 46048 events, ORDER missing in 39866 events, MARKET missing in 43763 events, of 51842 events in total
+Event type create market has optional types: EOA missing in 2526 events, TOKEN missing in 2366 events, ORDER missing in 2005 events, of 2669 events in total
+Event type cancel order has optional types: TOKEN missing in 13388 events, MARKET missing in 12586 events, of 15029 events in total
+Event type burn tokens has optional types: TOKEN missing in 45580 events, ORDER missing in 38482 events, MARKET missing in 43370 events, of 51458 events in total
+Event type fill order has optional types: EOA missing in 14040 events, TOKEN missing in 13174 events, MARKET missing in 12344 events, of 14776 events in total
+Event type minted tokens has optional types: ORDER missing in 26923 events, of 36208 events in total
+Event type burned tokens has optional types: ORDER missing in 13701 events, of 18434 events in total
+Event type submit initial report has optional types: EOA missing in 2673 events, TOKEN missing in 2489 events, ORDER missing in 2046 events, of 2790 events in total
+Event type redeem fee window has optional types: EOA missing in 898 events, TOKEN missing in 834 events, ORDER missing in 704 events, MARKET missing in 778 events, of 944 events in total
+Event type sell complete sets has optional types: EOA missing in 818 events, TOKEN missing in 767 events, ORDER missing in 630 events, of 863 events in total
+Event type call to log order creation has optional types: EOA missing in 28001 events, MARKET missing in 27901 events, of 28003 events in total
+Event type call to sell complete sets has optional types: ORDER missing in 4554 events, of 4558 events in total
+Event type call to log share token burned has optional types: ORDER missing in 33303 events, MARKET missing in 33288 events, of 33328 events in total
+Event type create dispute has optional types: EOA missing in 874 events, TOKEN missing in 804 events, ORDER missing in 650 events, of 904 events in total
+Event type contribute to dispute has optional types: EOA missing in 1523 events, TOKEN missing in 1436 events, ORDER missing in 1210 events, of 1602 events in total
+Event type complete dispute has optional types: EOA missing in 745 events, TOKEN missing in 711 events, ORDER missing in 564 events, of 782 events in total
+Event type create fee window has optional types: EOA missing in 105 events, TOKEN missing in 102 events, ORDER missing in 83 events, MARKET missing in 94 events, of 111 events in total
+Event type finalize market has optional types: EOA missing in 2581 events, TOKEN missing in 2450 events, ORDER missing in 2004 events, of 2738 events in total
+Event type redeem as initial reporter has optional types: EOA missing in 3085 events, TOKEN missing in 2950 events, ORDER missing in 2452 events, of 3260 events in total
+Event type claim trading proceeds has optional types: TOKEN missing in 5429 events, ORDER missing in 4543 events, of 6050 events in total
+Event type create universe has no optional types.
+Event type call to claim trading proceeds has optional types: ORDER missing in 5817 events, of 5819 events in total
+Event type call to sell complete sets (public) has optional types: ORDER missing in 989 events, of 992 events in total
+Event type call to log trading proceeds claim has optional types: ORDER missing in 23082 events, of 23093 events in total
+Event type redeem dispute crowdsourcer has optional types: EOA missing in 1339 events, TOKEN missing in 1247 events, ORDER missing in 1070 events, of 1412 events in total
+Event type call to create categorical market has optional types: EOA missing in 10 events, TOKEN missing in 289 events, ORDER missing in 515 events, MARKET missing in 273 events, of 581 events in total
+Event type call to create scalar market has optional types: EOA missing in 2 events, TOKEN missing in 85 events, ORDER missing in 152 events, MARKET missing in 80 events, of 176 events in total
+Event type call to create dispute crowdsourcer has no optional types.
+Event type call to purchase complete sets has optional types: TOKEN missing in 6 events, of 14 events in total
+Event type purchase complete sets has optional types: EOA missing in 549 events, TOKEN missing in 506 events, ORDER missing in 407 events, of 570 events in total
+Event type call to log order cancellation has optional types: MARKET missing in 13547 events, of 13571 events in total
+Event type delegate call to get reporting participant has optional types: EOA missing in 7 events, TOKEN missing in 24 events, ORDER missing in 39 events, CONTRACT missing in 7 events, MARKET missing in 15 events, of 42 events in total
+Event type call to get dispute round duration in seconds has optional types: TOKEN missing in 41 events, MARKET missing in 20 events, of 89 events in total
+Event type accept contribution to crowdsourcer has optional types: EOA missing in 154 events, TOKEN missing in 140 events, ORDER missing in 117 events, MARKET missing in 136 events, of 156 events in total
+Event type finalize crowdsourcer has optional types: EOA missing in 44 events, TOKEN missing in 42 events, ORDER missing in 39 events, MARKET missing in 38 events, of 47 events in total
+Event type withdraw proceeds from crowdsourcer has optional types: EOA missing in 100 events, TOKEN missing in 98 events, ORDER missing in 86 events, MARKET missing in 88 events, of 108 events in total
+Event type withdraw fees from crowdsourcer has optional types: EOA missing in 43 events, TOKEN missing in 41 events, ORDER missing in 36 events, MARKET missing in 41 events, of 45 events in total
+Event type call to initialize crowdsourcer has optional types: EOA missing in 71 events, TOKEN missing in 72 events, CONTRACT missing in 71 events, of 73 events in total
+Event type call to create has optional types: EOA missing in 322 events, TOKEN missing in 332 events, CONTRACT missing in 322 events, MARKET missing in 1 events, of 334 events in total
+Event type call without Ether transfer has optional types: EOA missing in 4034 events, TOKEN missing in 4236 events, ORDER missing in 2117 events, CONTRACT missing in 4183 events, MARKET missing in 2275 events, of 4292 events in total
+Event type delegate call to get dispute round duration in seconds has optional types: EOA missing in 22 events, TOKEN missing in 22 events, ORDER missing in 26 events, CONTRACT missing in 28 events, MARKET missing in 23 events, of 34 events in total
+Event type delegate call to derive payout distribution hash has optional types: EOA missing in 4 events, TOKEN missing in 4 events, ORDER missing in 6 events, CONTRACT missing in 4 events, MARKET missing in 2 events, of 7 events in total
+Event type delegate call to get number of participants has optional types: EOA missing in 15 events, TOKEN missing in 16 events, ORDER missing in 14 events, CONTRACT missing in 15 events, MARKET missing in 11 events, of 21 events in total
+Event type call to get REP token has optional types: EOA missing in 476 events, TOKEN missing in 495 events, ORDER missing in 162 events, CONTRACT missing in 493 events, MARKET missing in 352 events, of 509 events in total
+Event type create crowdsourcer has optional types: EOA missing in 29 events, ORDER missing in 29 events, of 32 events in total
+Event type initialize crowdsourcer has optional types: ORDER missing in 27 events, MARKET missing in 29 events, of 32 events in total
+Event type create new accounting instance has optional types: EOA missing in 28 events, ORDER missing in 28 events, MARKET missing in 25 events, of 32 events in total
+Event type create disputer for crowdsourcer has optional types: ORDER missing in 29 events, of 32 events in total
+Event type call to check if initialization happened has optional types: TOKEN missing in 2 events, MARKET missing in 1 events, of 4 events in total
+Event type call to initialize has optional types: TOKEN missing in 1 events, of 2 events in total
+Event type call to check if fork happened has optional types: EOA missing in 8 events, TOKEN missing in 14 events, ORDER missing in 9 events, CONTRACT missing in 9 events, MARKET missing in 8 events, of 15 events in total
+Event type withdraw contribution to crowdsourcer has optional types: EOA missing in 46 events, TOKEN missing in 44 events, ORDER missing in 38 events, MARKET missing in 44 events, of 49 events in total
+Event type undecoded event has no optional types.
+Event type delegate call to get size has optional types: EOA missing in 469 events, TOKEN missing in 384 events, ORDER missing in 342 events, CONTRACT missing in 535 events, MARKET missing in 418 events, of 549 events in total
+Event type delegate call to get dispute threshold for fork has optional types: EOA missing in 115 events, TOKEN missing in 96 events, ORDER missing in 92 events, CONTRACT missing in 130 events, MARKET missing in 101 events, of 137 events in total
+Event type delegate call to migrate has optional types: EOA missing in 431 events, TOKEN missing in 366 events, ORDER missing in 318 events, CONTRACT missing in 493 events, MARKET missing in 380 events, of 510 events in total
+Event type delegate call for trusted reporting participant transfer has optional types: EOA missing in 214 events, TOKEN missing in 183 events, ORDER missing in 156 events, CONTRACT missing in 248 events, MARKET missing in 199 events, of 255 events in total
+Event type delegate call to contribute has optional types: EOA missing in 468 events, TOKEN missing in 392 events, ORDER missing in 330 events, CONTRACT missing in 525 events, MARKET missing in 394 events, of 539 events in total
+Event type delegate call to check if active has optional types: EOA missing in 219 events, TOKEN missing in 199 events, ORDER missing in 168 events, CONTRACT missing in 258 events, MARKET missing in 187 events, of 265 events in total
+Event type delegate call to add an entry to a map has optional types: EOA missing in 152 events, TOKEN missing in 126 events, ORDER missing in 106 events, CONTRACT missing in 169 events, MARKET missing in 133 events, of 176 events in total
+Event type delegate call to get payout numerator has optional types: EOA missing in 4894 events, TOKEN missing in 4120 events, ORDER missing in 3644 events, CONTRACT missing in 5774 events, MARKET missing in 4312 events, of 5784 events in total
+Event type delegate call to get finalization time has optional types: EOA missing in 747 events, TOKEN missing in 628 events, ORDER missing in 569 events, CONTRACT missing in 888 events, MARKET missing in 650 events, of 889 events in total
+Event type delegate call to destroy shares has optional types: EOA missing in 1950 events, TOKEN missing in 1571 events, ORDER missing in 1441 events, CONTRACT missing in 2273 events, MARKET missing in 1695 events, of 2274 events in total
+Event type delegate call to get market creator mailbox has optional types: EOA missing in 1100 events, TOKEN missing in 919 events, ORDER missing in 795 events, CONTRACT missing in 1288 events, MARKET missing in 967 events, of 1289 events in total
+Event type delegate call to get winning payout numerator has optional types: EOA missing in 2174 events, TOKEN missing in 1804 events, ORDER missing in 1564 events, CONTRACT missing in 2527 events, MARKET missing in 1883 events, of 2529 events in total
+Event type delegate call to derive market creator fee amount has optional types: EOA missing in 2399 events, TOKEN missing in 1990 events, ORDER missing in 1770 events, CONTRACT missing in 2823 events, MARKET missing in 2114 events, of 2825 events in total
+Event type delegate call to get or cache reporting fee divisor has optional types: EOA missing in 2432 events, TOKEN missing in 2014 events, ORDER missing in 1795 events, CONTRACT missing in 2855 events, MARKET missing in 2118 events, of 2857 events in total
+Event type delegate call to get winning payout distribution hash has optional types: EOA missing in 524 events, TOKEN missing in 435 events, ORDER missing in 375 events, CONTRACT missing in 590 events, MARKET missing in 457 events, of 608 events in total
+Event type delegate call to market has optional types: EOA missing in 469 events, TOKEN missing in 392 events, ORDER missing in 338 events, CONTRACT missing in 530 events, MARKET missing in 406 events, of 548 events in total
+Event type delegate call to get forking market has optional types: EOA missing in 380 events, TOKEN missing in 349 events, ORDER missing in 276 events, CONTRACT missing in 448 events, MARKET missing in 361 events, of 466 events in total
+Event type delegate call to check if fee window is over has optional types: EOA missing in 369 events, TOKEN missing in 328 events, ORDER missing in 279 events, CONTRACT missing in 433 events, MARKET missing in 349 events, of 451 events in total
+Event type delegate call to update statistics once market is finalized has optional types: EOA missing in 433 events, TOKEN missing in 364 events, ORDER missing in 313 events, CONTRACT missing in 487 events, MARKET missing in 381 events, of 505 events in total
+Event type delegate call to decrement open interest from market has optional types: EOA missing in 437 events, TOKEN missing in 364 events, ORDER missing in 315 events, CONTRACT missing in 490 events, MARKET missing in 381 events, of 508 events in total
+Event type delegate call to check validity has optional types: EOA missing in 1187 events, TOKEN missing in 991 events, ORDER missing in 879 events, CONTRACT missing in 1345 events, MARKET missing in 1069 events, of 1399 events in total
+Event type delegate call to check if designated reporter was correct has optional types: EOA missing in 826 events, TOKEN missing in 701 events, ORDER missing in 617 events, CONTRACT missing in 937 events, MARKET missing in 720 events, of 973 events in total
+Event type delegate call to check if designated reporter showed has optional types: EOA missing in 832 events, TOKEN missing in 691 events, ORDER missing in 598 events, CONTRACT missing in 931 events, MARKET missing in 737 events, of 967 events in total
+Event type delegate call to deposit Ether has optional types: EOA missing in 521 events, TOKEN missing in 429 events, ORDER missing in 388 events, CONTRACT missing in 592 events, MARKET missing in 457 events, of 610 events in total
+Event type delegate call has optional types: EOA missing in 537 events, TOKEN missing in 417 events, ORDER missing in 399 events, CONTRACT missing in 623 events, MARKET missing in 482 events, of 625 events in total
+Event type delegate call to redeem for reporting participant has optional types: EOA missing in 812 events, TOKEN missing in 651 events, ORDER missing in 626 events, CONTRACT missing in 954 events, MARKET missing in 712 events, of 956 events in total
+Event type delegate call to get or create fee window before has optional types: EOA missing in 764 events, TOKEN missing in 619 events, ORDER missing in 530 events, CONTRACT missing in 878 events, MARKET missing in 673 events, of 880 events in total
+Event type delegate call to burn fee window has optional types: TOKEN missing in 3178 events, ORDER missing in 3110 events, CONTRACT missing in 3430 events, MARKET missing in 3191 events, of 3432 events in total
+Event type delegate call to get current fee window has optional types: EOA missing in 75 events, TOKEN missing in 66 events, ORDER missing in 46 events, MARKET missing in 67 events, of 86 events in total
+Event type delegate call to decrement open interest has optional types: EOA missing in 317 events, TOKEN missing in 281 events, ORDER missing in 219 events, MARKET missing in 281 events, of 375 events in total
+Event type delegate call to liquidate losing has optional types: EOA missing in 78 events, TOKEN missing in 65 events, ORDER missing in 57 events, MARKET missing in 73 events, of 94 events in total
+Event type delegate call to get number of markets has optional types: EOA missing in 41 events, TOKEN missing in 41 events, ORDER missing in 35 events, MARKET missing in 34 events, of 52 events in total
+Event type delegate call to get number of invalid markets has optional types: EOA missing in 9 events, TOKEN missing in 8 events, ORDER missing in 8 events, MARKET missing in 11 events, of 13 events in total
+Event type delegate call to get number of designated reporter no-shows has optional types: EOA missing in 14 events, TOKEN missing in 8 events, ORDER missing in 12 events, MARKET missing in 13 events, of 16 events in total
+Event type delegate call to get decimals has optional types: EOA missing in 3364 events, TOKEN missing in 3052 events, ORDER missing in 2839 events, MARKET missing in 3039 events, of 4212 events in total
+Event type delegate call to get end time has optional types: EOA missing in 18 events, TOKEN missing in 19 events, ORDER missing in 13 events, MARKET missing in 16 events, of 23 events in total
+Event type delegate call to get crowdsourcer has optional types: TOKEN missing in 7 events, ORDER missing in 9 events, MARKET missing in 4 events, of 10 events in total
+Event type call to notify about dispute crowdsourcer creation has no optional types.
+Event type call to log fee token minted has optional types: ORDER missing in 4132 events, MARKET missing in 4132 events, of 4133 events in total
+Event type call to log dispute crowdsourcer tokens minted has no optional types.
+Event type call to log dispute crowdsourcer contribution has no optional types.
+Event type delegate call to get number of incorrect designated report markets has optional types: EOA missing in 12 events, TOKEN missing in 9 events, ORDER missing in 9 events, MARKET missing in 12 events, of 14 events in total
+Event type transfer market has no optional types.
+Event type call to log complete sets sold has optional types: ORDER missing in 1410 events, of 1413 events in total
+Event type call to log market creation has optional types: ORDER missing in 715 events, of 716 events in total
+Event type call to check if container for share token has optional types: EOA missing in 813 events, ORDER missing in 362 events, MARKET missing in 517 events, of 852 events in total
+Event type call to increment open interest has optional types: EOA missing in 93 events, ORDER missing in 39 events, MARKET missing in 56 events, of 95 events in total
+Event type call to log share tokens transfer has optional types: EOA missing in 330 events, ORDER missing in 139 events, MARKET missing in 201 events, of 336 events in total
+Event type call to find bounding orders has optional types: EOA missing in 95 events, ORDER missing in 64 events, MARKET missing in 37 events, of 99 events in total
+Event type call to get timestamp has optional types: EOA missing in 149 events, ORDER missing in 69 events, MARKET missing in 88 events, of 157 events in total
+Event type call to check if container market has optional types: EOA missing in 231 events, ORDER missing in 127 events, MARKET missing in 114 events, of 239 events in total
+Event type call to check if known universe has optional types: EOA missing in 62 events, ORDER missing in 29 events, MARKET missing in 37 events, of 65 events in total
+Event type call to decrement open interest has optional types: ORDER missing in 3 events, MARKET missing in 4 events, of 7 events in total
+Event type call to get or cache reporting fee divisor has optional types: EOA missing in 69 events, ORDER missing in 36 events, MARKET missing in 37 events, of 73 events in total
+Event type call to get or create next fee window has optional types: EOA missing in 49 events, ORDER missing in 37 events, MARKET missing in 16 events, of 53 events in total
+Event type call to log REP token transferred has optional types: EOA missing in 239 events, ORDER missing in 62 events, MARKET missing in 184 events, of 243 events in total
+Event type call to get or cache validity bond has optional types: EOA missing in 3 events, ORDER missing in 3 events, MARKET missing in 1 events, of 4 events in total
+Event type call to get or cache designated reporter stake has optional types: ORDER missing in 1 events, MARKET missing in 2 events, of 3 events in total
+Event type call to log initial report submission has optional types: ORDER missing in 1014 events, of 1015 events in total
+Event type call to check if container for fee token has optional types: EOA missing in 23 events, ORDER missing in 13 events, MARKET missing in 13 events, of 26 events in total
+Event type call to buy complete sets with cash (public) has optional types: ORDER missing in 1085 events, of 1086 events in total
+Event type call to log complete set purchase has no optional types.
+Event type call to check if container for reporting participant has optional types: EOA missing in 11 events, ORDER missing in 6 events, MARKET missing in 6 events, of 12 events in total
+Event type delegate call to withdraw Ether (2) has optional types: EOA missing in 298 events, TOKEN missing in 233 events, ORDER missing in 206 events, MARKET missing in 268 events, of 344 events in total
+Event type call to log dispute crowdsourcer completion has no optional types.
+Event type call to log fee window minted has optional types: ORDER missing in 434 events, of 435 events in total
+Event type call to log fee window burned has optional types: ORDER missing in 398 events, of 399 events in total
+Event type call to log fee window redeemed has no optional types.
+Event type call to check if container for fee window has optional types: ORDER missing in 1 events, MARKET missing in 7 events, of 8 events in total
+Event type call to get or cache designated report no show bond has optional types: EOA missing in 2 events, ORDER missing in 1 events, MARKET missing in 2 events, of 3 events in total
+Event type call to get or cache market creation cost has optional types: ORDER missing in 1 events, MARKET missing in 2 events, of 3 events in total
+Event type call to create map has no optional types.
+Event type call to get or create fee window before has optional types: ORDER missing in 1 events, MARKET missing in 4 events, of 5 events in total
+Event type call to log dispute crowdsourcer tokens burned has optional types: ORDER missing in 1557 events, of 1558 events in total
+Event type call to log dispute crowdsourcer redemption has optional types: ORDER missing in 6756 events, of 6758 events in total
+Event type call to log fee token burning has no optional types.
+Event type call to log reporter redemption has no optional types.
+Event type call to buy (public) has no optional types.

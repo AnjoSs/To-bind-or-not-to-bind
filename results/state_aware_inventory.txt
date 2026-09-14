@@ -1,0 +1,103 @@
+10 OBJECT TYPES
+['Delivery', 'ItemLocation', 'Location', 'Material', 'Planner', 'PurchaseOrderItem', 'ReplenishmentProposal', 'SalesOrderItem', 'Supplier', 'TransferOrder'] 
+
+INTERACTION COUNTS
+A Delivery interacts with [1, 1] ItemLocation (on average 1.000).
+A Delivery interacts with [0, 1] Location (on average 0.995).
+A Delivery interacts with [0, 1] Material (on average 0.998).
+A Delivery interacts with [0, 1] Planner (on average 0.014).
+A Delivery interacts with [0, 1] PurchaseOrderItem (on average 0.996).
+A Delivery interacts with [0, 1] Supplier (on average 0.016).
+A ItemLocation interacts with [1, 75] Delivery (on average 11.854).
+A ItemLocation interacts with [1, 1] Location (on average 1.000).
+A ItemLocation interacts with [1, 1] Material (on average 1.000).
+A ItemLocation interacts with [1, 2] Planner (on average 1.062).
+A ItemLocation interacts with [1, 79] PurchaseOrderItem (on average 12.479).
+A ItemLocation interacts with [0, 79] ReplenishmentProposal (on average 12.312).
+A ItemLocation interacts with [4, 711] SalesOrderItem (on average 346.917).
+A ItemLocation interacts with [1, 2] Supplier (on average 1.042).
+A ItemLocation interacts with [0, 2] TransferOrder (on average 0.292).
+A Location interacts with [81, 283] Delivery (on average 188.667).
+A Location interacts with [16, 16] ItemLocation (on average 16.000).
+A Location interacts with [8, 8] Material (on average 8.000).
+A Location interacts with [2, 2] Planner (on average 2.000).
+A Location interacts with [87, 301] PurchaseOrderItem (on average 199.667).
+A Location interacts with [84, 298] ReplenishmentProposal (on average 197.000).
+A Location interacts with [3659, 7023] SalesOrderItem (on average 5550.667).
+A Location interacts with [1, 2] Supplier (on average 1.667).
+A Location interacts with [4, 5] TransferOrder (on average 4.667).
+A Material interacts with [2, 109] Delivery (on average 23.667).
+A Material interacts with [2, 2] ItemLocation (on average 2.000).
+A Material interacts with [1, 1] Location (on average 1.000).
+A Material interacts with [1, 2] Planner (on average 1.125).
+A Material interacts with [3, 117] PurchaseOrderItem (on average 24.958).
+A Material interacts with [2, 116] ReplenishmentProposal (on average 24.625).
+A Material interacts with [45, 1422] SalesOrderItem (on average 693.833).
+A Material interacts with [1, 2] Supplier (on average 1.083).
+A Material interacts with [0, 3] TransferOrder (on average 0.583).
+A Planner interacts with [0, 7] Delivery (on average 2.667).
+A Planner interacts with [1, 48] ItemLocation (on average 17.000).
+A Planner interacts with [1, 3] Location (on average 2.000).
+A Planner interacts with [1, 24] Material (on average 9.000).
+A Planner interacts with [0, 7] PurchaseOrderItem (on average 2.667).
+A Planner interacts with [0, 590] ReplenishmentProposal (on average 197.000).
+A Planner interacts with [0, 1] Supplier (on average 0.667).
+A Planner interacts with [0, 1] TransferOrder (on average 0.333).
+A PurchaseOrderItem interacts with [0, 1] Delivery (on average 0.947).
+A PurchaseOrderItem interacts with [1, 1] ItemLocation (on average 1.000).
+A PurchaseOrderItem interacts with [1, 1] Location (on average 1.000).
+A PurchaseOrderItem interacts with [1, 1] Material (on average 1.000).
+A PurchaseOrderItem interacts with [0, 1] Planner (on average 0.013).
+A PurchaseOrderItem interacts with [0, 1] Supplier (on average 0.990).
+A ReplenishmentProposal interacts with [1, 1] ItemLocation (on average 1.000).
+A ReplenishmentProposal interacts with [1, 1] Location (on average 1.000).
+A ReplenishmentProposal interacts with [1, 1] Material (on average 1.000).
+A ReplenishmentProposal interacts with [1, 1] Planner (on average 1.000).
+A SalesOrderItem interacts with [1, 1] ItemLocation (on average 1.000).
+A SalesOrderItem interacts with [1, 1] Location (on average 1.000).
+A SalesOrderItem interacts with [1, 1] Material (on average 1.000).
+A Supplier interacts with [0, 8] Delivery (on average 3.000).
+A Supplier interacts with [1, 48] ItemLocation (on average 16.667).
+A Supplier interacts with [1, 3] Location (on average 1.667).
+A Supplier interacts with [1, 24] Material (on average 8.667).
+A Supplier interacts with [0, 1] Planner (on average 0.667).
+A Supplier interacts with [1, 591] PurchaseOrderItem (on average 197.667).
+A TransferOrder interacts with [2, 2] ItemLocation (on average 2.000).
+A TransferOrder interacts with [2, 2] Location (on average 2.000).
+A TransferOrder interacts with [2, 2] Material (on average 2.000).
+A TransferOrder interacts with [0, 1] Planner (on average 0.143).
+
+RELATIONSHIP TYPES
+3 opt_one2one_opt: (TransferOrder, Planner), (Supplier, Planner), (PurchaseOrderItem, Delivery), 
+3 opt_one2many: (Supplier, PurchaseOrderItem), (Material, Delivery), (Location, Delivery), 
+12 one2many: (Material, SalesOrderItem), (Location, SalesOrderItem), (ItemLocation, SalesOrderItem), (Material, ReplenishmentProposal), (Location, ReplenishmentProposal), (Material, PurchaseOrderItem), (Location, PurchaseOrderItem), (ItemLocation, PurchaseOrderItem), (Location, Material), (Material, ItemLocation), (Location, ItemLocation), (ItemLocation, Delivery), 
+2 one2many_opt: (Planner, ReplenishmentProposal), (ItemLocation, ReplenishmentProposal), 
+3 opt_one2many_opt: (Supplier, Delivery), (Planner, PurchaseOrderItem), (Planner, Delivery), 
+7 many2many: (TransferOrder, Location), (Supplier, Material), (Supplier, Location), (Supplier, ItemLocation), (Planner, Material), (Planner, Location), (Planner, ItemLocation), 
+2 opt_many2many: (TransferOrder, Material), (TransferOrder, ItemLocation), 
+13 opt_many2many_opt: (TransferOrder, Supplier), (TransferOrder, SalesOrderItem), (TransferOrder, ReplenishmentProposal), (TransferOrder, PurchaseOrderItem), (TransferOrder, Delivery), (Supplier, SalesOrderItem), (Supplier, ReplenishmentProposal), (SalesOrderItem, ReplenishmentProposal), (SalesOrderItem, PurchaseOrderItem), (SalesOrderItem, Planner), (SalesOrderItem, Delivery), (ReplenishmentProposal, PurchaseOrderItem), (ReplenishmentProposal, Delivery), 
+Total 45 relationship types.
+
+OPTIONAL OBJECT TYPES IN EVENTS
+Event type Initialize Inventory has no optional types.
+Event type Sales Order Item Created has optional types: Location missing in 76 events, Material missing in 100 events, SalesOrderItem missing in 75 events, of 16652 events in total
+Event type Reservation Created has optional types: Location missing in 50 events, Material missing in 55 events, SalesOrderItem missing in 49 events, of 9433 events in total
+Event type Goods Issue has optional types: Location missing in 37 events, Material missing in 49 events, SalesOrderItem missing in 39 events, of 9437 events in total
+Event type Purchase Order Item Created has optional types: Delivery missing in 591 events, Location missing in 2 events, Material missing in 3 events, Planner missing in 591 events, PurchaseOrderItem missing in 3 events, Supplier missing in 8 events, of 599 events in total
+Event type Supplier Confirmation Received has optional types: Delivery missing in 582 events, Location missing in 1 events, Material missing in 4 events, Planner missing in 582 events, PurchaseOrderItem missing in 1 events, Supplier missing in 3 events, of 590 events in total
+Event type Backorder Registered has optional types: Location missing in 22 events, Material missing in 40 events, SalesOrderItem missing in 52 events, of 7592 events in total
+Event type Replenishment Proposal Created has optional types: Location missing in 4 events, Material missing in 3 events, Planner missing in 3 events, ReplenishmentProposal missing in 4 events, of 591 events in total
+Event type Replenishment Proposal Approved has optional types: Location missing in 4 events, Material missing in 4 events, Planner missing in 2 events, ReplenishmentProposal missing in 5 events, of 584 events in total
+Event type Goods Receipt has optional types: Delivery missing in 9 events, Location missing in 3 events, Material missing in 1 events, Planner missing in 550 events, PurchaseOrderItem missing in 1 events, Supplier missing in 549 events, of 558 events in total
+Event type Cycle Count Performed has optional types: Planner missing in 7 events, of 8 events in total
+Event type Inventory Adjustment has optional types: Location missing in 1 events, Planner missing in 39 events, of 40 events in total
+Event type Data Gap Started has no optional types.
+Event type Policy Threshold Updated has optional types: Planner missing in 5 events, of 6 events in total
+Event type Transfer Requested has optional types: Planner missing in 11 events, TransferOrder missing in 6 events, of 12 events in total
+Event type Delivery Delayed has no optional types.
+Event type Data Gap Ended has no optional types.
+Event type Transfer Ship has optional types: TransferOrder missing in 1 events, of 8 events in total
+Event type Expedite Requested has no optional types.
+Event type Transfer Receive has no optional types.
+Event type Receipt Rejected has optional types: PurchaseOrderItem missing in 1 events, of 21 events in total
+Event type Simulation End Snapshot has no optional types.

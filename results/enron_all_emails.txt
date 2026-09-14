@@ -1,0 +1,21 @@
+2 OBJECT TYPES
+['EMAILADDRESS', 'MESSAGEID'] 
+
+INTERACTION COUNTS
+A EMAILADDRESS interacts with [0, 11094] MESSAGEID (on average 19.439).
+A MESSAGEID interacts with [0, 182] EMAILADDRESS (on average 2.892).
+
+RELATIONSHIP TYPES
+1 opt_many2many_opt: (MESSAGEID, EMAILADDRESS), 
+Total 1 relationship types.
+
+OPTIONAL OBJECT TYPES IN EVENTS
+Event type Response has optional types: EMAILADDRESS missing in 23 events, MESSAGEID missing in 65457 events, of 149247 events in total
+Event type Default has optional types: EMAILADDRESS missing in 1670 events, MESSAGEID missing in 140312 events, of 331693 events in total
+Event type Forwarding has optional types: EMAILADDRESS missing in 27 events, MESSAGEID missing in 12840 events, of 36211 events in total
+Event type Reminder has optional types: MESSAGEID missing in 114 events, of 297 events in total
+Event type Undeliverable has optional types: MESSAGEID missing in 83 events, of 248 events in total
+Event type Urgent has optional types: MESSAGEID missing in 44 events, of 102 events in total
+Event type Invitation has optional types: MESSAGEID missing in 6 events, of 14 events in total
+Event type Declined has optional types: MESSAGEID missing in 12 events, of 49 events in total
+Event type Accepted has optional types: MESSAGEID missing in 8 events, of 30 events in total

@@ -1,0 +1,164 @@
+21 OBJECT TYPES
+['AdjusterAssignment', 'CatastropheEvent', 'Claim', 'Communication', 'Complaint', 'DamageItem', 'Estimate', 'EvidenceDocument', 'Exposure', 'FraudCase', 'Incident', 'Inspection', 'InsuredParty', 'LitigationCase', 'Payment', 'Policy', 'Recovery', 'RepairOrder', 'Reserve', 'ServiceProvider', 'Settlement'] 
+
+INTERACTION COUNTS
+A AdjusterAssignment interacts with [1, 1] Claim (on average 1.000).
+A AdjusterAssignment interacts with [1, 1] Exposure (on average 1.000).
+A CatastropheEvent interacts with [50, 50] Claim (on average 50.000).
+A CatastropheEvent interacts with [50, 50] Incident (on average 50.000).
+A CatastropheEvent interacts with [25, 25] InsuredParty (on average 25.000).
+A CatastropheEvent interacts with [25, 25] Policy (on average 25.000).
+A Claim interacts with [0, 1] AdjusterAssignment (on average 0.909).
+A Claim interacts with [1, 1] CatastropheEvent (on average 1.000).
+A Claim interacts with [1, 1] Communication (on average 1.000).
+A Claim interacts with [0, 1] Complaint (on average 0.204).
+A Claim interacts with [0, 1] DamageItem (on average 0.909).
+A Claim interacts with [0, 1] Estimate (on average 0.909).
+A Claim interacts with [0, 1] EvidenceDocument (on average 0.909).
+A Claim interacts with [0, 1] Exposure (on average 0.909).
+A Claim interacts with [0, 1] FraudCase (on average 0.038).
+A Claim interacts with [1, 1] Incident (on average 1.000).
+A Claim interacts with [0, 1] Inspection (on average 0.909).
+A Claim interacts with [1, 1] InsuredParty (on average 1.000).
+A Claim interacts with [0, 1] LitigationCase (on average 0.070).
+A Claim interacts with [0, 1] Payment (on average 0.909).
+A Claim interacts with [1, 1] Policy (on average 1.000).
+A Claim interacts with [0, 1] Recovery (on average 0.101).
+A Claim interacts with [0, 1] RepairOrder (on average 0.839).
+A Claim interacts with [0, 1] Reserve (on average 0.909).
+A Claim interacts with [0, 1] ServiceProvider (on average 0.909).
+A Claim interacts with [0, 1] Settlement (on average 0.909).
+A Communication interacts with [1, 1] Claim (on average 1.000).
+A Communication interacts with [1, 1] InsuredParty (on average 1.000).
+A Complaint interacts with [1, 1] Claim (on average 1.000).
+A Complaint interacts with [1, 1] InsuredParty (on average 1.000).
+A DamageItem interacts with [1, 1] Claim (on average 1.000).
+A DamageItem interacts with [1, 1] Estimate (on average 1.000).
+A DamageItem interacts with [1, 1] Exposure (on average 1.000).
+A DamageItem interacts with [0, 1] RepairOrder (on average 0.923).
+A DamageItem interacts with [0, 1] ServiceProvider (on average 0.923).
+A Estimate interacts with [1, 1] Claim (on average 1.000).
+A Estimate interacts with [1, 1] DamageItem (on average 1.000).
+A EvidenceDocument interacts with [1, 1] Claim (on average 1.000).
+A EvidenceDocument interacts with [1, 1] Exposure (on average 1.000).
+A Exposure interacts with [1, 1] AdjusterAssignment (on average 1.000).
+A Exposure interacts with [1, 1] Claim (on average 1.000).
+A Exposure interacts with [1, 1] DamageItem (on average 1.000).
+A Exposure interacts with [1, 1] EvidenceDocument (on average 1.000).
+A Exposure interacts with [0, 1] FraudCase (on average 0.042).
+A Exposure interacts with [1, 1] Inspection (on average 1.000).
+A Exposure interacts with [0, 1] LitigationCase (on average 0.077).
+A Exposure interacts with [0, 1] Payment (on average 0.923).
+A Exposure interacts with [1, 1] Reserve (on average 1.000).
+A Exposure interacts with [1, 1] ServiceProvider (on average 1.000).
+A FraudCase interacts with [1, 1] Claim (on average 1.000).
+A FraudCase interacts with [1, 1] Exposure (on average 1.000).
+A Incident interacts with [1, 1] CatastropheEvent (on average 1.000).
+A Incident interacts with [1, 1] Claim (on average 1.000).
+A Incident interacts with [1, 1] InsuredParty (on average 1.000).
+A Incident interacts with [1, 1] Policy (on average 1.000).
+A Inspection interacts with [1, 1] Claim (on average 1.000).
+A Inspection interacts with [1, 1] Exposure (on average 1.000).
+A Inspection interacts with [1, 1] ServiceProvider (on average 1.000).
+A InsuredParty interacts with [1, 1] CatastropheEvent (on average 1.000).
+A InsuredParty interacts with [2, 2] Claim (on average 2.000).
+A InsuredParty interacts with [2, 2] Communication (on average 2.000).
+A InsuredParty interacts with [0, 2] Complaint (on average 0.409).
+A InsuredParty interacts with [2, 2] Incident (on average 2.000).
+A InsuredParty interacts with [1, 1] Policy (on average 1.000).
+A LitigationCase interacts with [1, 1] Claim (on average 1.000).
+A LitigationCase interacts with [1, 1] Exposure (on average 1.000).
+A Payment interacts with [1, 1] Claim (on average 1.000).
+A Payment interacts with [0, 1] Exposure (on average 0.923).
+A Payment interacts with [0, 1] Recovery (on average 0.111).
+A Payment interacts with [0, 1] Reserve (on average 0.923).
+A Payment interacts with [1, 1] Settlement (on average 1.000).
+A Policy interacts with [1, 1] CatastropheEvent (on average 1.000).
+A Policy interacts with [2, 2] Claim (on average 2.000).
+A Policy interacts with [2, 2] Incident (on average 2.000).
+A Policy interacts with [1, 1] InsuredParty (on average 1.000).
+A Recovery interacts with [1, 1] Claim (on average 1.000).
+A Recovery interacts with [1, 1] Payment (on average 1.000).
+A RepairOrder interacts with [1, 1] Claim (on average 1.000).
+A RepairOrder interacts with [1, 1] DamageItem (on average 1.000).
+A RepairOrder interacts with [1, 1] ServiceProvider (on average 1.000).
+A Reserve interacts with [1, 1] Claim (on average 1.000).
+A Reserve interacts with [1, 1] Exposure (on average 1.000).
+A Reserve interacts with [0, 1] Payment (on average 0.923).
+A ServiceProvider interacts with [10, 12] Claim (on average 11.367).
+A ServiceProvider interacts with [9, 12] DamageItem (on average 10.492).
+A ServiceProvider interacts with [10, 12] Exposure (on average 11.367).
+A ServiceProvider interacts with [10, 12] Inspection (on average 11.367).
+A ServiceProvider interacts with [9, 12] RepairOrder (on average 10.492).
+A Settlement interacts with [1, 1] Claim (on average 1.000).
+A Settlement interacts with [1, 1] Payment (on average 1.000).
+
+RELATIONSHIP TYPES
+10 one2one: (Settlement, Payment), (Reserve, Exposure), (Policy, InsuredParty), (Inspection, Exposure), (Incident, Claim), (Exposure, EvidenceDocument), (Exposure, DamageItem), (Exposure, AdjusterAssignment), (Estimate, DamageItem), (Communication, Claim), 
+18 opt_one2one: (Claim, Settlement), (Claim, Reserve), (DamageItem, RepairOrder), (Claim, RepairOrder), (Payment, Recovery), (Claim, Recovery), (Claim, Payment), (Exposure, LitigationCase), (Claim, LitigationCase), (Claim, Inspection), (Exposure, FraudCase), (Claim, FraudCase), (Claim, Exposure), (Claim, EvidenceDocument), (Claim, Estimate), (Claim, DamageItem), (Claim, Complaint), (AdjusterAssignment, Claim), 
+2 opt_one2one_opt: (Reserve, Payment), (Payment, Exposure), 
+2 opt_one2many: (ServiceProvider, DamageItem), (ServiceProvider, Claim), 
+12 one2many: (ServiceProvider, RepairOrder), (ServiceProvider, Inspection), (ServiceProvider, Exposure), (Policy, Incident), (Policy, Claim), (CatastropheEvent, Policy), (InsuredParty, Incident), (InsuredParty, Communication), (InsuredParty, Claim), (CatastropheEvent, InsuredParty), (CatastropheEvent, Incident), (CatastropheEvent, Claim), 
+1 one2many_opt: (InsuredParty, Complaint), 
+165 opt_many2many_opt: (Settlement, ServiceProvider), (Settlement, Reserve), (Settlement, RepairOrder), (Settlement, Recovery), (Settlement, Policy), (Settlement, LitigationCase), (Settlement, InsuredParty), (Settlement, Inspection), (Settlement, Incident), (Settlement, FraudCase), (Settlement, Exposure), (Settlement, EvidenceDocument), (Settlement, Estimate), (Settlement, DamageItem), (Settlement, Complaint), (Settlement, Communication), (Settlement, CatastropheEvent), (Settlement, AdjusterAssignment), (ServiceProvider, Reserve), (ServiceProvider, Recovery), (ServiceProvider, Policy), (ServiceProvider, Payment), (ServiceProvider, LitigationCase), (ServiceProvider, InsuredParty), (ServiceProvider, Incident), (ServiceProvider, FraudCase), (ServiceProvider, EvidenceDocument), (ServiceProvider, Estimate), (ServiceProvider, Complaint), (ServiceProvider, Communication), (ServiceProvider, CatastropheEvent), (ServiceProvider, AdjusterAssignment), (Reserve, RepairOrder), (Reserve, Recovery), (Reserve, Policy), (Reserve, LitigationCase), (Reserve, InsuredParty), (Reserve, Inspection), (Reserve, Incident), (Reserve, FraudCase), (Reserve, EvidenceDocument), (Reserve, Estimate), (Reserve, DamageItem), (Reserve, Complaint), (Reserve, Communication), (Reserve, CatastropheEvent), (Reserve, AdjusterAssignment), (RepairOrder, Recovery), (RepairOrder, Policy), (RepairOrder, Payment), (RepairOrder, LitigationCase), (RepairOrder, InsuredParty), (RepairOrder, Inspection), (RepairOrder, Incident), (RepairOrder, FraudCase), (RepairOrder, Exposure), (RepairOrder, EvidenceDocument), (RepairOrder, Estimate), (RepairOrder, Complaint), (RepairOrder, Communication), (RepairOrder, CatastropheEvent), (RepairOrder, AdjusterAssignment), (Recovery, Policy), (Recovery, LitigationCase), (Recovery, InsuredParty), (Recovery, Inspection), (Recovery, Incident), (Recovery, FraudCase), (Recovery, Exposure), (Recovery, EvidenceDocument), (Recovery, Estimate), (Recovery, DamageItem), (Recovery, Complaint), (Recovery, Communication), (Recovery, CatastropheEvent), (Recovery, AdjusterAssignment), (Policy, Payment), (Policy, LitigationCase), (Policy, Inspection), (Policy, FraudCase), (Policy, Exposure), (Policy, EvidenceDocument), (Policy, Estimate), (Policy, DamageItem), (Policy, Complaint), (Policy, Communication), (Policy, AdjusterAssignment), (Payment, LitigationCase), (Payment, InsuredParty), (Payment, Inspection), (Payment, Incident), (Payment, FraudCase), (Payment, EvidenceDocument), (Payment, Estimate), (Payment, DamageItem), (Payment, Complaint), (Payment, Communication), (Payment, CatastropheEvent), (Payment, AdjusterAssignment), (LitigationCase, InsuredParty), (LitigationCase, Inspection), (LitigationCase, Incident), (LitigationCase, FraudCase), (LitigationCase, EvidenceDocument), (LitigationCase, Estimate), (LitigationCase, DamageItem), (LitigationCase, Complaint), (LitigationCase, Communication), (LitigationCase, CatastropheEvent), (LitigationCase, AdjusterAssignment), (InsuredParty, Inspection), (InsuredParty, FraudCase), (InsuredParty, Exposure), (InsuredParty, EvidenceDocument), (InsuredParty, Estimate), (InsuredParty, DamageItem), (InsuredParty, AdjusterAssignment), (Inspection, Incident), (Inspection, FraudCase), (Inspection, EvidenceDocument), (Inspection, Estimate), (Inspection, DamageItem), (Inspection, Complaint), (Inspection, Communication), (Inspection, CatastropheEvent), (Inspection, AdjusterAssignment), (Incident, FraudCase), (Incident, Exposure), (Incident, EvidenceDocument), (Incident, Estimate), (Incident, DamageItem), (Incident, Complaint), (Incident, Communication), (Incident, AdjusterAssignment), (FraudCase, EvidenceDocument), (FraudCase, Estimate), (FraudCase, DamageItem), (FraudCase, Complaint), (FraudCase, Communication), (FraudCase, CatastropheEvent), (FraudCase, AdjusterAssignment), (Exposure, Estimate), (Exposure, Complaint), (Exposure, Communication), (Exposure, CatastropheEvent), (EvidenceDocument, Estimate), (EvidenceDocument, DamageItem), (EvidenceDocument, Complaint), (EvidenceDocument, Communication), (EvidenceDocument, CatastropheEvent), (EvidenceDocument, AdjusterAssignment), (Estimate, Complaint), (Estimate, Communication), (Estimate, CatastropheEvent), (Estimate, AdjusterAssignment), (DamageItem, Complaint), (DamageItem, Communication), (DamageItem, CatastropheEvent), (DamageItem, AdjusterAssignment), (Complaint, Communication), (Complaint, CatastropheEvent), (Complaint, AdjusterAssignment), (Communication, CatastropheEvent), (Communication, AdjusterAssignment), (CatastropheEvent, AdjusterAssignment), 
+Total 210 relationship types.
+
+OPTIONAL OBJECT TYPES IN EVENTS
+Event type Claim Reported has no optional types.
+Event type Incident Registered has no optional types.
+Event type Claim Acknowledged has no optional types.
+Event type Policy Located has no optional types.
+Event type Coverage Check Started has no optional types.
+Event type Coverage Confirmed has no optional types.
+Event type Exposure Opened has no optional types.
+Event type Exposure Classified has no optional types.
+Event type Adjuster Assigned has no optional types.
+Event type Inspection Scheduled has no optional types.
+Event type Inspection Completed has no optional types.
+Event type Exposure Reclassified has no optional types.
+Event type Damage Item Added has no optional types.
+Event type Evidence Requested has no optional types.
+Event type Inspection Rescheduled has no optional types.
+Event type Coverage Denied has no optional types.
+Event type Evidence Received has no optional types.
+Event type Customer Contacted has no optional types.
+Event type Evidence Validated has no optional types.
+Event type Adjuster Reassigned has no optional types.
+Event type Complaint Opened has no optional types.
+Event type Complaint Resolved has no optional types.
+Event type Claim Closed has no optional types.
+Event type Damage Item Updated has no optional types.
+Event type Estimate Requested has no optional types.
+Event type Claim Archived has no optional types.
+Event type Estimate Received has no optional types.
+Event type Estimate Approved has no optional types.
+Event type Reserve Established has no optional types.
+Event type Estimate Revised has no optional types.
+Event type Fraud Score Calculated has no optional types.
+Event type Evidence Rejected has no optional types.
+Event type Liability Accepted has no optional types.
+Event type Reserve Increased has no optional types.
+Event type Reserve Decreased has no optional types.
+Event type Repair Authorized has no optional types.
+Event type Liability Denied has no optional types.
+Event type Litigation Opened has no optional types.
+Event type Hearing Scheduled has no optional types.
+Event type Claim Settled has no optional types.
+Event type Repair Started has no optional types.
+Event type Fraud Investigation Opened has no optional types.
+Event type Repair Completed has no optional types.
+Event type Fraud Case Referred has no optional types.
+Event type Reserve Released has no optional types.
+Event type Payment Proposed has no optional types.
+Event type Payment Approved has no optional types.
+Event type Payment Issued has no optional types.
+Event type Liability Partially Accepted has no optional types.
+Event type Repair Reopened has no optional types.
+Event type Fraud Investigation Cleared has no optional types.
+Event type Payment Canceled has no optional types.
+Event type Payment Failed has no optional types.
+Event type Payment Reissued has no optional types.
+Event type Recovery Identified has no optional types.
+Event type Recovery Demand Sent has no optional types.
+Event type Recovery Received has no optional types.
+Event type Claim Reopened has no optional types.

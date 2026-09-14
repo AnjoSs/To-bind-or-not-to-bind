@@ -1,0 +1,195 @@
+20 OBJECT TYPES
+['AccountingDocument', 'AdvanceShippingNotice', 'Contract', 'CostCenter', 'GoodsMovement', 'GoodsReceipt', 'InspectionLot', 'Invoice', 'InvoiceItem', 'Material', 'Payment', 'PaymentProposal', 'PurchaseOrder', 'PurchaseOrderItem', 'PurchaseRequisition', 'RFQ', 'RequisitionItem', 'ScheduleLine', 'Supplier', 'SupplierQuotation'] 
+
+INTERACTION COUNTS
+A AccountingDocument interacts with [1, 1] CostCenter (on average 1.000).
+A AccountingDocument interacts with [1, 1] Invoice (on average 1.000).
+A AccountingDocument interacts with [1, 1] PaymentProposal (on average 1.000).
+A AccountingDocument interacts with [1, 1] PurchaseRequisition (on average 1.000).
+A AdvanceShippingNotice interacts with [1, 1] PurchaseOrder (on average 1.000).
+A AdvanceShippingNotice interacts with [1, 1] PurchaseRequisition (on average 1.000).
+A AdvanceShippingNotice interacts with [1, 1] Supplier (on average 1.000).
+A Contract interacts with [2, 2] Material (on average 2.000).
+A Contract interacts with [12, 12] PurchaseOrder (on average 12.000).
+A Contract interacts with [12, 12] PurchaseRequisition (on average 12.000).
+A Contract interacts with [3, 3] Supplier (on average 3.000).
+A CostCenter interacts with [25, 25] AccountingDocument (on average 25.000).
+A CostCenter interacts with [25, 25] Invoice (on average 25.000).
+A CostCenter interacts with [25, 25] PurchaseRequisition (on average 25.000).
+A CostCenter interacts with [25, 25] RequisitionItem (on average 25.000).
+A GoodsMovement interacts with [1, 1] GoodsReceipt (on average 1.000).
+A GoodsMovement interacts with [1, 1] Material (on average 1.000).
+A GoodsMovement interacts with [1, 1] PurchaseOrder (on average 1.000).
+A GoodsMovement interacts with [0, 1] PurchaseOrderItem (on average 0.200).
+A GoodsMovement interacts with [1, 1] PurchaseRequisition (on average 1.000).
+A GoodsReceipt interacts with [1, 1] GoodsMovement (on average 1.000).
+A GoodsReceipt interacts with [1, 1] InspectionLot (on average 1.000).
+A GoodsReceipt interacts with [1, 1] Invoice (on average 1.000).
+A GoodsReceipt interacts with [1, 1] InvoiceItem (on average 1.000).
+A GoodsReceipt interacts with [1, 1] Material (on average 1.000).
+A GoodsReceipt interacts with [1, 1] PurchaseOrder (on average 1.000).
+A GoodsReceipt interacts with [1, 1] PurchaseRequisition (on average 1.000).
+A GoodsReceipt interacts with [1, 1] Supplier (on average 1.000).
+A InspectionLot interacts with [1, 1] GoodsReceipt (on average 1.000).
+A InspectionLot interacts with [1, 1] Material (on average 1.000).
+A InspectionLot interacts with [1, 1] PurchaseRequisition (on average 1.000).
+A Invoice interacts with [1, 1] AccountingDocument (on average 1.000).
+A Invoice interacts with [1, 1] CostCenter (on average 1.000).
+A Invoice interacts with [1, 1] GoodsReceipt (on average 1.000).
+A Invoice interacts with [1, 1] InvoiceItem (on average 1.000).
+A Invoice interacts with [1, 1] Payment (on average 1.000).
+A Invoice interacts with [1, 1] PaymentProposal (on average 1.000).
+A Invoice interacts with [1, 1] PurchaseOrder (on average 1.000).
+A Invoice interacts with [1, 1] PurchaseRequisition (on average 1.000).
+A Invoice interacts with [1, 1] Supplier (on average 1.000).
+A InvoiceItem interacts with [1, 1] GoodsReceipt (on average 1.000).
+A InvoiceItem interacts with [1, 1] Invoice (on average 1.000).
+A InvoiceItem interacts with [1, 1] PurchaseOrder (on average 1.000).
+A InvoiceItem interacts with [1, 1] PurchaseRequisition (on average 1.000).
+A InvoiceItem interacts with [1, 1] Supplier (on average 1.000).
+A Material interacts with [1, 1] Contract (on average 1.000).
+A Material interacts with [6, 6] GoodsMovement (on average 6.000).
+A Material interacts with [6, 6] GoodsReceipt (on average 6.000).
+A Material interacts with [6, 6] InspectionLot (on average 6.000).
+A Material interacts with [6, 6] PurchaseOrder (on average 6.000).
+A Material interacts with [6, 6] PurchaseOrderItem (on average 6.000).
+A Material interacts with [6, 6] PurchaseRequisition (on average 6.000).
+A Material interacts with [6, 6] RequisitionItem (on average 6.000).
+A Material interacts with [1, 1] Supplier (on average 1.000).
+A Payment interacts with [1, 1] Invoice (on average 1.000).
+A Payment interacts with [1, 1] PaymentProposal (on average 1.000).
+A Payment interacts with [1, 1] PurchaseRequisition (on average 1.000).
+A Payment interacts with [1, 1] Supplier (on average 1.000).
+A PaymentProposal interacts with [1, 1] AccountingDocument (on average 1.000).
+A PaymentProposal interacts with [1, 1] Invoice (on average 1.000).
+A PaymentProposal interacts with [1, 1] Payment (on average 1.000).
+A PaymentProposal interacts with [1, 1] PurchaseRequisition (on average 1.000).
+A PaymentProposal interacts with [1, 1] Supplier (on average 1.000).
+A PurchaseOrder interacts with [1, 1] AdvanceShippingNotice (on average 1.000).
+A PurchaseOrder interacts with [1, 1] Contract (on average 1.000).
+A PurchaseOrder interacts with [1, 1] GoodsMovement (on average 1.000).
+A PurchaseOrder interacts with [1, 1] GoodsReceipt (on average 1.000).
+A PurchaseOrder interacts with [1, 1] Invoice (on average 1.000).
+A PurchaseOrder interacts with [1, 1] InvoiceItem (on average 1.000).
+A PurchaseOrder interacts with [1, 1] Material (on average 1.000).
+A PurchaseOrder interacts with [1, 1] PurchaseOrderItem (on average 1.000).
+A PurchaseOrder interacts with [1, 1] PurchaseRequisition (on average 1.000).
+A PurchaseOrder interacts with [1, 1] Supplier (on average 1.000).
+A PurchaseOrderItem interacts with [0, 1] GoodsMovement (on average 0.200).
+A PurchaseOrderItem interacts with [1, 1] Material (on average 1.000).
+A PurchaseOrderItem interacts with [1, 1] PurchaseOrder (on average 1.000).
+A PurchaseOrderItem interacts with [1, 1] PurchaseRequisition (on average 1.000).
+A PurchaseOrderItem interacts with [0, 1] ScheduleLine (on average 0.111).
+A PurchaseRequisition interacts with [1, 1] AccountingDocument (on average 1.000).
+A PurchaseRequisition interacts with [1, 1] AdvanceShippingNotice (on average 1.000).
+A PurchaseRequisition interacts with [1, 1] Contract (on average 1.000).
+A PurchaseRequisition interacts with [1, 1] CostCenter (on average 1.000).
+A PurchaseRequisition interacts with [1, 1] GoodsMovement (on average 1.000).
+A PurchaseRequisition interacts with [1, 1] GoodsReceipt (on average 1.000).
+A PurchaseRequisition interacts with [1, 1] InspectionLot (on average 1.000).
+A PurchaseRequisition interacts with [1, 1] Invoice (on average 1.000).
+A PurchaseRequisition interacts with [1, 1] InvoiceItem (on average 1.000).
+A PurchaseRequisition interacts with [1, 1] Material (on average 1.000).
+A PurchaseRequisition interacts with [1, 1] Payment (on average 1.000).
+A PurchaseRequisition interacts with [1, 1] PaymentProposal (on average 1.000).
+A PurchaseRequisition interacts with [1, 1] PurchaseOrder (on average 1.000).
+A PurchaseRequisition interacts with [1, 1] PurchaseOrderItem (on average 1.000).
+A PurchaseRequisition interacts with [1, 1] RFQ (on average 1.000).
+A PurchaseRequisition interacts with [1, 1] RequisitionItem (on average 1.000).
+A PurchaseRequisition interacts with [0, 1] ScheduleLine (on average 0.111).
+A PurchaseRequisition interacts with [1, 1] Supplier (on average 1.000).
+A PurchaseRequisition interacts with [1, 1] SupplierQuotation (on average 1.000).
+A RFQ interacts with [1, 1] PurchaseRequisition (on average 1.000).
+A RFQ interacts with [1, 1] RequisitionItem (on average 1.000).
+A RFQ interacts with [1, 1] Supplier (on average 1.000).
+A RFQ interacts with [1, 1] SupplierQuotation (on average 1.000).
+A RequisitionItem interacts with [1, 1] CostCenter (on average 1.000).
+A RequisitionItem interacts with [1, 1] Material (on average 1.000).
+A RequisitionItem interacts with [1, 1] PurchaseRequisition (on average 1.000).
+A RequisitionItem interacts with [1, 1] RFQ (on average 1.000).
+A RequisitionItem interacts with [1, 1] Supplier (on average 1.000).
+A ScheduleLine interacts with [1, 1] PurchaseOrderItem (on average 1.000).
+A ScheduleLine interacts with [1, 1] PurchaseRequisition (on average 1.000).
+A Supplier interacts with [20, 20] AdvanceShippingNotice (on average 20.000).
+A Supplier interacts with [5, 5] Contract (on average 5.000).
+A Supplier interacts with [20, 20] GoodsReceipt (on average 20.000).
+A Supplier interacts with [20, 20] Invoice (on average 20.000).
+A Supplier interacts with [20, 20] InvoiceItem (on average 20.000).
+A Supplier interacts with [0, 10] Material (on average 3.333).
+A Supplier interacts with [20, 20] Payment (on average 20.000).
+A Supplier interacts with [20, 20] PaymentProposal (on average 20.000).
+A Supplier interacts with [20, 20] PurchaseOrder (on average 20.000).
+A Supplier interacts with [20, 20] PurchaseRequisition (on average 20.000).
+A Supplier interacts with [20, 20] RFQ (on average 20.000).
+A Supplier interacts with [20, 20] RequisitionItem (on average 20.000).
+A Supplier interacts with [20, 20] SupplierQuotation (on average 20.000).
+A SupplierQuotation interacts with [1, 1] PurchaseRequisition (on average 1.000).
+A SupplierQuotation interacts with [1, 1] RFQ (on average 1.000).
+A SupplierQuotation interacts with [1, 1] Supplier (on average 1.000).
+
+RELATIONSHIP TYPES
+32 one2one: (SupplierQuotation, RFQ), (SupplierQuotation, PurchaseRequisition), (RequisitionItem, RFQ), (RequisitionItem, PurchaseRequisition), (RFQ, PurchaseRequisition), (PurchaseRequisition, PurchaseOrderItem), (PurchaseRequisition, PurchaseOrder), (PurchaseRequisition, PaymentProposal), (PurchaseRequisition, Payment), (PurchaseRequisition, InvoiceItem), (PurchaseRequisition, Invoice), (PurchaseRequisition, InspectionLot), (PurchaseRequisition, GoodsReceipt), (PurchaseRequisition, GoodsMovement), (PurchaseRequisition, AdvanceShippingNotice), (PurchaseRequisition, AccountingDocument), (PurchaseOrderItem, PurchaseOrder), (PurchaseOrder, InvoiceItem), (PurchaseOrder, Invoice), (PurchaseOrder, GoodsReceipt), (PurchaseOrder, GoodsMovement), (PurchaseOrder, AdvanceShippingNotice), (PaymentProposal, Payment), (PaymentProposal, Invoice), (PaymentProposal, AccountingDocument), (Payment, Invoice), (InvoiceItem, Invoice), (InvoiceItem, GoodsReceipt), (Invoice, GoodsReceipt), (Invoice, AccountingDocument), (InspectionLot, GoodsReceipt), (GoodsReceipt, GoodsMovement), 
+2 opt_one2one: (PurchaseRequisition, ScheduleLine), (PurchaseOrderItem, ScheduleLine), 
+1 opt_one2one_opt: (PurchaseOrderItem, GoodsMovement), 
+25 one2many: (Supplier, SupplierQuotation), (Supplier, RequisitionItem), (Supplier, RFQ), (Supplier, PurchaseRequisition), (Supplier, PurchaseOrder), (Supplier, PaymentProposal), (Supplier, Payment), (Supplier, InvoiceItem), (Supplier, Invoice), (Supplier, GoodsReceipt), (Supplier, AdvanceShippingNotice), (Material, RequisitionItem), (CostCenter, RequisitionItem), (Material, PurchaseRequisition), (CostCenter, PurchaseRequisition), (Contract, PurchaseRequisition), (Material, PurchaseOrderItem), (Material, PurchaseOrder), (Contract, PurchaseOrder), (Material, InspectionLot), (Material, GoodsReceipt), (Material, GoodsMovement), (Contract, Material), (CostCenter, Invoice), (CostCenter, AccountingDocument), 
+1 one2many_opt: (Supplier, Material), 
+1 many2many: (Supplier, Contract), 
+128 opt_many2many_opt: (SupplierQuotation, ScheduleLine), (SupplierQuotation, RequisitionItem), (SupplierQuotation, PurchaseOrderItem), (SupplierQuotation, PurchaseOrder), (SupplierQuotation, PaymentProposal), (SupplierQuotation, Payment), (SupplierQuotation, Material), (SupplierQuotation, InvoiceItem), (SupplierQuotation, Invoice), (SupplierQuotation, InspectionLot), (SupplierQuotation, GoodsReceipt), (SupplierQuotation, GoodsMovement), (SupplierQuotation, CostCenter), (SupplierQuotation, Contract), (SupplierQuotation, AdvanceShippingNotice), (SupplierQuotation, AccountingDocument), (Supplier, ScheduleLine), (Supplier, PurchaseOrderItem), (Supplier, InspectionLot), (Supplier, GoodsMovement), (Supplier, CostCenter), (Supplier, AccountingDocument), (ScheduleLine, RequisitionItem), (ScheduleLine, RFQ), (ScheduleLine, PurchaseOrder), (ScheduleLine, PaymentProposal), (ScheduleLine, Payment), (ScheduleLine, Material), (ScheduleLine, InvoiceItem), (ScheduleLine, Invoice), (ScheduleLine, InspectionLot), (ScheduleLine, GoodsReceipt), (ScheduleLine, GoodsMovement), (ScheduleLine, CostCenter), (ScheduleLine, Contract), (ScheduleLine, AdvanceShippingNotice), (ScheduleLine, AccountingDocument), (RequisitionItem, PurchaseOrderItem), (RequisitionItem, PurchaseOrder), (RequisitionItem, PaymentProposal), (RequisitionItem, Payment), (RequisitionItem, InvoiceItem), (RequisitionItem, Invoice), (RequisitionItem, InspectionLot), (RequisitionItem, GoodsReceipt), (RequisitionItem, GoodsMovement), (RequisitionItem, Contract), (RequisitionItem, AdvanceShippingNotice), (RequisitionItem, AccountingDocument), (RFQ, PurchaseOrderItem), (RFQ, PurchaseOrder), (RFQ, PaymentProposal), (RFQ, Payment), (RFQ, Material), (RFQ, InvoiceItem), (RFQ, Invoice), (RFQ, InspectionLot), (RFQ, GoodsReceipt), (RFQ, GoodsMovement), (RFQ, CostCenter), (RFQ, Contract), (RFQ, AdvanceShippingNotice), (RFQ, AccountingDocument), (PurchaseOrderItem, PaymentProposal), (PurchaseOrderItem, Payment), (PurchaseOrderItem, InvoiceItem), (PurchaseOrderItem, Invoice), (PurchaseOrderItem, InspectionLot), (PurchaseOrderItem, GoodsReceipt), (PurchaseOrderItem, CostCenter), (PurchaseOrderItem, Contract), (PurchaseOrderItem, AdvanceShippingNotice), (PurchaseOrderItem, AccountingDocument), (PurchaseOrder, PaymentProposal), (PurchaseOrder, Payment), (PurchaseOrder, InspectionLot), (PurchaseOrder, CostCenter), (PurchaseOrder, AccountingDocument), (PaymentProposal, Material), (PaymentProposal, InvoiceItem), (PaymentProposal, InspectionLot), (PaymentProposal, GoodsReceipt), (PaymentProposal, GoodsMovement), (PaymentProposal, CostCenter), (PaymentProposal, Contract), (PaymentProposal, AdvanceShippingNotice), (Payment, Material), (Payment, InvoiceItem), (Payment, InspectionLot), (Payment, GoodsReceipt), (Payment, GoodsMovement), (Payment, CostCenter), (Payment, Contract), (Payment, AdvanceShippingNotice), (Payment, AccountingDocument), (Material, InvoiceItem), (Material, Invoice), (Material, CostCenter), (Material, AdvanceShippingNotice), (Material, AccountingDocument), (InvoiceItem, InspectionLot), (InvoiceItem, GoodsMovement), (InvoiceItem, CostCenter), (InvoiceItem, Contract), (InvoiceItem, AdvanceShippingNotice), (InvoiceItem, AccountingDocument), (Invoice, InspectionLot), (Invoice, GoodsMovement), (Invoice, Contract), (Invoice, AdvanceShippingNotice), (InspectionLot, GoodsMovement), (InspectionLot, CostCenter), (InspectionLot, Contract), (InspectionLot, AdvanceShippingNotice), (InspectionLot, AccountingDocument), (GoodsReceipt, CostCenter), (GoodsReceipt, Contract), (GoodsReceipt, AdvanceShippingNotice), (GoodsReceipt, AccountingDocument), (GoodsMovement, CostCenter), (GoodsMovement, Contract), (GoodsMovement, AdvanceShippingNotice), (GoodsMovement, AccountingDocument), (CostCenter, Contract), (CostCenter, AdvanceShippingNotice), (Contract, AdvanceShippingNotice), (Contract, AccountingDocument), (AdvanceShippingNotice, AccountingDocument), 
+Total 190 relationship types.
+
+OPTIONAL OBJECT TYPES IN EVENTS
+Event type Purchase Requisition Created has no optional types.
+Event type Requisition Item Added has no optional types.
+Event type Requisition Submitted has no optional types.
+Event type Requisition Released has no optional types.
+Event type Requisition Item Changed has no optional types.
+Event type RFQ Created has no optional types.
+Event type RFQ Sent has no optional types.
+Event type Supplier Quotation Received has no optional types.
+Event type Quotation Evaluated has no optional types.
+Event type Source Selected has no optional types.
+Event type Requisition Converted to PO has no optional types.
+Event type Purchase Order Created has no optional types.
+Event type Requisition Rejected has no optional types.
+Event type Contract Referenced has no optional types.
+Event type PO Item Added has no optional types.
+Event type PO Submitted for Approval has no optional types.
+Event type Quotation Revised has no optional types.
+Event type PO Released has no optional types.
+Event type PO Quantity Changed has no optional types.
+Event type PO Sent to Supplier has no optional types.
+Event type Supplier Confirmation Received has no optional types.
+Event type Advance Shipping Notice Received has no optional types.
+Event type Goods Receipt Posted has no optional types.
+Event type PO Rejected has no optional types.
+Event type PO Price Changed has no optional types.
+Event type Quality Inspection Started has no optional types.
+Event type Delivery Date Changed has no optional types.
+Event type Quality Inspection Passed has no optional types.
+Event type Partial Receipt Posted has no optional types.
+Event type Supplier Confirmation Changed has no optional types.
+Event type PO Item Delivery Completed has no optional types.
+Event type Quality Inspection Failed has no optional types.
+Event type Stock Placed in Blocked Stock has no optional types.
+Event type Invoice Received has no optional types.
+Event type Return to Supplier Posted has no optional types.
+Event type PO Item Deleted has no optional types.
+Event type Invoice Posted has no optional types.
+Event type Three-Way Match Passed has no optional types.
+Event type Stock Released from Blocked Stock has no optional types.
+Event type Goods Receipt Reversed has no optional types.
+Event type Accounting Document Created has no optional types.
+Event type Credit Memo Posted has no optional types.
+Event type Payment Proposal Created has no optional types.
+Event type Payment Proposal Approved has no optional types.
+Event type Three-Way Match Failed has no optional types.
+Event type Payment Executed has no optional types.
+Event type Invoice Parked has no optional types.
+Event type PO Item Final-Invoiced has no optional types.
+Event type Invoice Blocked has no optional types.
+Event type Purchase Order Closed has no optional types.
+Event type Invoice Unblocked has no optional types.
+Event type Invoice Changed has no optional types.
+Event type Payment Reversed has no optional types.
+Event type Supplier Blocked has no optional types.
+Event type Supplier Unblocked has no optional types.

@@ -1,0 +1,147 @@
+17 OBJECT TYPES
+['Agency', 'Appeal', 'Applicant', 'Condition', 'Contractor', 'Document', 'FeeInvoice', 'Inspection', 'Objection', 'Parcel', 'Payment', 'Permit', 'PermitApplication', 'PlanRevision', 'Property', 'Review', 'Violation'] 
+
+INTERACTION COUNTS
+A Agency interacts with [37, 38] PermitApplication (on average 37.500).
+A Agency interacts with [37, 38] PlanRevision (on average 37.500).
+A Agency interacts with [37, 38] Review (on average 37.500).
+A Appeal interacts with [1, 1] Permit (on average 1.000).
+A Appeal interacts with [1, 1] PermitApplication (on average 1.000).
+A Applicant interacts with [0, 2] Objection (on average 0.400).
+A Applicant interacts with [2, 2] Parcel (on average 2.000).
+A Applicant interacts with [2, 2] PermitApplication (on average 2.000).
+A Applicant interacts with [0, 2] PlanRevision (on average 0.400).
+A Applicant interacts with [2, 2] Property (on average 2.000).
+A Condition interacts with [1, 1] Permit (on average 1.000).
+A Condition interacts with [1, 1] PermitApplication (on average 1.000).
+A Contractor interacts with [6, 6] Inspection (on average 6.000).
+A Contractor interacts with [6, 6] Permit (on average 6.000).
+A Contractor interacts with [6, 6] PermitApplication (on average 6.000).
+A Document interacts with [1, 1] PermitApplication (on average 1.000).
+A Document interacts with [1, 1] PlanRevision (on average 1.000).
+A FeeInvoice interacts with [1, 1] Payment (on average 1.000).
+A FeeInvoice interacts with [1, 1] PermitApplication (on average 1.000).
+A Inspection interacts with [1, 1] Contractor (on average 1.000).
+A Inspection interacts with [1, 1] Permit (on average 1.000).
+A Inspection interacts with [1, 1] PermitApplication (on average 1.000).
+A Inspection interacts with [0, 1] Violation (on average 0.200).
+A Objection interacts with [1, 1] Applicant (on average 1.000).
+A Objection interacts with [1, 1] PermitApplication (on average 1.000).
+A Objection interacts with [1, 1] PlanRevision (on average 1.000).
+A Parcel interacts with [2, 3] Applicant (on average 2.500).
+A Parcel interacts with [2, 3] PermitApplication (on average 2.500).
+A Parcel interacts with [1, 1] Property (on average 1.000).
+A Payment interacts with [1, 1] FeeInvoice (on average 1.000).
+A Payment interacts with [1, 1] PermitApplication (on average 1.000).
+A Permit interacts with [0, 1] Appeal (on average 0.034).
+A Permit interacts with [1, 1] Condition (on average 1.000).
+A Permit interacts with [1, 1] Contractor (on average 1.000).
+A Permit interacts with [1, 1] Inspection (on average 1.000).
+A Permit interacts with [1, 1] PermitApplication (on average 1.000).
+A Permit interacts with [0, 1] Violation (on average 0.200).
+A PermitApplication interacts with [1, 1] Agency (on average 1.000).
+A PermitApplication interacts with [0, 1] Appeal (on average 0.034).
+A PermitApplication interacts with [1, 1] Applicant (on average 1.000).
+A PermitApplication interacts with [1, 1] Condition (on average 1.000).
+A PermitApplication interacts with [1, 1] Contractor (on average 1.000).
+A PermitApplication interacts with [1, 1] Document (on average 1.000).
+A PermitApplication interacts with [1, 1] FeeInvoice (on average 1.000).
+A PermitApplication interacts with [1, 1] Inspection (on average 1.000).
+A PermitApplication interacts with [0, 1] Objection (on average 0.200).
+A PermitApplication interacts with [1, 1] Parcel (on average 1.000).
+A PermitApplication interacts with [1, 1] Payment (on average 1.000).
+A PermitApplication interacts with [1, 1] Permit (on average 1.000).
+A PermitApplication interacts with [1, 1] PlanRevision (on average 1.000).
+A PermitApplication interacts with [1, 1] Property (on average 1.000).
+A PermitApplication interacts with [1, 1] Review (on average 1.000).
+A PermitApplication interacts with [0, 1] Violation (on average 0.200).
+A PlanRevision interacts with [1, 1] Agency (on average 1.000).
+A PlanRevision interacts with [0, 1] Applicant (on average 0.200).
+A PlanRevision interacts with [1, 1] Document (on average 1.000).
+A PlanRevision interacts with [0, 1] Objection (on average 0.200).
+A PlanRevision interacts with [1, 1] PermitApplication (on average 1.000).
+A PlanRevision interacts with [1, 1] Review (on average 1.000).
+A Property interacts with [2, 3] Applicant (on average 2.500).
+A Property interacts with [1, 1] Parcel (on average 1.000).
+A Property interacts with [2, 3] PermitApplication (on average 2.500).
+A Review interacts with [1, 1] Agency (on average 1.000).
+A Review interacts with [1, 1] PermitApplication (on average 1.000).
+A Review interacts with [1, 1] PlanRevision (on average 1.000).
+A Violation interacts with [1, 1] Inspection (on average 1.000).
+A Violation interacts with [1, 1] Permit (on average 1.000).
+A Violation interacts with [1, 1] PermitApplication (on average 1.000).
+
+RELATIONSHIP TYPES
+14 one2one: (Review, PlanRevision), (Review, PermitApplication), (Property, Parcel), (PlanRevision, PermitApplication), (PlanRevision, Document), (PermitApplication, Permit), (PermitApplication, Payment), (PermitApplication, Inspection), (PermitApplication, FeeInvoice), (PermitApplication, Document), (PermitApplication, Condition), (Permit, Inspection), (Permit, Condition), (Payment, FeeInvoice), 
+7 opt_one2one: (PermitApplication, Violation), (Permit, Violation), (Inspection, Violation), (Objection, PlanRevision), (Objection, PermitApplication), (Appeal, PermitApplication), (Appeal, Permit), 
+9 one2many: (Agency, Review), (Property, PermitApplication), (Agency, PlanRevision), (Parcel, PermitApplication), (Contractor, PermitApplication), (Applicant, PermitApplication), (Agency, PermitApplication), (Contractor, Permit), (Contractor, Inspection), 
+1 one2many_opt: (Applicant, Objection), 
+1 opt_one2many_opt: (Applicant, PlanRevision), 
+2 many2many: (Property, Applicant), (Parcel, Applicant), 
+102 opt_many2many_opt: (Violation, Review), (Violation, Property), (Violation, PlanRevision), (Violation, Payment), (Violation, Parcel), (Violation, Objection), (Violation, FeeInvoice), (Violation, Document), (Violation, Contractor), (Violation, Condition), (Violation, Applicant), (Violation, Appeal), (Violation, Agency), (Review, Property), (Review, Permit), (Review, Payment), (Review, Parcel), (Review, Objection), (Review, Inspection), (Review, FeeInvoice), (Review, Document), (Review, Contractor), (Review, Condition), (Review, Applicant), (Review, Appeal), (Property, PlanRevision), (Property, Permit), (Property, Payment), (Property, Objection), (Property, Inspection), (Property, FeeInvoice), (Property, Document), (Property, Contractor), (Property, Condition), (Property, Appeal), (Property, Agency), (PlanRevision, Permit), (PlanRevision, Payment), (PlanRevision, Parcel), (PlanRevision, Inspection), (PlanRevision, FeeInvoice), (PlanRevision, Contractor), (PlanRevision, Condition), (PlanRevision, Appeal), (Permit, Payment), (Permit, Parcel), (Permit, Objection), (Permit, FeeInvoice), (Permit, Document), (Permit, Applicant), (Permit, Agency), (Payment, Parcel), (Payment, Objection), (Payment, Inspection), (Payment, Document), (Payment, Contractor), (Payment, Condition), (Payment, Applicant), (Payment, Appeal), (Payment, Agency), (Parcel, Objection), (Parcel, Inspection), (Parcel, FeeInvoice), (Parcel, Document), (Parcel, Contractor), (Parcel, Condition), (Parcel, Appeal), (Parcel, Agency), (Objection, Inspection), (Objection, FeeInvoice), (Objection, Document), (Objection, Contractor), (Objection, Condition), (Objection, Appeal), (Objection, Agency), (Inspection, FeeInvoice), (Inspection, Document), (Inspection, Condition), (Inspection, Applicant), (Inspection, Appeal), (Inspection, Agency), (FeeInvoice, Document), (FeeInvoice, Contractor), (FeeInvoice, Condition), (FeeInvoice, Applicant), (FeeInvoice, Appeal), (FeeInvoice, Agency), (Document, Contractor), (Document, Condition), (Document, Applicant), (Document, Appeal), (Document, Agency), (Contractor, Condition), (Contractor, Applicant), (Contractor, Appeal), (Contractor, Agency), (Condition, Applicant), (Condition, Appeal), (Condition, Agency), (Applicant, Appeal), (Applicant, Agency), (Appeal, Agency), 
+Total 136 relationship types.
+
+OPTIONAL OBJECT TYPES IN EVENTS
+Event type Pre-Application Opened has no optional types.
+Event type Applicant Identity Verified has no optional types.
+Event type Parcel Linked has no optional types.
+Event type Application Drafted has no optional types.
+Event type Application Submitted has no optional types.
+Event type Fee Calculated has no optional types.
+Event type Fee Invoice Issued has no optional types.
+Event type Fee Paid has no optional types.
+Event type Completeness Review Started has no optional types.
+Event type Completeness Accepted has no optional types.
+Event type Zoning Review Started has no optional types.
+Event type Zoning Approved has no optional types.
+Event type Completeness Rejected has no optional types.
+Event type Additional Information Requested has no optional types.
+Event type Submission Withdrawn has no optional types.
+Event type Heritage Review Requested has no optional types.
+Event type Application Reopened has no optional types.
+Event type Additional Documents Submitted has no optional types.
+Event type Heritage Approved has no optional types.
+Event type Environmental Review Started has no optional types.
+Event type Environmental Review Passed has no optional types.
+Event type Public Notice Published has no optional types.
+Event type Consultation Opened has no optional types.
+Event type Consultation Closed has no optional types.
+Event type Heritage Conditions Imposed has no optional types.
+Event type Zoning Denied has no optional types.
+Event type Fire Safety Review Started has no optional types.
+Event type Plan Revision Requested has no optional types.
+Event type Hearing Scheduled has no optional types.
+Event type Plan Revision Submitted has no optional types.
+Event type Hearing Held has no optional types.
+Event type Plan Revision Accepted has no optional types.
+Event type Fire Safety Passed has no optional types.
+Event type Structural Review Started has no optional types.
+Event type Structural Review Passed has no optional types.
+Event type Objection Filed has no optional types.
+Event type Permit Drafted has no optional types.
+Event type Permit Approved has no optional types.
+Event type Permit Issued has no optional types.
+Event type Fire Safety Failed has no optional types.
+Event type Contractor Registered has no optional types.
+Event type Environmental Review Failed has no optional types.
+Event type Work Commencement Notified has no optional types.
+Event type Inspection Requested has no optional types.
+Event type Objection Withdrawn has no optional types.
+Event type Inspection Scheduled has no optional types.
+Event type Inspection Performed has no optional types.
+Event type Inspection Passed has no optional types.
+Event type Completion Certificate Requested has no optional types.
+Event type Completion Certificate Issued has no optional types.
+Event type Case Archived has no optional types.
+Event type Permit Amended has no optional types.
+Event type Permit Revoked has no optional types.
+Event type Appeal Filed has no optional types.
+Event type Appeal Hearing Held has no optional types.
+Event type Structural Review Failed has no optional types.
+Event type Appeal Allowed has no optional types.
+Event type Inspection Failed has no optional types.
+Event type Reinspection Requested has no optional types.
+Event type Violation Opened has no optional types.
+Event type Violation Remediated has no optional types.
+Event type Permit Suspended has no optional types.
+Event type Appeal Dismissed has no optional types.

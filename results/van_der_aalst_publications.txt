@@ -1,0 +1,41 @@
+6 OBJECT TYPES
+['Paper', 'Keyword', 'Researcher', 'Conference', 'City', 'Country'] 
+
+INTERACTION COUNTS
+A Paper interacts with [0, 32] Keyword (on average 14.185).
+A Paper interacts with [1, 77] Researcher (on average 4.484).
+A Paper interacts with [0, 1] Conference (on average 0.113).
+A Keyword interacts with [1, 1622] Paper (on average 10.884).
+A Keyword interacts with [1, 982] Researcher (on average 13.865).
+A Researcher interacts with [1, 1668] Paper (on average 7.509).
+A Researcher interacts with [0, 2174] Keyword (on average 30.264).
+A Researcher interacts with [0, 94] Conference (on average 0.524).
+A Researcher interacts with [0, 18] City (on average 0.181).
+A Researcher interacts with [0, 13] Country (on average 0.161).
+A Conference interacts with [0, 12] Paper (on average 1.871).
+A Conference interacts with [1, 36] Researcher (on average 5.168).
+A Conference interacts with [0, 1] City (on average 0.990).
+A Conference interacts with [0, 1] Country (on average 0.990).
+A City interacts with [1, 13] Researcher (on average 2.432).
+A City interacts with [1, 5] Conference (on average 1.351).
+A City interacts with [0, 1] Country (on average 0.986).
+A Country interacts with [1, 24] Researcher (on average 4.706).
+A Country interacts with [1, 15] Conference (on average 2.941).
+A Country interacts with [1, 10] City (on average 2.147).
+
+RELATIONSHIP TYPES
+3 opt_one2many: (Country, City), (Country, Conference), (City, Conference), 
+1 opt_one2many_opt: (Conference, Paper), 
+1 many2many: (Researcher, Paper), 
+5 opt_many2many: (Country, Researcher), (City, Researcher), (Conference, Researcher), (Keyword, Researcher), (Keyword, Paper), 
+5 opt_many2many_opt: (Keyword, Country), (Keyword, City), (Keyword, Conference), (Paper, Country), (Paper, City), 
+Total 15 relationship types.
+
+OPTIONAL OBJECT TYPES IN EVENTS
+Event type Publication has optional types: Keyword missing in 11 events, of 1668 events in total
+Event type Abstract Deadline has no optional types.
+Event type Submission Deadline has no optional types.
+Event type Start Conference has optional types: City missing in 1 events, Country missing in 1 events, of 101 events in total
+Event type End Conference has optional types: City missing in 1 events, Country missing in 1 events, of 101 events in total
+Event type Acceptance Notification has no optional types.
+Event type Final Version Deadline has no optional types.

@@ -1,0 +1,213 @@
+28 OBJECT TYPES
+['BOMRevision', 'Customer', 'EngineeringChange', 'GoodsReceipt', 'Invoice', 'Material', 'MaterialLot', 'Nonconformance', 'Operation', 'Package', 'Payment', 'ProductConfiguration', 'PurchaseOrder', 'PurchaseOrderLine', 'PurchaseRequisition', 'QualityInspection', 'Quote', 'QuoteRevision', 'RFQ', 'RFQLine', 'ReworkOrder', 'SalesOrder', 'SalesOrderLine', 'SerialUnit', 'Shipment', 'Supplier', 'Warranty', 'WorkOrder'] 
+
+INTERACTION COUNTS
+A BOMRevision interacts with [0, 1] EngineeringChange (on average 0.143).
+A BOMRevision interacts with [0, 1] ProductConfiguration (on average 0.143).
+A BOMRevision interacts with [1, 1] SalesOrder (on average 1.000).
+A BOMRevision interacts with [1, 1] SalesOrderLine (on average 1.000).
+A BOMRevision interacts with [1, 1] WorkOrder (on average 1.000).
+A Customer interacts with [4, 4] Quote (on average 4.000).
+A Customer interacts with [4, 4] QuoteRevision (on average 4.000).
+A Customer interacts with [4, 4] RFQ (on average 4.000).
+A Customer interacts with [4, 4] SalesOrder (on average 4.000).
+A Customer interacts with [4, 4] SerialUnit (on average 4.000).
+A Customer interacts with [4, 4] Warranty (on average 4.000).
+A EngineeringChange interacts with [1, 1] BOMRevision (on average 1.000).
+A EngineeringChange interacts with [1, 1] ProductConfiguration (on average 1.000).
+A EngineeringChange interacts with [1, 1] SalesOrder (on average 1.000).
+A GoodsReceipt interacts with [1, 1] MaterialLot (on average 1.000).
+A GoodsReceipt interacts with [0, 1] PurchaseOrder (on average 0.200).
+A GoodsReceipt interacts with [1, 1] QualityInspection (on average 1.000).
+A GoodsReceipt interacts with [1, 1] SalesOrder (on average 1.000).
+A GoodsReceipt interacts with [0, 1] Supplier (on average 0.200).
+A GoodsReceipt interacts with [1, 1] WorkOrder (on average 1.000).
+A Invoice interacts with [1, 1] Payment (on average 1.000).
+A Invoice interacts with [1, 1] SalesOrder (on average 1.000).
+A Invoice interacts with [1, 1] Shipment (on average 1.000).
+A Material interacts with [7, 8] MaterialLot (on average 7.500).
+A Material interacts with [0, 8] PurchaseRequisition (on average 1.500).
+A Material interacts with [7, 8] RFQ (on average 7.500).
+A Material interacts with [7, 8] RFQLine (on average 7.500).
+A Material interacts with [7, 8] SalesOrder (on average 7.500).
+A Material interacts with [7, 8] WorkOrder (on average 7.500).
+A MaterialLot interacts with [1, 1] GoodsReceipt (on average 1.000).
+A MaterialLot interacts with [1, 1] Material (on average 1.000).
+A MaterialLot interacts with [0, 1] PurchaseOrder (on average 0.200).
+A MaterialLot interacts with [1, 1] QualityInspection (on average 1.000).
+A MaterialLot interacts with [1, 1] SalesOrder (on average 1.000).
+A MaterialLot interacts with [0, 1] Supplier (on average 0.200).
+A MaterialLot interacts with [1, 1] WorkOrder (on average 1.000).
+A Nonconformance interacts with [1, 1] QualityInspection (on average 1.000).
+A Nonconformance interacts with [1, 1] ReworkOrder (on average 1.000).
+A Nonconformance interacts with [1, 1] SalesOrder (on average 1.000).
+A Nonconformance interacts with [1, 1] WorkOrder (on average 1.000).
+A Operation interacts with [1, 1] SalesOrder (on average 1.000).
+A Operation interacts with [1, 1] WorkOrder (on average 1.000).
+A Package interacts with [1, 1] SalesOrder (on average 1.000).
+A Package interacts with [1, 1] SerialUnit (on average 1.000).
+A Package interacts with [1, 1] Shipment (on average 1.000).
+A Payment interacts with [1, 1] Invoice (on average 1.000).
+A Payment interacts with [1, 1] SalesOrder (on average 1.000).
+A ProductConfiguration interacts with [1, 1] BOMRevision (on average 1.000).
+A ProductConfiguration interacts with [1, 1] EngineeringChange (on average 1.000).
+A ProductConfiguration interacts with [1, 1] SalesOrder (on average 1.000).
+A PurchaseOrder interacts with [1, 1] GoodsReceipt (on average 1.000).
+A PurchaseOrder interacts with [1, 1] MaterialLot (on average 1.000).
+A PurchaseOrder interacts with [1, 1] PurchaseOrderLine (on average 1.000).
+A PurchaseOrder interacts with [1, 1] PurchaseRequisition (on average 1.000).
+A PurchaseOrder interacts with [1, 1] SalesOrder (on average 1.000).
+A PurchaseOrder interacts with [1, 1] Supplier (on average 1.000).
+A PurchaseOrderLine interacts with [1, 1] PurchaseOrder (on average 1.000).
+A PurchaseOrderLine interacts with [1, 1] PurchaseRequisition (on average 1.000).
+A PurchaseOrderLine interacts with [1, 1] SalesOrder (on average 1.000).
+A PurchaseOrderLine interacts with [1, 1] Supplier (on average 1.000).
+A PurchaseRequisition interacts with [1, 1] Material (on average 1.000).
+A PurchaseRequisition interacts with [1, 1] PurchaseOrder (on average 1.000).
+A PurchaseRequisition interacts with [1, 1] PurchaseOrderLine (on average 1.000).
+A PurchaseRequisition interacts with [1, 1] SalesOrder (on average 1.000).
+A PurchaseRequisition interacts with [1, 1] Supplier (on average 1.000).
+A PurchaseRequisition interacts with [1, 1] WorkOrder (on average 1.000).
+A QualityInspection interacts with [1, 1] GoodsReceipt (on average 1.000).
+A QualityInspection interacts with [1, 1] MaterialLot (on average 1.000).
+A QualityInspection interacts with [0, 1] Nonconformance (on average 0.200).
+A QualityInspection interacts with [1, 1] SalesOrder (on average 1.000).
+A QualityInspection interacts with [1, 1] WorkOrder (on average 1.000).
+A Quote interacts with [1, 1] Customer (on average 1.000).
+A Quote interacts with [1, 1] QuoteRevision (on average 1.000).
+A Quote interacts with [1, 1] RFQ (on average 1.000).
+A Quote interacts with [1, 1] SalesOrder (on average 1.000).
+A QuoteRevision interacts with [1, 1] Customer (on average 1.000).
+A QuoteRevision interacts with [1, 1] Quote (on average 1.000).
+A QuoteRevision interacts with [1, 1] RFQ (on average 1.000).
+A QuoteRevision interacts with [1, 1] SalesOrder (on average 1.000).
+A RFQ interacts with [1, 1] Customer (on average 1.000).
+A RFQ interacts with [1, 1] Material (on average 1.000).
+A RFQ interacts with [1, 1] Quote (on average 1.000).
+A RFQ interacts with [1, 1] QuoteRevision (on average 1.000).
+A RFQ interacts with [1, 1] RFQLine (on average 1.000).
+A RFQ interacts with [1, 1] SalesOrder (on average 1.000).
+A RFQLine interacts with [1, 1] Material (on average 1.000).
+A RFQLine interacts with [1, 1] RFQ (on average 1.000).
+A RFQLine interacts with [1, 1] SalesOrder (on average 1.000).
+A ReworkOrder interacts with [1, 1] Nonconformance (on average 1.000).
+A ReworkOrder interacts with [1, 1] SalesOrder (on average 1.000).
+A ReworkOrder interacts with [1, 1] WorkOrder (on average 1.000).
+A SalesOrder interacts with [1, 1] BOMRevision (on average 1.000).
+A SalesOrder interacts with [1, 1] Customer (on average 1.000).
+A SalesOrder interacts with [0, 1] EngineeringChange (on average 0.143).
+A SalesOrder interacts with [1, 1] GoodsReceipt (on average 1.000).
+A SalesOrder interacts with [1, 1] Invoice (on average 1.000).
+A SalesOrder interacts with [1, 1] Material (on average 1.000).
+A SalesOrder interacts with [1, 1] MaterialLot (on average 1.000).
+A SalesOrder interacts with [0, 1] Nonconformance (on average 0.200).
+A SalesOrder interacts with [1, 1] Operation (on average 1.000).
+A SalesOrder interacts with [1, 1] Package (on average 1.000).
+A SalesOrder interacts with [1, 1] Payment (on average 1.000).
+A SalesOrder interacts with [0, 1] ProductConfiguration (on average 0.143).
+A SalesOrder interacts with [0, 1] PurchaseOrder (on average 0.200).
+A SalesOrder interacts with [0, 1] PurchaseOrderLine (on average 0.200).
+A SalesOrder interacts with [0, 1] PurchaseRequisition (on average 0.200).
+A SalesOrder interacts with [1, 1] QualityInspection (on average 1.000).
+A SalesOrder interacts with [1, 1] Quote (on average 1.000).
+A SalesOrder interacts with [1, 1] QuoteRevision (on average 1.000).
+A SalesOrder interacts with [1, 1] RFQ (on average 1.000).
+A SalesOrder interacts with [1, 1] RFQLine (on average 1.000).
+A SalesOrder interacts with [0, 1] ReworkOrder (on average 0.200).
+A SalesOrder interacts with [1, 1] SalesOrderLine (on average 1.000).
+A SalesOrder interacts with [1, 1] SerialUnit (on average 1.000).
+A SalesOrder interacts with [1, 1] Shipment (on average 1.000).
+A SalesOrder interacts with [0, 1] Supplier (on average 0.200).
+A SalesOrder interacts with [1, 1] Warranty (on average 1.000).
+A SalesOrder interacts with [1, 1] WorkOrder (on average 1.000).
+A SalesOrderLine interacts with [1, 1] BOMRevision (on average 1.000).
+A SalesOrderLine interacts with [1, 1] SalesOrder (on average 1.000).
+A SalesOrderLine interacts with [1, 1] WorkOrder (on average 1.000).
+A SerialUnit interacts with [1, 1] Customer (on average 1.000).
+A SerialUnit interacts with [1, 1] Package (on average 1.000).
+A SerialUnit interacts with [1, 1] SalesOrder (on average 1.000).
+A SerialUnit interacts with [1, 1] Shipment (on average 1.000).
+A SerialUnit interacts with [1, 1] Warranty (on average 1.000).
+A Shipment interacts with [1, 1] Invoice (on average 1.000).
+A Shipment interacts with [1, 1] Package (on average 1.000).
+A Shipment interacts with [1, 1] SalesOrder (on average 1.000).
+A Shipment interacts with [1, 1] SerialUnit (on average 1.000).
+A Supplier interacts with [20, 20] GoodsReceipt (on average 20.000).
+A Supplier interacts with [20, 20] MaterialLot (on average 20.000).
+A Supplier interacts with [20, 20] PurchaseOrder (on average 20.000).
+A Supplier interacts with [20, 20] PurchaseOrderLine (on average 20.000).
+A Supplier interacts with [20, 20] PurchaseRequisition (on average 20.000).
+A Supplier interacts with [20, 20] SalesOrder (on average 20.000).
+A Warranty interacts with [1, 1] Customer (on average 1.000).
+A Warranty interacts with [1, 1] SalesOrder (on average 1.000).
+A Warranty interacts with [1, 1] SerialUnit (on average 1.000).
+A WorkOrder interacts with [1, 1] BOMRevision (on average 1.000).
+A WorkOrder interacts with [1, 1] GoodsReceipt (on average 1.000).
+A WorkOrder interacts with [1, 1] Material (on average 1.000).
+A WorkOrder interacts with [1, 1] MaterialLot (on average 1.000).
+A WorkOrder interacts with [0, 1] Nonconformance (on average 0.200).
+A WorkOrder interacts with [1, 1] Operation (on average 1.000).
+A WorkOrder interacts with [0, 1] PurchaseRequisition (on average 0.200).
+A WorkOrder interacts with [1, 1] QualityInspection (on average 1.000).
+A WorkOrder interacts with [0, 1] ReworkOrder (on average 0.200).
+A WorkOrder interacts with [1, 1] SalesOrder (on average 1.000).
+A WorkOrder interacts with [1, 1] SalesOrderLine (on average 1.000).
+
+RELATIONSHIP TYPES
+42 one2one: (WorkOrder, SalesOrderLine), (WorkOrder, SalesOrder), (WorkOrder, QualityInspection), (WorkOrder, Operation), (WorkOrder, MaterialLot), (WorkOrder, GoodsReceipt), (WorkOrder, BOMRevision), (Warranty, SerialUnit), (Warranty, SalesOrder), (Shipment, SerialUnit), (Shipment, SalesOrder), (Shipment, Package), (Shipment, Invoice), (SerialUnit, SalesOrder), (SerialUnit, Package), (SalesOrderLine, SalesOrder), (SalesOrderLine, BOMRevision), (SalesOrder, RFQLine), (SalesOrder, RFQ), (SalesOrder, QuoteRevision), (SalesOrder, Quote), (SalesOrder, QualityInspection), (SalesOrder, Payment), (SalesOrder, Package), (SalesOrder, Operation), (SalesOrder, MaterialLot), (SalesOrder, Invoice), (SalesOrder, GoodsReceipt), (SalesOrder, BOMRevision), (ReworkOrder, Nonconformance), (RFQLine, RFQ), (RFQ, QuoteRevision), (RFQ, Quote), (QuoteRevision, Quote), (QualityInspection, MaterialLot), (QualityInspection, GoodsReceipt), (PurchaseRequisition, PurchaseOrderLine), (PurchaseRequisition, PurchaseOrder), (PurchaseOrderLine, PurchaseOrder), (ProductConfiguration, EngineeringChange), (Payment, Invoice), (MaterialLot, GoodsReceipt), 
+15 opt_one2one: (ReworkOrder, WorkOrder), (PurchaseRequisition, WorkOrder), (Nonconformance, WorkOrder), (ReworkOrder, SalesOrder), (PurchaseRequisition, SalesOrder), (PurchaseOrderLine, SalesOrder), (PurchaseOrder, SalesOrder), (ProductConfiguration, SalesOrder), (Nonconformance, SalesOrder), (EngineeringChange, SalesOrder), (Nonconformance, QualityInspection), (MaterialLot, PurchaseOrder), (GoodsReceipt, PurchaseOrder), (BOMRevision, ProductConfiguration), (BOMRevision, EngineeringChange), 
+3 opt_one2many: (Supplier, SalesOrder), (Supplier, MaterialLot), (Supplier, GoodsReceipt), 
+14 one2many: (Material, WorkOrder), (Customer, Warranty), (Supplier, PurchaseRequisition), (Supplier, PurchaseOrderLine), (Supplier, PurchaseOrder), (Customer, SerialUnit), (Material, SalesOrder), (Customer, SalesOrder), (Material, RFQLine), (Material, RFQ), (Customer, RFQ), (Customer, QuoteRevision), (Customer, Quote), (Material, MaterialLot), 
+1 one2many_opt: (Material, PurchaseRequisition), 
+303 opt_many2many_opt: (WorkOrder, Warranty), (WorkOrder, Supplier), (WorkOrder, Shipment), (WorkOrder, SerialUnit), (WorkOrder, RFQLine), (WorkOrder, RFQ), (WorkOrder, QuoteRevision), (WorkOrder, Quote), (WorkOrder, PurchaseOrderLine), (WorkOrder, PurchaseOrder), (WorkOrder, ProductConfiguration), (WorkOrder, Payment), (WorkOrder, Package), (WorkOrder, Invoice), (WorkOrder, EngineeringChange), (WorkOrder, Customer), (Warranty, Supplier), (Warranty, Shipment), (Warranty, SalesOrderLine), (Warranty, ReworkOrder), (Warranty, RFQLine), (Warranty, RFQ), (Warranty, QuoteRevision), (Warranty, Quote), (Warranty, QualityInspection), (Warranty, PurchaseRequisition), (Warranty, PurchaseOrderLine), (Warranty, PurchaseOrder), (Warranty, ProductConfiguration), (Warranty, Payment), (Warranty, Package), (Warranty, Operation), (Warranty, Nonconformance), (Warranty, MaterialLot), (Warranty, Material), (Warranty, Invoice), (Warranty, GoodsReceipt), (Warranty, EngineeringChange), (Warranty, BOMRevision), (Supplier, Shipment), (Supplier, SerialUnit), (Supplier, SalesOrderLine), (Supplier, ReworkOrder), (Supplier, RFQLine), (Supplier, RFQ), (Supplier, QuoteRevision), (Supplier, Quote), (Supplier, QualityInspection), (Supplier, ProductConfiguration), (Supplier, Payment), (Supplier, Package), (Supplier, Operation), (Supplier, Nonconformance), (Supplier, Material), (Supplier, Invoice), (Supplier, EngineeringChange), (Supplier, Customer), (Supplier, BOMRevision), (Shipment, SalesOrderLine), (Shipment, ReworkOrder), (Shipment, RFQLine), (Shipment, RFQ), (Shipment, QuoteRevision), (Shipment, Quote), (Shipment, QualityInspection), (Shipment, PurchaseRequisition), (Shipment, PurchaseOrderLine), (Shipment, PurchaseOrder), (Shipment, ProductConfiguration), (Shipment, Payment), (Shipment, Operation), (Shipment, Nonconformance), (Shipment, MaterialLot), (Shipment, Material), (Shipment, GoodsReceipt), (Shipment, EngineeringChange), (Shipment, Customer), (Shipment, BOMRevision), (SerialUnit, SalesOrderLine), (SerialUnit, ReworkOrder), (SerialUnit, RFQLine), (SerialUnit, RFQ), (SerialUnit, QuoteRevision), (SerialUnit, Quote), (SerialUnit, QualityInspection), (SerialUnit, PurchaseRequisition), (SerialUnit, PurchaseOrderLine), (SerialUnit, PurchaseOrder), (SerialUnit, ProductConfiguration), (SerialUnit, Payment), (SerialUnit, Operation), (SerialUnit, Nonconformance), (SerialUnit, MaterialLot), (SerialUnit, Material), (SerialUnit, Invoice), (SerialUnit, GoodsReceipt), (SerialUnit, EngineeringChange), (SerialUnit, BOMRevision), (SalesOrderLine, ReworkOrder), (SalesOrderLine, RFQLine), (SalesOrderLine, RFQ), (SalesOrderLine, QuoteRevision), (SalesOrderLine, Quote), (SalesOrderLine, QualityInspection), (SalesOrderLine, PurchaseRequisition), (SalesOrderLine, PurchaseOrderLine), (SalesOrderLine, PurchaseOrder), (SalesOrderLine, ProductConfiguration), (SalesOrderLine, Payment), (SalesOrderLine, Package), (SalesOrderLine, Operation), (SalesOrderLine, Nonconformance), (SalesOrderLine, MaterialLot), (SalesOrderLine, Material), (SalesOrderLine, Invoice), (SalesOrderLine, GoodsReceipt), (SalesOrderLine, EngineeringChange), (SalesOrderLine, Customer), (ReworkOrder, RFQLine), (ReworkOrder, RFQ), (ReworkOrder, QuoteRevision), (ReworkOrder, Quote), (ReworkOrder, QualityInspection), (ReworkOrder, PurchaseRequisition), (ReworkOrder, PurchaseOrderLine), (ReworkOrder, PurchaseOrder), (ReworkOrder, ProductConfiguration), (ReworkOrder, Payment), (ReworkOrder, Package), (ReworkOrder, Operation), (ReworkOrder, MaterialLot), (ReworkOrder, Material), (ReworkOrder, Invoice), (ReworkOrder, GoodsReceipt), (ReworkOrder, EngineeringChange), (ReworkOrder, Customer), (ReworkOrder, BOMRevision), (RFQLine, QuoteRevision), (RFQLine, Quote), (RFQLine, QualityInspection), (RFQLine, PurchaseRequisition), (RFQLine, PurchaseOrderLine), (RFQLine, PurchaseOrder), (RFQLine, ProductConfiguration), (RFQLine, Payment), (RFQLine, Package), (RFQLine, Operation), (RFQLine, Nonconformance), (RFQLine, MaterialLot), (RFQLine, Invoice), (RFQLine, GoodsReceipt), (RFQLine, EngineeringChange), (RFQLine, Customer), (RFQLine, BOMRevision), (RFQ, QualityInspection), (RFQ, PurchaseRequisition), (RFQ, PurchaseOrderLine), (RFQ, PurchaseOrder), (RFQ, ProductConfiguration), (RFQ, Payment), (RFQ, Package), (RFQ, Operation), (RFQ, Nonconformance), (RFQ, MaterialLot), (RFQ, Invoice), (RFQ, GoodsReceipt), (RFQ, EngineeringChange), (RFQ, BOMRevision), (QuoteRevision, QualityInspection), (QuoteRevision, PurchaseRequisition), (QuoteRevision, PurchaseOrderLine), (QuoteRevision, PurchaseOrder), (QuoteRevision, ProductConfiguration), (QuoteRevision, Payment), (QuoteRevision, Package), (QuoteRevision, Operation), (QuoteRevision, Nonconformance), (QuoteRevision, MaterialLot), (QuoteRevision, Material), (QuoteRevision, Invoice), (QuoteRevision, GoodsReceipt), (QuoteRevision, EngineeringChange), (QuoteRevision, BOMRevision), (Quote, QualityInspection), (Quote, PurchaseRequisition), (Quote, PurchaseOrderLine), (Quote, PurchaseOrder), (Quote, ProductConfiguration), (Quote, Payment), (Quote, Package), (Quote, Operation), (Quote, Nonconformance), (Quote, MaterialLot), (Quote, Material), (Quote, Invoice), (Quote, GoodsReceipt), (Quote, EngineeringChange), (Quote, BOMRevision), (QualityInspection, PurchaseRequisition), (QualityInspection, PurchaseOrderLine), (QualityInspection, PurchaseOrder), (QualityInspection, ProductConfiguration), (QualityInspection, Payment), (QualityInspection, Package), (QualityInspection, Operation), (QualityInspection, Material), (QualityInspection, Invoice), (QualityInspection, EngineeringChange), (QualityInspection, Customer), (QualityInspection, BOMRevision), (PurchaseRequisition, ProductConfiguration), (PurchaseRequisition, Payment), (PurchaseRequisition, Package), (PurchaseRequisition, Operation), (PurchaseRequisition, Nonconformance), (PurchaseRequisition, MaterialLot), (PurchaseRequisition, Invoice), (PurchaseRequisition, GoodsReceipt), (PurchaseRequisition, EngineeringChange), (PurchaseRequisition, Customer), (PurchaseRequisition, BOMRevision), (PurchaseOrderLine, ProductConfiguration), (PurchaseOrderLine, Payment), (PurchaseOrderLine, Package), (PurchaseOrderLine, Operation), (PurchaseOrderLine, Nonconformance), (PurchaseOrderLine, MaterialLot), (PurchaseOrderLine, Material), (PurchaseOrderLine, Invoice), (PurchaseOrderLine, GoodsReceipt), (PurchaseOrderLine, EngineeringChange), (PurchaseOrderLine, Customer), (PurchaseOrderLine, BOMRevision), (PurchaseOrder, ProductConfiguration), (PurchaseOrder, Payment), (PurchaseOrder, Package), (PurchaseOrder, Operation), (PurchaseOrder, Nonconformance), (PurchaseOrder, Material), (PurchaseOrder, Invoice), (PurchaseOrder, EngineeringChange), (PurchaseOrder, Customer), (PurchaseOrder, BOMRevision), (ProductConfiguration, Payment), (ProductConfiguration, Package), (ProductConfiguration, Operation), (ProductConfiguration, Nonconformance), (ProductConfiguration, MaterialLot), (ProductConfiguration, Material), (ProductConfiguration, Invoice), (ProductConfiguration, GoodsReceipt), (ProductConfiguration, Customer), (Payment, Package), (Payment, Operation), (Payment, Nonconformance), (Payment, MaterialLot), (Payment, Material), (Payment, GoodsReceipt), (Payment, EngineeringChange), (Payment, Customer), (Payment, BOMRevision), (Package, Operation), (Package, Nonconformance), (Package, MaterialLot), (Package, Material), (Package, Invoice), (Package, GoodsReceipt), (Package, EngineeringChange), (Package, Customer), (Package, BOMRevision), (Operation, Nonconformance), (Operation, MaterialLot), (Operation, Material), (Operation, Invoice), (Operation, GoodsReceipt), (Operation, EngineeringChange), (Operation, Customer), (Operation, BOMRevision), (Nonconformance, MaterialLot), (Nonconformance, Material), (Nonconformance, Invoice), (Nonconformance, GoodsReceipt), (Nonconformance, EngineeringChange), (Nonconformance, Customer), (Nonconformance, BOMRevision), (MaterialLot, Invoice), (MaterialLot, EngineeringChange), (MaterialLot, Customer), (MaterialLot, BOMRevision), (Material, Invoice), (Material, GoodsReceipt), (Material, EngineeringChange), (Material, Customer), (Material, BOMRevision), (Invoice, GoodsReceipt), (Invoice, EngineeringChange), (Invoice, Customer), (Invoice, BOMRevision), (GoodsReceipt, EngineeringChange), (GoodsReceipt, Customer), (GoodsReceipt, BOMRevision), (EngineeringChange, Customer), (Customer, BOMRevision), 
+Total 378 relationship types.
+
+OPTIONAL OBJECT TYPES IN EVENTS
+Event type RFQ Created has no optional types.
+Event type RFQ Line Added has no optional types.
+Event type Quote Prepared has no optional types.
+Event type Quote Revised has no optional types.
+Event type Quote Approved has no optional types.
+Event type Quote Sent has no optional types.
+Event type Quote Accepted has no optional types.
+Event type Sales Order Created has no optional types.
+Event type Order Line Added has no optional types.
+Event type Configuration Frozen has no optional types.
+Event type Credit Check Passed has no optional types.
+Event type Order Released has no optional types.
+Event type BOM Revision Released has no optional types.
+Event type Work Order Created has no optional types.
+Event type Work Order Released has no optional types.
+Event type Material Reserved has no optional types.
+Event type Credit Check Failed has no optional types.
+Event type Material Issued to Work Order has no optional types.
+Event type Operation Started has no optional types.
+Event type Engineering Change Requested has no optional types.
+Event type Material Shortage Detected has no optional types.
+Event type Operation Completed has no optional types.
+Event type Engineering Change Approved has no optional types.
+Event type Purchase Requisition Created has no optional types.
+Event type Purchase Order Issued has no optional types.
+Event type Final Inspection Passed has no optional types.
+Event type Engineering Change Implemented has no optional types.
+Event type Production Paused has no optional types.
+Event type Supplier Confirmation Received has no optional types.
+Event type Serial Number Assigned has no optional types.
+Event type Finished Goods Received has no optional types.
+Event type Goods Receipt Posted has no optional types.
+Event type Shipment Planned has no optional types.
+Event type Package Sealed has no optional types.
+Event type Production Resumed has no optional types.
+Event type Shipment Dispatched has no optional types.
+Event type Incoming Inspection Started has no optional types.
+Event type Delivery Confirmed has no optional types.
+Event type Invoice Issued has no optional types.
+Event type Payment Received has no optional types.
+Event type Incoming Inspection Passed has no optional types.
+Event type Warranty Registered has no optional types.
+Event type Order Closed has no optional types.
+Event type Incoming Inspection Failed has no optional types.
+Event type Final Inspection Failed has no optional types.
+Event type Nonconformance Raised has no optional types.
+Event type Rework Ordered has no optional types.
+Event type Rework Completed has no optional types.

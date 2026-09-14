@@ -1,0 +1,78 @@
+8 OBJECT TYPES
+['Alarm', 'Component', 'Inspection', 'Machine', 'Operator', 'ProductionOrder', 'MaintenanceTeam', 'WorkOrder'] 
+
+INTERACTION COUNTS
+A Alarm interacts with [1, 1] Component (on average 1.000).
+A Alarm interacts with [1, 1] Machine (on average 1.000).
+A Alarm interacts with [1, 1] MaintenanceTeam (on average 1.000).
+A Component interacts with [0, 1] Alarm (on average 0.125).
+A Component interacts with [0, 2] Inspection (on average 0.875).
+A Component interacts with [1, 1] Machine (on average 1.000).
+A Component interacts with [0, 1] Operator (on average 0.125).
+A Component interacts with [436, 441] ProductionOrder (on average 438.500).
+A Component interacts with [0, 2] MaintenanceTeam (on average 1.000).
+A Component interacts with [1, 2] WorkOrder (on average 1.250).
+A Inspection interacts with [1, 1] Component (on average 1.000).
+A Inspection interacts with [1, 1] Machine (on average 1.000).
+A Inspection interacts with [0, 1] MaintenanceTeam (on average 0.143).
+A Inspection interacts with [0, 1] WorkOrder (on average 0.429).
+A Machine interacts with [0, 1] Alarm (on average 0.125).
+A Machine interacts with [1, 1] Component (on average 1.000).
+A Machine interacts with [0, 2] Inspection (on average 0.875).
+A Machine interacts with [0, 1] Operator (on average 0.125).
+A Machine interacts with [436, 441] ProductionOrder (on average 439.000).
+A Machine interacts with [0, 2] MaintenanceTeam (on average 1.000).
+A Machine interacts with [1, 2] WorkOrder (on average 1.250).
+A Operator interacts with [1, 1] Component (on average 1.000).
+A Operator interacts with [1, 1] Machine (on average 1.000).
+A ProductionOrder interacts with [0, 1] Component (on average 0.999).
+A ProductionOrder interacts with [1, 1] Machine (on average 1.000).
+A MaintenanceTeam interacts with [0, 1] Alarm (on average 0.500).
+A MaintenanceTeam interacts with [1, 7] Component (on average 4.000).
+A MaintenanceTeam interacts with [0, 1] Inspection (on average 0.500).
+A MaintenanceTeam interacts with [1, 7] Machine (on average 4.000).
+A MaintenanceTeam interacts with [1, 7] WorkOrder (on average 4.000).
+A WorkOrder interacts with [1, 1] Component (on average 1.000).
+A WorkOrder interacts with [0, 1] Inspection (on average 0.300).
+A WorkOrder interacts with [1, 1] Machine (on average 1.000).
+A WorkOrder interacts with [0, 1] MaintenanceTeam (on average 0.800).
+
+RELATIONSHIP TYPES
+1 one2one: (Machine, Component), 
+5 opt_one2one: (Alarm, MaintenanceTeam), (Machine, Operator), (Component, Operator), (Alarm, Machine), (Alarm, Component), 
+2 opt_one2one_opt: (WorkOrder, Inspection), (MaintenanceTeam, Inspection), 
+2 opt_one2many: (MaintenanceTeam, WorkOrder), (Component, ProductionOrder), 
+3 one2many: (Machine, WorkOrder), (Component, WorkOrder), (Machine, ProductionOrder), 
+2 one2many_opt: (Machine, Inspection), (Component, Inspection), 
+2 opt_many2many: (MaintenanceTeam, Machine), (MaintenanceTeam, Component), 
+11 opt_many2many_opt: (WorkOrder, ProductionOrder), (WorkOrder, Operator), (WorkOrder, Alarm), (ProductionOrder, MaintenanceTeam), (ProductionOrder, Operator), (ProductionOrder, Inspection), (ProductionOrder, Alarm), (Operator, MaintenanceTeam), (Operator, Inspection), (Operator, Alarm), (Inspection, Alarm), 
+Total 28 relationship types.
+
+OPTIONAL OBJECT TYPES IN EVENTS
+Event type Initialize Machine has no optional types.
+Event type Sensor Snapshot has optional types: Component missing in 65 events, of 36353 events in total
+Event type Warning Alarm Raised has optional types: Alarm missing in 11 events, WorkOrder missing in 11 events, of 12 events in total
+Event type Maintenance Request Created has optional types: Alarm missing in 7 events, MaintenanceTeam missing in 7 events, WorkOrder missing in 7 events, of 8 events in total
+Event type Critical Alarm Raised has optional types: Alarm missing in 271 events, of 272 events in total
+Event type Automatic Stop has optional types: Alarm missing in 273 events, Component missing in 2 events, WorkOrder missing in 273 events, of 274 events in total
+Event type Work Order Created has optional types: MaintenanceTeam missing in 1 events, of 2 events in total
+Event type Maintenance Started has optional types: MaintenanceTeam missing in 1 events, of 9 events in total
+Event type Inspection Performed has optional types: Inspection missing in 3 events, MaintenanceTeam missing in 6 events, WorkOrder missing in 4 events, of 10 events in total
+Event type Test Run Completed has optional types: Inspection missing in 7 events, MaintenanceTeam missing in 2 events, of 10 events in total
+Event type Machine Restarted has optional types: Component missing in 1 events, MaintenanceTeam missing in 270 events, WorkOrder missing in 268 events, of 278 events in total
+Event type Maintenance Completed has optional types: MaintenanceTeam missing in 1 events, of 2 events in total
+Event type Defect Detected has no optional types.
+Event type Quality Hold Started has no optional types.
+Event type Calibration Performed has no optional types.
+Event type Quality Hold Released has no optional types.
+Event type Setup Completed has optional types: Component missing in 3 events, Operator missing in 1047 events, ProductionOrder missing in 6 events, of 1048 events in total
+Event type Setup Started has optional types: Component missing in 2 events, ProductionOrder missing in 3 events, of 1048 events in total
+Event type Diagnosis Performed has no optional types.
+Event type Component Replaced has optional types: MaintenanceTeam missing in 1 events, WorkOrder missing in 1 events, of 9 events in total
+Event type Part Unavailable has no optional types.
+Event type Operation Completed has optional types: Component missing in 1 events, MaintenanceTeam missing in 271 events, WorkOrder missing in 270 events, of 273 events in total
+Event type Test Failed has no optional types.
+Event type Repair Performed has optional types: Component missing in 1 events, MaintenanceTeam missing in 279 events, WorkOrder missing in 279 events, of 283 events in total
+Event type Alarm Acknowledged has no optional types.
+Event type Production Order Released has optional types: Component missing in 8 events, ProductionOrder missing in 14 events, of 3519 events in total
+Event type Simulation End Snapshot has no optional types.

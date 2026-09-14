@@ -1,0 +1,154 @@
+19 OBJECT TYPES
+['AdverseEvent', 'Aliquot', 'Consent', 'DataQuery', 'Dispensation', 'Dose', 'DrugKit', 'Investigator', 'LabOrder', 'LabResult', 'LabTest', 'Participant', 'Protocol', 'ProtocolDeviation', 'Sample', 'SampleShipment', 'Site', 'Study', 'Visit'] 
+
+INTERACTION COUNTS
+A AdverseEvent interacts with [1, 1] Dose (on average 1.000).
+A AdverseEvent interacts with [1, 1] Participant (on average 1.000).
+A Aliquot interacts with [1, 1] Participant (on average 1.000).
+A Aliquot interacts with [1, 1] Sample (on average 1.000).
+A Consent interacts with [1, 1] Participant (on average 1.000).
+A Consent interacts with [1, 1] Protocol (on average 1.000).
+A DataQuery interacts with [1, 1] Participant (on average 1.000).
+A DataQuery interacts with [1, 1] Visit (on average 1.000).
+A Dispensation interacts with [1, 1] Dose (on average 1.000).
+A Dispensation interacts with [1, 1] DrugKit (on average 1.000).
+A Dispensation interacts with [1, 1] Participant (on average 1.000).
+A Dose interacts with [0, 1] AdverseEvent (on average 0.111).
+A Dose interacts with [1, 1] Dispensation (on average 1.000).
+A Dose interacts with [1, 1] Participant (on average 1.000).
+A DrugKit interacts with [1, 1] Dispensation (on average 1.000).
+A DrugKit interacts with [1, 1] Participant (on average 1.000).
+A DrugKit interacts with [1, 1] Site (on average 1.000).
+A Investigator interacts with [10, 10] Participant (on average 10.000).
+A Investigator interacts with [2, 2] Site (on average 2.000).
+A Investigator interacts with [1, 1] Study (on average 1.000).
+A LabOrder interacts with [1, 1] LabTest (on average 1.000).
+A LabOrder interacts with [1, 1] Participant (on average 1.000).
+A LabOrder interacts with [1, 1] Sample (on average 1.000).
+A LabResult interacts with [1, 1] LabTest (on average 1.000).
+A LabResult interacts with [1, 1] Participant (on average 1.000).
+A LabResult interacts with [1, 1] Sample (on average 1.000).
+A LabTest interacts with [1, 1] LabOrder (on average 1.000).
+A LabTest interacts with [1, 1] LabResult (on average 1.000).
+A LabTest interacts with [1, 1] Participant (on average 1.000).
+A LabTest interacts with [1, 1] Sample (on average 1.000).
+A Participant interacts with [0, 1] AdverseEvent (on average 0.100).
+A Participant interacts with [0, 1] Aliquot (on average 0.847).
+A Participant interacts with [0, 1] Consent (on average 0.900).
+A Participant interacts with [0, 1] DataQuery (on average 0.200).
+A Participant interacts with [0, 1] Dispensation (on average 0.900).
+A Participant interacts with [0, 1] Dose (on average 0.900).
+A Participant interacts with [0, 1] DrugKit (on average 0.900).
+A Participant interacts with [1, 1] Investigator (on average 1.000).
+A Participant interacts with [0, 1] LabOrder (on average 0.847).
+A Participant interacts with [0, 1] LabResult (on average 0.847).
+A Participant interacts with [0, 1] LabTest (on average 0.847).
+A Participant interacts with [0, 1] Protocol (on average 0.936).
+A Participant interacts with [0, 1] ProtocolDeviation (on average 0.129).
+A Participant interacts with [0, 1] Sample (on average 0.900).
+A Participant interacts with [0, 1] SampleShipment (on average 0.847).
+A Participant interacts with [1, 1] Site (on average 1.000).
+A Participant interacts with [1, 1] Study (on average 1.000).
+A Participant interacts with [0, 1] Visit (on average 0.900).
+A Protocol interacts with [0, 20] Consent (on average 18.367).
+A Protocol interacts with [1, 20] Participant (on average 19.095).
+A Protocol interacts with [0, 3] ProtocolDeviation (on average 2.626).
+A Protocol interacts with [0, 2] Study (on average 0.728).
+A ProtocolDeviation interacts with [1, 1] Participant (on average 1.000).
+A ProtocolDeviation interacts with [1, 1] Protocol (on average 1.000).
+A Sample interacts with [0, 1] Aliquot (on average 0.941).
+A Sample interacts with [0, 1] LabOrder (on average 0.941).
+A Sample interacts with [0, 1] LabResult (on average 0.941).
+A Sample interacts with [0, 1] LabTest (on average 0.941).
+A Sample interacts with [1, 1] Participant (on average 1.000).
+A Sample interacts with [0, 1] SampleShipment (on average 0.941).
+A Sample interacts with [0, 1] Site (on average 0.941).
+A Sample interacts with [1, 1] Visit (on average 1.000).
+A SampleShipment interacts with [1, 1] Participant (on average 1.000).
+A SampleShipment interacts with [1, 1] Sample (on average 1.000).
+A SampleShipment interacts with [1, 1] Site (on average 1.000).
+A Site interacts with [0, 25] DrugKit (on average 22.500).
+A Site interacts with [5, 5] Investigator (on average 5.000).
+A Site interacts with [25, 25] Participant (on average 25.000).
+A Site interacts with [0, 24] Sample (on average 21.175).
+A Site interacts with [0, 24] SampleShipment (on average 21.175).
+A Site interacts with [5, 5] Study (on average 5.000).
+A Site interacts with [0, 25] Visit (on average 22.500).
+A Study interacts with [3, 3] Investigator (on average 3.000).
+A Study interacts with [30, 30] Participant (on average 30.000).
+A Study interacts with [1, 2] Protocol (on average 1.070).
+A Study interacts with [6, 6] Site (on average 6.000).
+A Visit interacts with [0, 1] DataQuery (on average 0.222).
+A Visit interacts with [1, 1] Participant (on average 1.000).
+A Visit interacts with [1, 1] Sample (on average 1.000).
+A Visit interacts with [1, 1] Site (on average 1.000).
+
+RELATIONSHIP TYPES
+5 one2one: (Visit, Sample), (LabTest, LabResult), (LabTest, LabOrder), (DrugKit, Dispensation), (Dose, Dispensation), 
+21 opt_one2one: (Participant, Visit), (DataQuery, Visit), (Sample, SampleShipment), (Participant, SampleShipment), (Participant, Sample), (LabTest, Sample), (LabResult, Sample), (LabOrder, Sample), (Aliquot, Sample), (Participant, ProtocolDeviation), (LabTest, Participant), (LabResult, Participant), (LabOrder, Participant), (DrugKit, Participant), (Dose, Participant), (Dispensation, Participant), (DataQuery, Participant), (Consent, Participant), (Aliquot, Participant), (AdverseEvent, Participant), (AdverseEvent, Dose), 
+1 opt_one2many: (Protocol, Participant), 
+4 one2many: (Study, Participant), (Study, Investigator), (Site, Participant), (Investigator, Participant), 
+5 one2many_opt: (Site, Visit), (Site, SampleShipment), (Site, DrugKit), (Protocol, ProtocolDeviation), (Protocol, Consent), 
+1 opt_one2many_opt: (Site, Sample), 
+2 many2many: (Study, Site), (Site, Investigator), 
+1 opt_many2many: (Study, Protocol), 
+131 opt_many2many_opt: (Visit, Study), (Visit, SampleShipment), (Visit, ProtocolDeviation), (Visit, Protocol), (Visit, LabTest), (Visit, LabResult), (Visit, LabOrder), (Visit, Investigator), (Visit, DrugKit), (Visit, Dose), (Visit, Dispensation), (Visit, Consent), (Visit, Aliquot), (Visit, AdverseEvent), (Study, SampleShipment), (Study, Sample), (Study, ProtocolDeviation), (Study, LabTest), (Study, LabResult), (Study, LabOrder), (Study, DrugKit), (Study, Dose), (Study, Dispensation), (Study, DataQuery), (Study, Consent), (Study, Aliquot), (Study, AdverseEvent), (Site, ProtocolDeviation), (Site, Protocol), (Site, LabTest), (Site, LabResult), (Site, LabOrder), (Site, Dose), (Site, Dispensation), (Site, DataQuery), (Site, Consent), (Site, Aliquot), (Site, AdverseEvent), (SampleShipment, ProtocolDeviation), (SampleShipment, Protocol), (SampleShipment, LabTest), (SampleShipment, LabResult), (SampleShipment, LabOrder), (SampleShipment, Investigator), (SampleShipment, DrugKit), (SampleShipment, Dose), (SampleShipment, Dispensation), (SampleShipment, DataQuery), (SampleShipment, Consent), (SampleShipment, Aliquot), (SampleShipment, AdverseEvent), (Sample, ProtocolDeviation), (Sample, Protocol), (Sample, Investigator), (Sample, DrugKit), (Sample, Dose), (Sample, Dispensation), (Sample, DataQuery), (Sample, Consent), (Sample, AdverseEvent), (ProtocolDeviation, LabTest), (ProtocolDeviation, LabResult), (ProtocolDeviation, LabOrder), (ProtocolDeviation, Investigator), (ProtocolDeviation, DrugKit), (ProtocolDeviation, Dose), (ProtocolDeviation, Dispensation), (ProtocolDeviation, DataQuery), (ProtocolDeviation, Consent), (ProtocolDeviation, Aliquot), (ProtocolDeviation, AdverseEvent), (Protocol, LabTest), (Protocol, LabResult), (Protocol, LabOrder), (Protocol, Investigator), (Protocol, DrugKit), (Protocol, Dose), (Protocol, Dispensation), (Protocol, DataQuery), (Protocol, Aliquot), (Protocol, AdverseEvent), (LabTest, Investigator), (LabTest, DrugKit), (LabTest, Dose), (LabTest, Dispensation), (LabTest, DataQuery), (LabTest, Consent), (LabTest, Aliquot), (LabTest, AdverseEvent), (LabResult, LabOrder), (LabResult, Investigator), (LabResult, DrugKit), (LabResult, Dose), (LabResult, Dispensation), (LabResult, DataQuery), (LabResult, Consent), (LabResult, Aliquot), (LabResult, AdverseEvent), (LabOrder, Investigator), (LabOrder, DrugKit), (LabOrder, Dose), (LabOrder, Dispensation), (LabOrder, DataQuery), (LabOrder, Consent), (LabOrder, Aliquot), (LabOrder, AdverseEvent), (Investigator, DrugKit), (Investigator, Dose), (Investigator, Dispensation), (Investigator, DataQuery), (Investigator, Consent), (Investigator, Aliquot), (Investigator, AdverseEvent), (DrugKit, Dose), (DrugKit, DataQuery), (DrugKit, Consent), (DrugKit, Aliquot), (DrugKit, AdverseEvent), (Dose, DataQuery), (Dose, Consent), (Dose, Aliquot), (Dispensation, DataQuery), (Dispensation, Consent), (Dispensation, Aliquot), (Dispensation, AdverseEvent), (DataQuery, Consent), (DataQuery, Aliquot), (DataQuery, AdverseEvent), (Consent, Aliquot), (Consent, AdverseEvent), (Aliquot, AdverseEvent), 
+Total 171 relationship types.
+
+OPTIONAL OBJECT TYPES IN EVENTS
+Event type Study Created has no optional types.
+Event type Protocol Published has no optional types.
+Event type Site Initiated has no optional types.
+Event type Participant Screened has no optional types.
+Event type Consent Signed has no optional types.
+Event type Participant Enrolled has no optional types.
+Event type Screening Failed has no optional types.
+Event type Participant Randomized has no optional types.
+Event type Participant Discontinued has no optional types.
+Event type Visit Scheduled has no optional types.
+Event type Site Suspended has no optional types.
+Event type Site Reactivated has no optional types.
+Event type Visit Started has no optional types.
+Event type Protocol Amended has no optional types.
+Event type Visit Completed has no optional types.
+Event type Drug Kit Assigned has no optional types.
+Event type Drug Kit Dispensed has no optional types.
+Event type Visit Canceled has no optional types.
+Event type Visit Rescheduled has no optional types.
+Event type Dose Administered has no optional types.
+Event type Visit Missed has no optional types.
+Event type Drug Kit Returned has no optional types.
+Event type Sample Collection Ordered has no optional types.
+Event type Sample Collected has no optional types.
+Event type Sample Accessioned has no optional types.
+Event type Participant Reconsented has no optional types.
+Event type Dose Held has no optional types.
+Event type Aliquot Created has no optional types.
+Event type Sample Frozen has no optional types.
+Event type Sample Shipment Created has no optional types.
+Event type Sample Collection Canceled has no optional types.
+Event type Consent Withdrawn has no optional types.
+Event type Sample Shipment Packed has no optional types.
+Event type Sample Shipment Dispatched has no optional types.
+Event type Sample Shipment Received has no optional types.
+Event type Lab Test Ordered has no optional types.
+Event type Lab Test Started has no optional types.
+Event type Lab Test Completed has no optional types.
+Event type Result Entered has no optional types.
+Event type Result Validated has no optional types.
+Event type Sample Thawed has no optional types.
+Event type Data Query Opened has no optional types.
+Event type Data Query Answered has no optional types.
+Event type Participant Completed has no optional types.
+Event type Data Query Closed has no optional types.
+Event type Lab Test Repeated has no optional types.
+Event type Protocol Deviation Raised has no optional types.
+Event type Protocol Deviation Closed has no optional types.
+Event type Adverse Event Opened has no optional types.
+Event type Adverse Event Graded has no optional types.
+Event type Protocol Deviation Waived has no optional types.
+Event type Adverse Event Resolved has no optional types.
+Event type Sample Destroyed has no optional types.
+Event type Adverse Event Escalated has no optional types.
+Event type Result Amended has no optional types.
+Event type Site Closed has no optional types.
